@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en-gb">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>CYF&#43;</title>
+    <meta name="description" content="A free and open source immersive engineering programme. Practical, hands on projects in Go, distributed systems engineering, site reliability engineering, software engineering. Pace, scale, and complexity." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        animation: fade-in 0.2s;
+      }
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+     
+    <link
+      rel="stylesheet"
+      href="/bundled.min.f44ec27dd539fe9647de9751483e4bcd.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="/bundled.min.f44ec27dd539fe9647de9751483e4bcd.css" />
+    </noscript>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;700&family=Major+Mono+Display&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/favicons/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicons/favicon.ico" />
+    <meta name="apple-mobile-web-app-title" content="CYF+" />
+    <meta name="application-name" content="CYF+" />
+    <meta name="msapplication-TileColor" content="#9f00a7" />
+    <meta
+      name="msapplication-config"
+      content="/favicons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#00ff90" />
+  </head>
+</html>
+<body class="is-light-mode">
+  <a class="c-skip-link e-button" id="skip-link" href="#main">Skip to main</a>
+  <div class="l-layout">
+    <header class="l-layout__header l-header">
+  <div class="l-header__nav">
+    <h1 class="l-header__heading">
+      <a class="l-header__home" href="/">CYF&#43;</a>
+    </h1>
+
+    <button
+      class="l-header__action e-button e-button--icon js-menu-toggle is-fixed"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-button__icon l-header__icon"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+        />
+      </svg>
+
+      <span class="is-invisible">Open Menu.</span>
+    </button>
+  </div>
+</header>
+ <nav
+  class="l-layout__menu l-menu"
+  aria-label="Main Site Links."
+  id="site-menu"
+  hidden
+  tabindex="0"
+>
+  <div class="l-menu__container">
+    <h2 class="l-menu__heading e-heading__2">
+      <a href="/" class="l-menu__home">CYF&#43;</a>
+    </h2>
+    <button
+      class="l-menu__action e-button e-button--icon js-menu-toggle"
+      id="close-menu"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-button__icon"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18L18 6M6 6l12 12"
+        />
+      </svg>
+
+      <span class="is-invisible">Close Menu.</span>
+    </button>
+    <ul class="l-menu__primary e-list">
+      <li class="l-menu__item e-list__item">
+        <a class="l-menu__link e-link e-heading__1" href="/about">About</a>
+      </li>
+      <li class="l-menu__item e-list__item">
+        <a class="l-menu__link e-link e-heading__1" href="/versions"
+          >Versions</a
+        >
+      </li>
+      <li class="l-menu__item e-list__item">
+        <a class="l-menu__link e-link e-heading__1" href="/projects"
+          >Projects</a
+        >
+      </li>
+      <li class="l-menu__item e-list__item">
+        <a class="l-menu__link e-link e-heading__1" href="/primers">Primers</a>
+      </li>
+    </ul>
+
+    <div class="l-menu__secondary">
+      
+      <a class="l-menu__link e-link" href="#skip-link">
+        <span class="is-invisible">To top</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          width="48px"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="l-menu__icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3 4.5h14.25M3 9h9.75M3 13.5h5.25m5.25-.75L17.25 9m0 0L21 12.75M17.25 9v12"
+          />
+        </svg>
+      </a>
+      
+    </div>
+  </div>
+
+  <img
+    src="/pictures/depths/dddepth--005.webp"
+    alt=""
+    class="l-menu__bg"
+  />
+</nav>
+
+    <main id="main" class="l-layout__main l-main" tabindex="0">
+      
+
+<article>
+  <header class="l-page__header c-page-header">
+    <div class="c-page-header__container">
+      <div class="c-page-header__breadcrumbs">
+        
+<nav class="c-breadcrumbs">
+  <ol class="c-breadcrumbs__list">
+    <li class="c-breadcrumbs__item">
+      <a class="c-breadcrumbs__link" href="/about/">About</a>
+    </li>
+  </ol>
+</nav>
+
+
+      </div>
+      <h1
+        class="c-page-header__title e-heading__1 is-invisible"
+      >
+        Contributing
+      </h1>
+        
+
+  
+
+  
+
+
+  
+      <section class="c-page-header__toc c-toc" id="toc">
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#goals">Goals</a></li>
+    <li><a href="#how-we-teach">How we teach</a>
+      <ol>
+        <li><a href="#learning-by-doing">Learning by doing</a></li>
+        <li><a href="#dont-reinvent-the-wheel">Don&rsquo;t reinvent the wheel</a></li>
+        <li><a href="#make-it-challenging">Make it challenging</a></li>
+        <li><a href="#fundamentals-first">Fundamentals first</a></li>
+        <li><a href="#self-contained">Self-contained</a></li>
+      </ol>
+    </li>
+    <li><a href="#how-we-work">How we work</a></li>
+    <li><a href="#project-structure">Project structure</a>
+      <ol>
+        <li><a href="#on-main-in-a-directory-named-for-the-project">On <code>main</code> in a directory named for the project</a></li>
+        <li><a href="#on-main-in-the-readmemd">On <code>main</code> in the README.md</a></li>
+        <li><a href="#on-a-branch-named-implproject_name">On a branch named <code>impl/${project_name}</code></a></li>
+      </ol>
+    </li>
+    <li><a href="#how-to-add-a-project">How to add a project</a></li>
+    <li><a href="#getting-help">Getting help</a></li>
+    <li><a href="#code-of-conduct">Code of Conduct</a></li>
+  </ol>
+</nav>
+      </section>
+      
+    </div>
+  </header>
+
+  <section class="l-page__main c-copy"><h1 id="contributing-to-code-your-future-immersive-go-course">Contributing to Code Your Future Immersive Go Course</h1>
+<p>This repository is a permissively licensed, open source work. We welcome contributions, both as corrections/improvements and additions, and recommend filing an issue for discussion before investing too much work.</p>
+<h2 id="goals">Goals</h2>
+<p>This repository primarily exists to help junior software engineers get experience with the Go programming language, and learn about topics that would be useful as a software engineer working in production.</p>
+<p>It is intended to be followed without needing support (i.e. should explain things, ideally via references to high quality existing materials), but requiring real learning and research by those taking it (i.e. it shouldn&rsquo;t spoon-feed every step and every answer). This is important, as working out how to do things, and thinking about design, are important software engineering skills.</p>
+<h2 id="how-we-teach">How we teach</h2>
+<h3 id="learning-by-doing">Learning by doing</h3>
+<p>We primarily teach via exercises and projects. We describe outcomes, show examples, and give references (either terms to Google, or links to useful material).</p>
+<h3 id="dont-reinvent-the-wheel">Don&rsquo;t reinvent the wheel</h3>
+<p>Where we think there isn&rsquo;t a useful / accurate / well-targeted existing resource, we may write explanations ourselves, but this should be rare - many excellent people have come before us!</p>
+<h3 id="make-it-challenging">Make it challenging</h3>
+<p>We don&rsquo;t explain every step along the way - working out the steps is an important part of learning. Deciding exactly how many steps to explain is a tricky balance.</p>
+<h3 id="fundamentals-first">Fundamentals first</h3>
+<p>As far as possible and reasonable, we teach foundational topics <em>before</em> teaching abstractions. The goal is that learners can re-apply their knowledge to new situations by re-combining the fundamentals, rather than simply being able to use a specific tool.</p>
+<ul>
+<li><strong>Yes</strong>: a project that teaches setting up &amp; running code on a cloud VM (such as <a href="https://aws.amazon.com/ec2/">EC2</a>) before a project that hides the details (such as <a href="https://aws.amazon.com/lambda/">Lambda</a>)</li>
+<li><strong>Yes</strong>: a project that introduces configuring cloud infrastructure before a project using an <a href="https://en.m.wikipedia.org/wiki/Infrastructure_as_code">IaC</a> tool such as <a href="https://www.terraform.io/">Terraform</a>.</li>
+<li><strong>No</strong>: introducing concurrency with a framework like <a href="https://github.com/panjf2000/ants">ants</a> without building familiarity with the basics of channels.</li>
+</ul>
+<h3 id="self-contained">Self-contained</h3>
+<p>Each project here should be self-contained; projects should not extend existing projects and assume they have been built. However, projects can reference previous projects if there is incidental overlap in what is being built.</p>
+<ul>
+<li><strong>Yes</strong>: (after instructions for the build) &ldquo;You might have spotted that this is the same server as in the server-database project.&rdquo;</li>
+<li><strong>No</strong>: &ldquo;Implement this server as per the instructions in the server-database project.&rdquo;</li>
+<li><strong>Also no</strong>: &ldquo;Take your server from the server-database project and make it also respond to gRPC requests&rdquo;</li>
+</ul>
+<p>The course itself should be self-contained in that it should not depend on the existence or implementation of any specific Code Your Future resources. This is so that the course does not add a maintenance burden to CYF as it develops: for example, the person managing AWS resources for learners at CYF should <em>not</em> have to update instructions in this course. Instead, this course should link to canonical resources inside CYF.</p>
+<p>It&rsquo;s also fine to rely on prerequisite knowledge as long as there is a link to resources which would explain that prerequisite at the correct level.</p>
+<p>Rule of thumb: a person should be able to complete a project <em>without</em> being part of CYF, and without having done any of the other projects.</p>
+<h2 id="how-we-work">How we work</h2>
+<p>Work on this repository is tracked in the <a href="https://github.com/orgs/CodeYourFuture/projects/20">Immersive Go Course GitHub Project</a>.</p>
+<p>Work should progress Backlog -&gt; To Do -&gt; In Progress -&gt; Done. Every task should have a Target Sprint capturing which CYF sprint it contributes to. If you&rsquo;re not sure, ask in the GitHub issue.</p>
+<p>For the initial implementation of the course:</p>
+<ul>
+<li>Tasks are organised into Development Sprints of one week</li>
+<li>The work in the current Development Sprint is on the <a href="https://github.com/orgs/CodeYourFuture/projects/20/views/2">Current Sprint board</a></li>
+<li>The work in the current Development Sprint should be prioritised over everything else</li>
+<li>Every issue and PR should have an associated <strong>milestone</strong> relating to the CYF Course Sprint</li>
+</ul>
+<h2 id="project-structure">Project structure</h2>
+<p>Each project has a name, e.g. <code>http-auth</code>.</p>
+<p>Every project contains at least the following elements, and may have others as needed:</p>
+<h3 id="on-main-in-a-directory-named-for-the-project">On <code>main</code> in a directory named for the project</h3>
+<ol>
+<li>A README.md containing:
+<ol>
+<li>Learning objectives. A list of things the person doing the project will understand, know, and be able to do after they have completed the project.</li>
+<li>A concise description of the high-level idea of the project - what&rsquo;s it for?</li>
+<li>A decscription of the outcomes desired from the project, and a rough sequence of steps.</li>
+<li>Ideas for extensions to the project, as a bulleted list under a final section heading called &ldquo;Extensions&rdquo;.</li>
+</ol>
+</li>
+<li>Any scaffolding or supporting files that may be useful (e.g. files to be served, starter code if getting started isn&rsquo;t the focus of the project).</li>
+</ol>
+<h3 id="on-main-in-the-readmemd">On <code>main</code> in the README.md</h3>
+<p>A reference to the project, in order (or at least after prerequisite projects), and a quick description of it.</p>
+<h3 id="on-a-branch-named-implproject_name">On a branch named <code>impl/${project_name}</code></h3>
+<ol>
+<li>An IMPLEMENTATION.md file, talking through a whole implementation, pointing out the important pieces, and explaining how to run it.</li>
+<li>A fully working implementation of the project, intended to be readable and intelligible someone doing the project for the first time:
+<ol>
+<li>The code should always be correct from a security and safety point of view - this should be model code, don&rsquo;t take short-cuts, and if you need to, explain why, and why it&rsquo;s bad.</li>
+<li>Always choose clarity of code as the primary motivator. Favour clarity over efficiency, conciseness, cuteness, cleverness, etc. These are learning examples.</li>
+<li>Comment your code extensively. Assume the reader doesn&rsquo;t understand what your code does or why: explain what it&rsquo;s doing, how it&rsquo;s doing it, and most importantly, why it&rsquo;s doing it. If it&rsquo;s important that it&rsquo;s doing something a certain way (e.g. avoiding SQL injection attacks), <em>explain this</em>.</li>
+<li>From the IMPLEMENTATION.md, and the implementation, it should be clear how to run the code. If dependencies are needed, they should be made clear in one of those locations.</li>
+</ol>
+</li>
+</ol>
+<p>Don&rsquo;t copy the README.md over from the <code>main</code> branch. That way, we avoid tricky rebasing issues for everyone.</p>
+<h2 id="how-to-add-a-project">How to add a project</h2>
+<p>If you haven&rsquo;t already discussed the project idea with the team, we recommend <a href="https://github.com/CodeYourFuture/immersive-go-course/issues/new">filing an issue</a> to discuss it.</p>
+<p>Start with learning objectives - in your README.md, write down what you&rsquo;re hoping to teach through the project.</p>
+<p>Fill in the rest of your README.md, and any other files needed, and make a pull request against <code>main</code>.</p>
+<p>Put together a model implementation as described above, and make a pull request against <code>main</code>. After review, one of the maintainers will push it to the appropriately named branch.</p>
+<h2 id="getting-help">Getting help</h2>
+<p>Feel free to <a href="https://github.com/CodeYourFuture/immersive-go-course/issues/new">file an issue</a>, or if you&rsquo;re on the Code Your Future slack, ping one of <a href="https://github.com/CodeYourFuture/immersive-go-course#authors">the named authors</a> to get directed to the right channel.</p>
+<h2 id="code-of-conduct">Code of Conduct</h2>
+<p>Contributors and users of this repository are expected to adhere to <a href="https://codeyourfuture.io/about/code-of-conduct/">the Code Your Future Code of Conduct</a>.</p>
+</section>
+
+  
+
+</article>
+
+
+    </main><footer class="l-layout__footer l-footer">
+  <a
+    class="l-footer__github e-button e-button--icon"
+    href="https://github.com/CodeYourFuture/immersive-go-course/"
+  >
+    <svg
+      focusable="false"
+      class="e-button__icon"
+      role="presentation"
+      viewbox="0 0 98 96"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+        fill="currentColor"
+      />
+    </svg>
+    <span class="is-invisible">Find us on GitHub</span>
+  </a>
+  <p class="l-footer__impressum e-heading__6">
+    This
+    <a href="https://github.com/CodeYourFuture/immersive-go-course/"
+      >free and open source engineering programme</a
+    >
+    is a project of
+    <a href="https://codeyourfuture.io">Code Your Future</a>
+    <br />
+    This work is licensed under a Creative Commons Attribution-ShareAlike 4.0
+    International License.
+  </p>
+  <button
+    id="mode-toggle"
+    class="e__button--toggle e-button--icon l-footer__mode"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="e-icon e__button__icon e-icon--moon"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+      />
+    </svg>
+
+    <span class="is-invisible">Toggle between light and dark mode</span>
+  </button>
+</footer>
+
+  
+
+<script>
+  function randomBG() {
+    const style = document.createElement("style");
+    style.textContent = `body, html {background-image:url("\/pictures/svgs/neons/nnneon.svg"),url("\/pictures/svgs/quads/qqquad-5.svg"),radial-gradient(circle,var(--theme-color--paper) 0%,var(--theme-color--block) 50%,var(--theme-color--paper) 100%);
+      background-size: cover;
+    }`;
+
+    document.head.appendChild(style);
+  }
+
+  window.addEventListener("load", randomBG);
+</script>
+
+
+<script src="/scripts/app.min.js" defer></script>
+
+
+</div>
+</body>

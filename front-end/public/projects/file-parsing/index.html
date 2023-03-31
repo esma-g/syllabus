@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en-gb">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>CYF&#43;</title>
+    <meta name="description" content="A free and open source immersive engineering programme. Practical, hands on projects in Go, distributed systems engineering, site reliability engineering, software engineering. Pace, scale, and complexity." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        animation: fade-in 0.2s;
+      }
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+     
+    <link
+      rel="stylesheet"
+      href="/bundled.min.f44ec27dd539fe9647de9751483e4bcd.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="/bundled.min.f44ec27dd539fe9647de9751483e4bcd.css" />
+    </noscript>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;700&family=Major+Mono+Display&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/favicons/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicons/favicon.ico" />
+    <meta name="apple-mobile-web-app-title" content="CYF+" />
+    <meta name="application-name" content="CYF+" />
+    <meta name="msapplication-TileColor" content="#9f00a7" />
+    <meta
+      name="msapplication-config"
+      content="/favicons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#00ff90" />
+  </head>
+</html>
+<body class="is-light-mode">
+  <a class="c-skip-link e-button" id="skip-link" href="#main">Skip to main</a>
+  <div class="l-layout">
+    <header class="l-layout__header l-header">
+  <div class="l-header__nav">
+    <h1 class="l-header__heading">
+      <a class="l-header__home" href="/">CYF&#43;</a>
+    </h1>
+
+    <button
+      class="l-header__action e-button e-button--icon js-menu-toggle is-fixed"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-button__icon l-header__icon"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+        />
+      </svg>
+
+      <span class="is-invisible">Open Menu.</span>
+    </button>
+  </div>
+</header>
+ <nav
+  class="l-layout__menu l-menu"
+  aria-label="Main Site Links."
+  id="site-menu"
+  hidden
+  tabindex="0"
+>
+  <div class="l-menu__container">
+    <h2 class="l-menu__heading e-heading__2">
+      <a href="/" class="l-menu__home">CYF&#43;</a>
+    </h2>
+    <button
+      class="l-menu__action e-button e-button--icon js-menu-toggle"
+      id="close-menu"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-button__icon"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18L18 6M6 6l12 12"
+        />
+      </svg>
+
+      <span class="is-invisible">Close Menu.</span>
+    </button>
+    <ul class="l-menu__primary e-list">
+      <li class="l-menu__item e-list__item">
+        <a class="l-menu__link e-link e-heading__1" href="/about">About</a>
+      </li>
+      <li class="l-menu__item e-list__item">
+        <a class="l-menu__link e-link e-heading__1" href="/versions"
+          >Versions</a
+        >
+      </li>
+      <li class="l-menu__item e-list__item">
+        <a class="l-menu__link e-link e-heading__1" href="/projects"
+          >Projects</a
+        >
+      </li>
+      <li class="l-menu__item e-list__item">
+        <a class="l-menu__link e-link e-heading__1" href="/primers">Primers</a>
+      </li>
+    </ul>
+
+    <div class="l-menu__secondary">
+      
+      <a class="l-menu__link e-link" href="#skip-link">
+        <span class="is-invisible">To top</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          width="48px"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="l-menu__icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3 4.5h14.25M3 9h9.75M3 13.5h5.25m5.25-.75L17.25 9m0 0L21 12.75M17.25 9v12"
+          />
+        </svg>
+      </a>
+      
+    </div>
+  </div>
+
+  <img
+    src="/pictures/depths/dddepth--005.webp"
+    alt=""
+    class="l-menu__bg"
+  />
+</nav>
+
+    <main id="main" class="l-layout__main l-main" tabindex="0">
+      
+
+<article>
+  <header class="l-page__header c-page-header">
+    <div class="c-page-header__container">
+      <div class="c-page-header__breadcrumbs">
+        
+<nav class="c-breadcrumbs">
+  <ol class="c-breadcrumbs__list">
+    <li class="c-breadcrumbs__item">
+      <a class="c-breadcrumbs__link" href="/projects/">Projects</a>
+    </li>
+  </ol>
+</nav>
+
+
+      </div>
+      <h1
+        class="c-page-header__title e-heading__1 is-invisible"
+      >
+        File Parsing
+      </h1>
+         
+      <a
+        class="c-page-header__edit e-heading__5 e-link is-none--lt-container"
+        href="https://github.com/CodeYourFuture/immersive-go-course/tree/main/projects/file-parsing/README.md"
+        >Edit on Github</a
+      >
+       
+
+  
+
+  
+
+
+  
+      <section class="c-page-header__toc c-toc" id="toc">
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#objectives">Objectives:</a></li>
+    <li><a href="#project">Project</a>
+      <ol>
+        <li><a href="#data-formats">Data formats</a></li>
+        <li><a href="#json">JSON</a></li>
+        <li><a href="#repeated-json">Repeated JSON</a></li>
+        <li><a href="#comma-separated-value">Comma Separated Value</a></li>
+        <li><a href="#custom-binary">Custom Binary</a></li>
+      </ol>
+    </li>
+    <li><a href="#extra-things-to-consider">Extra things to consider</a>
+      <ol>
+        <li><a href="#variable-length-data-encoding">Variable-length data encoding</a></li>
+      </ol>
+    </li>
+    <li><a href="#avoiding-writing-code">Avoiding writing code</a></li>
+  </ol>
+</nav>
+      </section>
+      
+    </div>
+  </header>
+
+  <section class="l-page__main c-copy"><p>In this project we&rsquo;ll practice parsing data from files in different formats.</p>
+<p>Many larger projects require reading configuration data or files, and often times it&rsquo;s also convenient to write a small program to understand or process some data, and being comfortable quickly doing so can be very helpful.</p>
+<p>Timebox: 2 days</p>
+<h2 id="objectives">Objectives:</h2>
+<ul>
+<li>Write Go code to parse data in non-standard formats.</li>
+<li>Write tests for Go code.</li>
+<li>Become comfortable leveraging libraries to parse standard formats in slightly non-standard ways.</li>
+</ul>
+<h2 id="project">Project</h2>
+<p>The <code>examples</code> sub-directory in this directory contains a number of data files, each of which contains the same data in a different format. Descriptions of each format can be found below. Each data file contains a data-set of player names, and their high scores, for some game.</p>
+<p>We are going to write a program to analyse the data, and print out the names of the players with the highest and lowest scores.</p>
+<p>Don&rsquo;t forget to write tests for your program, too.</p>
+<h3 id="data-formats">Data formats</h3>
+<h3 id="json">JSON</h3>
+<p>json.txt contains an array of JSON objects, each with a &ldquo;name&rdquo; and &ldquo;high_score&rdquo; key.</p>
+<h3 id="repeated-json">Repeated JSON</h3>
+<p>repeated-json.txt contains lines of data stored in JSON format. Each line contains exactly one record, stored as an object. Lines starting with # are comments and should be ignored.</p>
+<h3 id="comma-separated-value">Comma Separated Value</h3>
+<p>data.csv is a standard Comma Separated Value (&ldquo;CSV&rdquo;) file. The format is well-documented online, and there are many libraries which support parsing it.</p>
+<h3 id="custom-binary">Custom Binary</h3>
+<p>There are two files in a custom binary serialisation format.</p>
+<blockquote>
+<p>:memo: This section refers to a concept called &ldquo;endianness&rdquo;. You can learn more about endianness <a href="https://www.freecodecamp.org/news/what-is-endianness-big-endian-vs-little-endian/">in this article</a>.</p>
+</blockquote>
+<blockquote>
+<p>:memo: This section refers to a character encoding called UTF-8. You can learn more about UTF-8 <a href="https://en.wikipedia.org/wiki/UTF-8">on wikipedia</a>. For this exercise, it&rsquo;s sufficient to know that UTF-8 is a way of encoding strings as bytes, and that if you read the bytes of a UTF-8 string in Go, you can use that value as a <code>string</code> without needing to change it.</p>
+</blockquote>
+<blockquote>
+<p>:memo: This section refers to a &ldquo;null terminating character&rdquo;. When encoding a piece of data with variable length, we need to know how big it is. There are a few ways we can typically do that; the one we&rsquo;re going to use is that we&rsquo;ll specify &ldquo;you&rsquo;ll know when the string is over, when you see a byte which is all zeros - the byte before that one was the last byte of the string&rdquo;.</p>
+</blockquote>
+<p>The format is as follows:</p>
+<ul>
+<li>First two bytes of the file indicate endianness of numbers. If the bytes are FE FF, numbers in the file are stored in big endian byte order. If the bytes are FF FE, numbers in the file are stored in little endian byte order.</li>
+<li>Each record contains exactly four bytes representing the score as a signed 32-bit integer, in the above described endian format, then the name of the player stored in UTF-8 which may not contain a null character, followed by a null terminating character.</li>
+</ul>
+<p>The tool <code>od</code> (which you can learn more about <a href="https://man7.org/linux/man-pages/man1/od.1.html">here</a>) can be useful for exploring binary data. For instance, we can run:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>% od -t x1 projects/file-parsing/examples/custom-binary-le.bin
+</span></span><span style="display:flex;"><span>0000000    ff  fe  0a  00  00  00  41  79  61  00  1e  00  00  00  50  72
+</span></span><span style="display:flex;"><span>0000020    69  73  68  61  00  ff  ff  ff  ff  43  68  61  72  6c  69  65
+</span></span><span style="display:flex;"><span>0000040    00  19  00  00  00  4d  61  72  67  6f  74  00                
+</span></span><span style="display:flex;"><span>0000054
+</span></span></code></pre></div><p>This prints each byte of the file, one at a time, represented as hexidecimal digits.</p>
+<p>We can see in this example that the first byte is ff and the second is fe - according to our file format specification, that suggests the numbers here are stored in little endian byte order.</p>
+<p>We can see the next four bytes contain 0a then three 00s, then three non-null bytes, then a null byte.</p>
+<h2 id="extra-things-to-consider">Extra things to consider</h2>
+<h3 id="variable-length-data-encoding">Variable-length data encoding</h3>
+<p>In the description of the binary serialisation format, we mentioned that there were different ways of encoding variable-length data.</p>
+<p>The example that we used for strings was to use a terminating character - we specify that there&rsquo;s a character (or several characters in sequence) which isn&rsquo;t allowed to appear in our data (e.g. a null byte, one where all the bits are 0), and that we&rsquo;ll add that to the end of the data so you know it&rsquo;s the end.</p>
+<p>We also used another technique, for storing the scores - we specified that the score is stored in a fixed number of bytes (specifically 4). 4 bytes is probably more space than we actually need to store our game&rsquo;s scores (4 bytes can store 4294967296 different values - really big scores!), and in fact most of our scores fit into 1 byte (256 different values), but specifying exactly 4 bytes is a simple rule, and gives us flexibility in case scores increase in the future.</p>
+<p>Yet another technique is that we can write down the length of the variable length data in a fixed amount of memory before the data; i.e. to say &ldquo;These 4 bytes say that the string after them will be 100 bytes long&rdquo;.</p>
+<p>Each of these three approaches has different trade-offs - benefits they bring, and drawbacks they add.</p>
+<p>Consider the trade-offs of each approach. What makes it a good approach? What makes it a bad approach? What kind of data and use-cases is each well-suited for?</p>
+<p>Some things to consider:</p>
+<ul>
+<li>Are any more or less efficient in terms of how much space they use? Do any waste space?</li>
+<li>What limits do they apply to the kind of data we can actually store?</li>
+<li>Do any of the approaches make it easier/harder or faster/slower to parse data stored in that format?</li>
+</ul>
+<h2 id="avoiding-writing-code">Avoiding writing code</h2>
+<p>While it&rsquo;s useful to be comfortable putting together ad-hoc programs to parse some data (and you should practice this!), one of the advantages of using existing formats of data is that there are often tools which can help us to do some parsing or analysis without even needing to write a program at all.</p>
+<p>Two examples of this are <a href="https://stedolan.github.io/jq/"><code>jq</code></a> (which allows you to parse JSON using a custom query language), and <a href="https://github.com/antonmedv/fx"><code>fx</code></a> which allows you to write JavaScript snippets to manipulate JSON.</p>
+<p>For example, you can use <code>jq</code> to answer the question &ldquo;Who had the highest score&rdquo; without needing to write a whole program:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>% jq -r <span style="color:#e6db74">&#39;. | max_by(.high_score).name&#39;</span> file-parsing/examples/json.txt
+</span></span><span style="display:flex;"><span>Prisha
+</span></span></code></pre></div><p>Or use <code>fx</code> to do the same, but using more familiar JavaScript as the query language:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>% fx file-parsing/examples/json.txt <span style="color:#e6db74">&#39;.sort((l, r) =&gt; r.high_score - l.high_score)[0].name&#39;</span>
+</span></span><span style="display:flex;"><span>Prisha
+</span></span></code></pre></div><p>Similarly, a program called <a href="https://github.com/mithrandie/csvq"><code>csvq</code></a> can be used to query CSV files in a SQL-like query language:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span># cat examples/data.csv | csvq <span style="color:#e6db74">&#39;SELECT * ORDER BY `high score` DESC LIMIT 1&#39;</span>
+</span></span><span style="display:flex;"><span>+--------+------------+
+</span></span><span style="display:flex;"><span>|  name  | high score |
+</span></span><span style="display:flex;"><span>+--------+------------+
+</span></span><span style="display:flex;"><span>| Prisha | 30         |
+</span></span><span style="display:flex;"><span>+--------+------------+
+</span></span></code></pre></div><p>Spend some time experimenting with these tools:</p>
+<ul>
+<li>Write some interesting queries over the data.</li>
+<li>Try to work out what the limits are of using these pre-existing tools, and when you&rsquo;re more likely going to want to just write a custom program yourself.</li>
+</ul>
+</section>
+
+  
+<footer class="c-page-footer c-copy">
+  <h4 class="c-page-footer__section">
+    <a
+      class="c-page-footer__section-link e-link"
+      href="/projects"
+      >projects</a
+    >
+  </h4>
+   
+  <nav class="c-page-footer__section-nav">
+    <a
+      class="e-button e-button--icon c-page-footer__edit"
+      href="https://github.com/CodeYourFuture/immersive-go-course/tree/main/projects/file-parsing/README.md"
+      ><svg
+        role="presentation"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-button__icon"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125"
+        />
+      </svg>
+      <span class="is-invisible">Edit this page on GitHub</span></a
+    >
+    
+    
+  </nav>
+</footer>
+
+
+</article>
+
+
+    </main><footer class="l-layout__footer l-footer">
+  <a
+    class="l-footer__github e-button e-button--icon"
+    href="https://github.com/CodeYourFuture/immersive-go-course/"
+  >
+    <svg
+      focusable="false"
+      class="e-button__icon"
+      role="presentation"
+      viewbox="0 0 98 96"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+        fill="currentColor"
+      />
+    </svg>
+    <span class="is-invisible">Find us on GitHub</span>
+  </a>
+  <p class="l-footer__impressum e-heading__6">
+    This
+    <a href="https://github.com/CodeYourFuture/immersive-go-course/"
+      >free and open source engineering programme</a
+    >
+    is a project of
+    <a href="https://codeyourfuture.io">Code Your Future</a>
+    <br />
+    This work is licensed under a Creative Commons Attribution-ShareAlike 4.0
+    International License.
+  </p>
+  <button
+    id="mode-toggle"
+    class="e__button--toggle e-button--icon l-footer__mode"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="e-icon e__button__icon e-icon--moon"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+      />
+    </svg>
+
+    <span class="is-invisible">Toggle between light and dark mode</span>
+  </button>
+</footer>
+
+  
+
+<script>
+  function randomBG() {
+    const style = document.createElement("style");
+    style.textContent = `body, html {background-image:url("\/pictures/svgs/neons/nnneon.svg"),url("\/pictures/svgs/quads/qqquad-5.svg"),radial-gradient(circle,var(--theme-color--paper) 0%,var(--theme-color--block) 50%,var(--theme-color--paper) 100%);
+      background-size: cover;
+    }`;
+
+    document.head.appendChild(style);
+  }
+
+  window.addEventListener("load", randomBG);
+</script>
+
+
+<script src="/scripts/app.min.js" defer></script>
+
+
+</div>
+</body>

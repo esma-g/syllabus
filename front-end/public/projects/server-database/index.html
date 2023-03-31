@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en-gb">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>CYF&#43;</title>
+    <meta name="description" content="A free and open source immersive engineering programme. Practical, hands on projects in Go, distributed systems engineering, site reliability engineering, software engineering. Pace, scale, and complexity." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        animation: fade-in 0.2s;
+      }
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+     
+    <link
+      rel="stylesheet"
+      href="/bundled.min.f44ec27dd539fe9647de9751483e4bcd.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="/bundled.min.f44ec27dd539fe9647de9751483e4bcd.css" />
+    </noscript>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;700&family=Major+Mono+Display&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/favicons/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicons/favicon.ico" />
+    <meta name="apple-mobile-web-app-title" content="CYF+" />
+    <meta name="application-name" content="CYF+" />
+    <meta name="msapplication-TileColor" content="#9f00a7" />
+    <meta
+      name="msapplication-config"
+      content="/favicons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#00ff90" />
+  </head>
+</html>
+<body class="is-light-mode">
+  <a class="c-skip-link e-button" id="skip-link" href="#main">Skip to main</a>
+  <div class="l-layout">
+    <header class="l-layout__header l-header">
+  <div class="l-header__nav">
+    <h1 class="l-header__heading">
+      <a class="l-header__home" href="/">CYF&#43;</a>
+    </h1>
+
+    <button
+      class="l-header__action e-button e-button--icon js-menu-toggle is-fixed"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-button__icon l-header__icon"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+        />
+      </svg>
+
+      <span class="is-invisible">Open Menu.</span>
+    </button>
+  </div>
+</header>
+ <nav
+  class="l-layout__menu l-menu"
+  aria-label="Main Site Links."
+  id="site-menu"
+  hidden
+  tabindex="0"
+>
+  <div class="l-menu__container">
+    <h2 class="l-menu__heading e-heading__2">
+      <a href="/" class="l-menu__home">CYF&#43;</a>
+    </h2>
+    <button
+      class="l-menu__action e-button e-button--icon js-menu-toggle"
+      id="close-menu"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-button__icon"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18L18 6M6 6l12 12"
+        />
+      </svg>
+
+      <span class="is-invisible">Close Menu.</span>
+    </button>
+    <ul class="l-menu__primary e-list">
+      <li class="l-menu__item e-list__item">
+        <a class="l-menu__link e-link e-heading__1" href="/about">About</a>
+      </li>
+      <li class="l-menu__item e-list__item">
+        <a class="l-menu__link e-link e-heading__1" href="/versions"
+          >Versions</a
+        >
+      </li>
+      <li class="l-menu__item e-list__item">
+        <a class="l-menu__link e-link e-heading__1" href="/projects"
+          >Projects</a
+        >
+      </li>
+      <li class="l-menu__item e-list__item">
+        <a class="l-menu__link e-link e-heading__1" href="/primers">Primers</a>
+      </li>
+    </ul>
+
+    <div class="l-menu__secondary">
+      
+      <a class="l-menu__link e-link" href="#skip-link">
+        <span class="is-invisible">To top</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          width="48px"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="l-menu__icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3 4.5h14.25M3 9h9.75M3 13.5h5.25m5.25-.75L17.25 9m0 0L21 12.75M17.25 9v12"
+          />
+        </svg>
+      </a>
+      
+    </div>
+  </div>
+
+  <img
+    src="/pictures/depths/dddepth--005.webp"
+    alt=""
+    class="l-menu__bg"
+  />
+</nav>
+
+    <main id="main" class="l-layout__main l-main" tabindex="0">
+      
+
+<article>
+  <header class="l-page__header c-page-header">
+    <div class="c-page-header__container">
+      <div class="c-page-header__breadcrumbs">
+        
+<nav class="c-breadcrumbs">
+  <ol class="c-breadcrumbs__list">
+    <li class="c-breadcrumbs__item">
+      <a class="c-breadcrumbs__link" href="/projects/">Projects</a>
+    </li>
+  </ol>
+</nav>
+
+
+      </div>
+      <h1
+        class="c-page-header__title e-heading__1 is-invisible"
+      >
+        Server and database
+      </h1>
+         
+      <a
+        class="c-page-header__edit e-heading__5 e-link is-none--lt-container"
+        href="https://github.com/CodeYourFuture/immersive-go-course/tree/main/projects/server-database/README.md"
+        >Edit on Github</a
+      >
+       
+
+  
+
+  
+
+
+<h2 class="c-lastmod c-page-header__lastmod">
+  .Lastmod
+  <a href="https://github.com/CodeYourFuture/immersive-go-course/tree/main/server-database">
+    <time datetime="2023-01-08T15:59:51Z">2023-01-08T15:59:51Z</time>
+  </a>
+</h2>
+
+  
+      <section class="c-page-header__toc c-toc" id="toc">
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#learning-objectives">Learning objectives:</a></li>
+    <li><a href="#project">Project</a></li>
+    <li><a href="#extensions">Extensions</a></li>
+  </ol>
+</nav>
+      </section>
+      
+    </div>
+  </header>
+
+  <section class="l-page__main c-copy"><p>In this project, we will build another server. This one will have a simple API that serves data in JSON form. We will them convert the backend to read from a Postgres database, serving data for the API. We will then turn off the database and learn how to handle errors correctly.</p>
+<p>Timebox: 6 days</p>
+<h2 id="learning-objectives">Learning objectives:</h2>
+<ul>
+<li>Build a simple API server that talks JSON</li>
+<li>Understand how a server and a database work together</li>
+<li>Use SQL to read data from a database</li>
+<li>Accept data over a POST request and write it to the database</li>
+</ul>
+<h2 id="project">Project</h2>
+<p>We&rsquo;re going to be using JSON in this project. Before we start, read this <a href="https://go.dev/blog/json">introduction to Go and JSON</a>.</p>
+<p>To get started, <code>cd</code> into the <code>server-database</code> directory, and run <code>go mod init server-database</code>.</p>
+<p>We&rsquo;ve created some <code>main.go</code> files in the past: do the same here.</p>
+<p>Initially we need to create a struct that represents the data we&rsquo;re going to store: a list of images with a title, alternative text that stores a description of the image for accessibility, and a URL.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Image</span> <span style="color:#66d9ef">struct</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">Title</span>   <span style="color:#66d9ef">string</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">AltText</span> <span style="color:#66d9ef">string</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">URL</span>     <span style="color:#66d9ef">string</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Then we can initialise some data:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#a6e22e">images</span> <span style="color:#f92672">:=</span> []<span style="color:#a6e22e">Image</span>{
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">Title</span>: <span style="color:#e6db74">&#34;Sunset&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">AltText</span>: <span style="color:#e6db74">&#34;Clouds at sunset&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">URL</span>: <span style="color:#e6db74">&#34;https://images.unsplash.com/photo-1506815444479-bfdb1e96c566?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80&#34;</span>,
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">Title</span>: <span style="color:#e6db74">&#34;Mountain&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">AltText</span>: <span style="color:#e6db74">&#34;A mountain at sunset&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">URL</span>: <span style="color:#e6db74">&#34;https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80&#34;</span>,
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Now, set up an HTTP server (we did this in the <code>http-auth</code> project), and create an endpoint <code>/images.json</code> that returns this data in the response:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>&gt; curl <span style="color:#e6db74">&#39;http://localhost:8080/images.json&#39;</span> -i
+</span></span><span style="display:flex;"><span>HTTP/1.1 200 OK
+</span></span><span style="display:flex;"><span>Content-Type: text/json
+</span></span><span style="display:flex;"><span>Date: Wed, 03 Aug 2022 18:06:34 GMT
+</span></span><span style="display:flex;"><span>Content-Length: 487
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>[{&#34;Title&#34;:&#34;Sunset&#34;,&#34;AltText&#34;:&#34;Clouds at sunset&#34;,&#34;URL&#34;:&#34;https://images.unsplash.com/photo-1506815444479-bfdb1e96c566?ixlib=rb-1.2.1\u0026ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8\u0026auto=format\u0026fit=crop\u0026w=1000\u0026q=80&#34;},{&#34;Title&#34;:&#34;Mountain&#34;,&#34;AltText&#34;:&#34;A mountain at sunset&#34;,&#34;URL&#34;:&#34;https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?ixlib=rb-1.2.1\u0026ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8\u0026auto=format\u0026fit=crop\u0026w=1000\u0026q=80&#34;}]
+</span></span></code></pre></div><blockquote>
+<p>💡 See the <a href="../prep/README.md#command-line-examples">prep README.md</a> for an explanation of this command line example.</p>
+</blockquote>
+<p>We&rsquo;re going to need to import <code>&quot;encoding/json&quot;</code> and <code>Marshal</code> to turn the data into JSON.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#a6e22e">b</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">json</span>.<span style="color:#a6e22e">Marshal</span>(<span style="color:#a6e22e">images</span>)
+</span></span></code></pre></div><p>We don&rsquo;t always want to use the exact same field names from our programming language as we do in our public JSON. Instead of <code>Title</code>, <code>AltText</code>, and <code>URL</code>, let&rsquo;s make it so that when we serialise the fields, the keys are in <a href="https://en.wikipedia.org/wiki/Snake_case">snake_case</a> not <a href="https://en.wikipedia.org/wiki/Camel_case">CamelCase</a>, so that instead our <code>curl</code> will behave like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>&gt; curl <span style="color:#e6db74">&#39;http://localhost:8080/images.json&#39;</span> -i
+</span></span><span style="display:flex;"><span>HTTP/1.1 200 OK
+</span></span><span style="display:flex;"><span>Content-Type: text/json
+</span></span><span style="display:flex;"><span>Date: Wed, 03 Aug 2022 18:06:34 GMT
+</span></span><span style="display:flex;"><span>Content-Length: 487
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>[{&#34;title&#34;:&#34;Sunset&#34;,&#34;alt_text&#34;:&#34;Clouds at sunset&#34;,&#34;url&#34;:&#34;https://images.unsplash.com/photo-1506815444479-bfdb1e96c566?ixlib=rb-1.2.1\u0026ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8\u0026auto=format\u0026fit=crop\u0026w=1000\u0026q=80&#34;},{&#34;title&#34;:&#34;Mountain&#34;,&#34;alt_text&#34;:&#34;A mountain at sunset&#34;,&#34;url&#34;:&#34;https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?ixlib=rb-1.2.1\u0026ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8\u0026auto=format\u0026fit=crop\u0026w=1000\u0026q=80&#34;}]
+</span></span></code></pre></div><p>Make sure not to change the field names of the struct when we do so!</p>
+<p>Next, add a query parameter <code>indent</code> which uses <code>MarshalIndent</code> instead (<a href="https://pkg.go.dev/encoding/json#MarshalIndent">https://pkg.go.dev/encoding/json#MarshalIndent</a>) such that the following snippet works.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>&gt; curl <span style="color:#e6db74">&#39;http://localhost:8080/images.json?indent=2&#39;</span> -i
+</span></span><span style="display:flex;"><span>HTTP/1.1 200 OK
+</span></span><span style="display:flex;"><span>Content-Type: text/json
+</span></span><span style="display:flex;"><span>Date: Mon, 08 Aug 2022 19:57:51 GMT
+</span></span><span style="display:flex;"><span>Content-Length: 536
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>[
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    &#34;title&#34;: &#34;Sunset&#34;,
+</span></span><span style="display:flex;"><span>    &#34;alt_text&#34;: &#34;Clouds at sunset&#34;,
+</span></span><span style="display:flex;"><span>    &#34;url&#34;: &#34;https://images.unsplash.com/photo-1506815444479-bfdb1e96c566?ixlib=rb-1.2.1\u0026ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8\u0026auto=format\u0026fit=crop\u0026w=1000\u0026q=80&#34;
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    &#34;title&#34;: &#34;Mountain&#34;,
+</span></span><span style="display:flex;"><span>    &#34;alt_text&#34;: &#34;A mountain at sunset&#34;,
+</span></span><span style="display:flex;"><span>    &#34;url&#34;: &#34;https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?ixlib=rb-1.2.1\u0026ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8\u0026auto=format\u0026fit=crop\u0026w=1000\u0026q=80&#34;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>]
+</span></span></code></pre></div><p>The indent value should increase the amount of indentation: <code>?indent=4</code> should have 4 spaces, but <code>?indent=2</code> should have 2.</p>
+<p>To do this, we&rsquo;ll need to investigate the <code>strconv</code> and <code>strings</code> packages in the Go standard library.</p>
+<p>We&rsquo;ve now got a working server that responds to requests with data in JSON format, and can format it to be more readable by developers exploring the API.</p>
+<hr>
+<p>Next we&rsquo;re going to set up a database to store data that our server will use.</p>
+<p>We&rsquo;ll use <a href="https://www.postgresql.org/">Postgres</a>, which is an open source relational database. Don&rsquo;t worry if that doesn&rsquo;t mean anything right now. Read the Postgres website to find out the core ideas.</p>
+<p>First, install Postgres. We may have been provided with access to Amazon Web Services, which provides Postgres for us via their Relational Database Service. If not, we can also run it on our computer: follow the <a href="https://www.postgresql.org/download/">instructions on the Postgres website</a>.</p>
+<p>Our goal is to have a database running that we can connect to using a connection string, which will look something like this: <code>postgres://user:secret@localhost:5432/mydatabasename</code></p>
+<p>For easy demoing, we&rsquo;ll assume you have Postgres running locally and connect with <code>postgresql://localhost</code>.</p>
+<p>Next install <a href="https://www.pgadmin.org/">pgAdmin</a> (if you haven&rsquo;t already). This is a useful user interface that we&rsquo;ll use to set up the Postgres database.</p>
+<p>Open up pgAdmin and add a server that connects to your instance of Postgres.</p>
+<p>Then add a database by right-clicking on Databases.</p>
+<p><img src="./readme-assets/create-database.png" alt=""></p>
+<p>The SQL generated (see the SQL tab) should read as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">DATABASE</span> <span style="color:#e6db74">&#34;go-server-database&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">WITH</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">OWNER</span> <span style="color:#f92672">=</span> postgres
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">ENCODING</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;UTF8&#39;</span>
+</span></span><span style="display:flex;"><span>    LC_COLLATE <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;en_US.UTF-8&#39;</span>
+</span></span><span style="display:flex;"><span>    LC_CTYPE <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;en_US.UTF-8&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">CONNECTION</span> <span style="color:#66d9ef">LIMIT</span> <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    IS_TEMPLATE <span style="color:#f92672">=</span> <span style="color:#66d9ef">False</span>;
+</span></span></code></pre></div><blockquote>
+<p>SQL is Structured Query Language: it&rsquo;s pronounced either &ldquo;sequel&rdquo; or Ess-Queue-Ell. Both work. It&rsquo;s used for interacting with various data storage systems. You can find out more about it and learn how to use it <a href="https://www.codecademy.com/learn/learn-sql">on CodeAcademy</a>.</p>
+</blockquote>
+<hr>
+<p>Data in Postgres is arranged in tables with columns, like a spreadsheet.</p>
+<p>Next create a table that will store our image data. Within the <code>go-server-database</code> database, open <code>schemas</code>, <code>public</code>, and then create a new table.</p>
+<p><img src="./readme-assets/create-table.png" alt=""></p>
+<p>Add four columns:</p>
+<ul>
+<li><code>id</code>: type <code>serial</code> with &ldquo;Primary key?&rdquo; and &ldquo;Not null?&rdquo; turned on</li>
+<li><code>title</code>: type <code>text</code> with &ldquo;Not null?&rdquo; turned on</li>
+<li><code>url</code>: type <code>text</code> with &ldquo;Not null?&rdquo; turned on</li>
+<li><code>alt_text</code>: type <code>text</code></li>
+</ul>
+<p>The SQL tab should look like the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> <span style="color:#66d9ef">public</span>.images
+</span></span><span style="display:flex;"><span>(
+</span></span><span style="display:flex;"><span>    id serial <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>    title text <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>    url text <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>    alt_text text,
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">PRIMARY</span> <span style="color:#66d9ef">KEY</span> (id)
+</span></span><span style="display:flex;"><span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">ALTER</span> <span style="color:#66d9ef">TABLE</span> <span style="color:#66d9ef">IF</span> <span style="color:#66d9ef">EXISTS</span> <span style="color:#66d9ef">public</span>.images
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">OWNER</span> <span style="color:#66d9ef">to</span> postgres;
+</span></span></code></pre></div><p>Once the table is created, we can insert some data.</p>
+<p>Right click on the table and open <code>Scripts &gt; INSERT script</code>.</p>
+<p><img src="./readme-assets/insert-script.png" alt=""></p>
+<p>This will open the Query tool, which will allow us to add some data, and give some basic SQL to start with.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> <span style="color:#66d9ef">public</span>.images(
+</span></span><span style="display:flex;"><span>	id, title, url, alt_text)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">VALUES</span> (<span style="color:#f92672">?</span>, <span style="color:#f92672">?</span>, <span style="color:#f92672">?</span>, <span style="color:#f92672">?</span>);
+</span></span></code></pre></div><p>If we run this (&ldquo;play&rdquo; button at the top) we will get an error, because we haven&rsquo;t provided any data.</p>
+<p>Update the SQL to look like this. We don&rsquo;t need to specify an ID: Postgres will create this.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> <span style="color:#66d9ef">public</span>.images(title, url, alt_text)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">VALUES</span> (<span style="color:#e6db74">&#39;Sunset&#39;</span>, <span style="color:#e6db74">&#39;https://images.unsplash.com/photo-1506815444479-bfdb1e96c566?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80&#39;</span>, <span style="color:#e6db74">&#39;Clouds at sunset&#39;</span>);
+</span></span></code></pre></div><p>This should insert some data:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>INSERT 0 1
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Query returned successfully in 132 msec.
+</span></span></code></pre></div><p>We can check by deleting this query and running a different one:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> images;
+</span></span></code></pre></div><p>We should see the row we added, and a value in the ID column.</p>
+<p>Now write a new <code>INSERT</code> query with the other image file from our code.</p>
+<p>When this is done, the <code>SELECT</code> query should return two rows with different IDs and data. Nice.</p>
+<hr>
+<p>We can now connect our server to the database.</p>
+<p>The server and the database are two separate systems that communicate over a network, like our client (<code>curl</code>) and server did before. This time, the server will be acting as the &ldquo;client&rdquo; by making requests to the database, and the database will responding with data it has stored.</p>
+<p>We will be sending requests from our server to the database using SQL: from now on we&rsquo;ll call them queries. At the most basic level, queries can read, write, update and delete data.</p>
+<p>Let&rsquo;s get going.</p>
+<p>Install pgx: <code>go get github.com/jackc/pgx/v4</code></p>
+<p><code>pgx</code> is the library we will use to connect to and query the database.</p>
+<p>The first step is to connect. Our server needs to know which database to connect to, and we&rsquo;ll do that by running the server like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>&gt; DATABASE_URL=&#39;postgres://localhost:5432/go-server-database&#39; go run .
+</span></span></code></pre></div><p><code>DATABASE_URL</code> is an environment variable, and our server can access the value of this variable like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Getenv</span>(<span style="color:#e6db74">&#34;DATABASE_URL&#34;</span>)
+</span></span></code></pre></div><p>Before going any further, write some code that checks if <code>DATABASE_URL</code> is set. If it&rsquo;s not: write a helpful error to <code>os.Stderr</code> and exit the process with a non-zero code, to indicate failure (<code>os.Exit(1)</code>).</p>
+<p>Next, create a connection using <code>pgx.Connect</code>. We will need to supply a <code>context</code>, which can simply be <code>context.Background()</code>. We can <a href="https://pkg.go.dev/context">find out about contexts in the Go documentation</a>, but they are not an important concept for now.</p>
+<p>Remember to handle errors in connecting to the database gracefully: handle the error and output a useful error message. We can check this is working by turning off Postgres and starting our server:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>&gt; DATABASE_URL=&#39;postgres://localhost:5432/go-server-database&#39; go run .
+</span></span><span style="display:flex;"><span>unable to connect to database: failed to connect to `host=localhost user=tom database=go-server-database`: dial error (dial tcp 127.0.0.1:5432: connect: connection refused)
+</span></span><span style="display:flex;"><span>exit status 1
+</span></span></code></pre></div><p>Once connected to the database, we can look in pgAdmin at the Dashboard for our server: it will show an active session.</p>
+<p>It&rsquo;s important to gracefully close our connection to the database, so we need to add <code>defer conn.Close(context.Background())</code> immediately after we successfully connect. The <code>defer</code> keyword means that this line of code is delayed until the enclosing function returns. <a href="https://go.dev/blog/defer-panic-and-recover">Defer is really useful!</a></p>
+<p>Now we&rsquo;re connected we can fetch some data.</p>
+<p>To get data we&rsquo;ll use <code>conn.Query</code>, which is a <a href="https://gobyexample.com/methods">method</a> defined for the connection (<code>pgx.Conn</code>) to the Postgres database.</p>
+<p>The SQL will be the same as above, to fetch all the images:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#e6db74">&#34;SELECT title, url, alt_text FROM public.images&#34;</span>
+</span></span></code></pre></div><p>Remember to handle the error from <code>conn.Query</code> gracefully.</p>
+<p><code>conn.Query</code> returns some <code>Rows</code> which we can use to <code>Scan</code> for the actual data:</p>
+<p>We need a container <a href="https://gobyexample.com/slices">slice</a> for the image: <code>var images []Image</code></p>
+<p>We can iterate over the rows: <code>for rows.Next() { ... }</code></p>
+<p>Using <code>Scan</code> to extract the data from each row means <a href="https://www.digitalocean.com/community/conceptual_articles/understanding-pointers-in-go">passing a pointer to the variables</a> you want to fill, so they can be modified:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">title</span>, <span style="color:#a6e22e">url</span>, <span style="color:#a6e22e">altText</span> <span style="color:#66d9ef">string</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">err</span> = <span style="color:#a6e22e">rows</span>.<span style="color:#a6e22e">Scan</span>(<span style="color:#f92672">&amp;</span><span style="color:#a6e22e">title</span>, <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">url</span>, <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">altText</span>)
+</span></span></code></pre></div><p>After handling the possible error, we can add an image to the list:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#a6e22e">images</span> = append(<span style="color:#a6e22e">images</span>, <span style="color:#a6e22e">Image</span>{<span style="color:#a6e22e">Title</span>: <span style="color:#a6e22e">title</span>, <span style="color:#a6e22e">URL</span>: <span style="color:#a6e22e">url</span>, <span style="color:#a6e22e">AltText</span>: <span style="color:#a6e22e">altText</span>})
+</span></span></code></pre></div><p>And that&rsquo;s it! We&rsquo;ve not got all images from the database, and our server can now return them as JSON.</p>
+<p>The structure of our overall solution now should look something like:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Check that DATABASE_URL is set
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Connect to the database
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Handle a possible connection error
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Defer closing the connection to when main function exits
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Fetch images from the database
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Send a query to the database, returning raw rows
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Handle query errors
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Create slice to contain the images
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Iterate through each row to extract the data
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">// Extract the data, passing pointers so the data can be updated in place
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">// Append this as a new Image to the images slice
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Create the handler function that serves the images JSON
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">// Handle the indent query parameter
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">// Convert images to a byte-array for writing back in a response
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">// Write a `Content-Type` header
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">// Write the data back to the client
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Listen &amp; serve on port 8080
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><p>Don&rsquo;t forget error handling!</p>
+<hr>
+<p>There&rsquo;s now quite a bit of logic in this <code>main</code> function and it&rsquo;s getting a bit big.</p>
+<p>Extract the image fetching logic (not the database connection) to its own function with this signature:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">fetchImages</span>(<span style="color:#a6e22e">conn</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">pgx</span>.<span style="color:#a6e22e">Conn</span>) ([]<span style="color:#a6e22e">Image</span>, <span style="color:#66d9ef">error</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Fetch images from the database
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Send a query to the database, returning raw rows
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Handle query errors
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Create slice to contain the images
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Iterate through each row to extract the data
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">// Extract the data, passing pointers so the data can be updated in place
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">// Append this as a new Image to the images slice
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Return the images
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><hr>
+<p>Now we&rsquo;re going to accept data over an <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST">HTTP POST request</a>. This will add new images to the database.</p>
+<p>This is going to be an exercise for you. At the end, the following request should work:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>&gt; curl <span style="color:#e6db74">&#39;http://localhost:8080/images.json?indent=2&#39;</span> -i --data <span style="color:#e6db74">&#39;{&#34;title&#34;: &#34;Cat&#34;, &#34;alt_text&#34;: &#34;A cool cat&#34;, &#34;url&#34;: &#34;https://images.unsplash.com/photo-1533738363-b7f9aef128ce?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80&#34;}&#39;</span>
+</span></span><span style="display:flex;"><span>HTTP/1.1 200 OK
+</span></span><span style="display:flex;"><span>Content-Type: text/json
+</span></span><span style="display:flex;"><span>Date: Thu, 11 Aug 2022 20:17:32 GMT
+</span></span><span style="display:flex;"><span>Content-Length: 240
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>{
+</span></span><span style="display:flex;"><span>  &#34;title&#34;: &#34;Cat&#34;,
+</span></span><span style="display:flex;"><span>  &#34;alt_text&#34;: &#34;A cool cat&#34;,
+</span></span><span style="display:flex;"><span>  &#34;url&#34;: &#34;https://images.unsplash.com/photo-1533738363-b7f9aef128ce?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80&#34;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>After that request, a <code>GET /images.json</code> request should return all the images:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>&gt; curl <span style="color:#e6db74">&#39;http://localhost:8080/images.json?indent=2&#39;</span> -i
+</span></span><span style="display:flex;"><span>HTTP/1.1 200 OK
+</span></span><span style="display:flex;"><span>Content-Type: text/json
+</span></span><span style="display:flex;"><span>Date: Thu, 11 Aug 2022 20:17:32 GMT
+</span></span><span style="display:flex;"><span>Content-Length: 763
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>[
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    &#34;title&#34;: &#34;Sunset&#34;,
+</span></span><span style="display:flex;"><span>    &#34;alt_text&#34;: &#34;Clouds at sunset&#34;,
+</span></span><span style="display:flex;"><span>    &#34;url&#34;: &#34;https://images.unsplash.com/photo-1506815444479-bfdb1e96c566?ixlib=rb-1.2.1\u0026ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8\u0026auto=format\u0026fit=crop\u0026w=1000\u0026q=80&#34;
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    &#34;title&#34;: &#34;Mountain&#34;,
+</span></span><span style="display:flex;"><span>    &#34;alt_text&#34;: &#34;A mountain at sunset&#34;,
+</span></span><span style="display:flex;"><span>    &#34;url&#34;: &#34;https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?ixlib=rb-1.2.1\u0026ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8\u0026auto=format\u0026fit=crop\u0026w=1000\u0026q=80&#34;
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    &#34;title&#34;: &#34;Cat&#34;,
+</span></span><span style="display:flex;"><span>    &#34;alt_text&#34;: &#34;A cool cat&#34;,
+</span></span><span style="display:flex;"><span>    &#34;url&#34;: &#34;https://images.unsplash.com/photo-1533738363-b7f9aef128ce?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80&#34;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>]
+</span></span></code></pre></div><h2 id="extensions">Extensions</h2>
+<ol>
+<li>Don&rsquo;t let the same image URL be uploaded twice</li>
+<li>On upload, try to detect if completely useless alt-text has been supplied, and reject the request</li>
+<li>On upload, have our server make sure the URL actually works and returns an image, and reject the request if it didn&rsquo;t</li>
+<li>On upload, record the resolution of the fetched image in the database too, and return it in the JSON</li>
+</ol>
+</section>
+
+  
+<footer class="c-page-footer c-copy">
+  <h4 class="c-page-footer__section">
+    <a
+      class="c-page-footer__section-link e-link"
+      href="/projects"
+      >projects</a
+    >
+  </h4>
+   
+  <nav class="c-page-footer__section-nav">
+    <a
+      class="e-button e-button--icon c-page-footer__edit"
+      href="https://github.com/CodeYourFuture/immersive-go-course/tree/main/projects/server-database/README.md"
+      ><svg
+        role="presentation"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-button__icon"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125"
+        />
+      </svg>
+      <span class="is-invisible">Edit this page on GitHub</span></a
+    >
+    
+    
+  </nav>
+</footer>
+
+
+</article>
+
+
+    </main><footer class="l-layout__footer l-footer">
+  <a
+    class="l-footer__github e-button e-button--icon"
+    href="https://github.com/CodeYourFuture/immersive-go-course/"
+  >
+    <svg
+      focusable="false"
+      class="e-button__icon"
+      role="presentation"
+      viewbox="0 0 98 96"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+        fill="currentColor"
+      />
+    </svg>
+    <span class="is-invisible">Find us on GitHub</span>
+  </a>
+  <p class="l-footer__impressum e-heading__6">
+    This
+    <a href="https://github.com/CodeYourFuture/immersive-go-course/"
+      >free and open source engineering programme</a
+    >
+    is a project of
+    <a href="https://codeyourfuture.io">Code Your Future</a>
+    <br />
+    This work is licensed under a Creative Commons Attribution-ShareAlike 4.0
+    International License.
+  </p>
+  <button
+    id="mode-toggle"
+    class="e__button--toggle e-button--icon l-footer__mode"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="e-icon e__button__icon e-icon--moon"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+      />
+    </svg>
+
+    <span class="is-invisible">Toggle between light and dark mode</span>
+  </button>
+</footer>
+
+  
+
+<script>
+  function randomBG() {
+    const style = document.createElement("style");
+    style.textContent = `body, html {background-image:url("\/pictures/svgs/neons/nnneon.svg"),url("\/pictures/svgs/quads/qqquad-5.svg"),radial-gradient(circle,var(--theme-color--paper) 0%,var(--theme-color--block) 50%,var(--theme-color--paper) 100%);
+      background-size: cover;
+    }`;
+
+    document.head.appendChild(style);
+  }
+
+  window.addEventListener("load", randomBG);
+</script>
+
+
+<script src="/scripts/app.min.js" defer></script>
+
+
+</div>
+</body>

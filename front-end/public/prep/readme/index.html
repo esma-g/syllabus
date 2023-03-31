@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en-gb">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>CYF&#43;</title>
+    <meta name="description" content="A free and open source immersive engineering programme. Practical, hands on projects in Go, distributed systems engineering, site reliability engineering, software engineering. Pace, scale, and complexity." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        animation: fade-in 0.2s;
+      }
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+     
+    <link
+      rel="stylesheet"
+      href="/bundled.min.f44ec27dd539fe9647de9751483e4bcd.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="/bundled.min.f44ec27dd539fe9647de9751483e4bcd.css" />
+    </noscript>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;700&family=Major+Mono+Display&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/favicons/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicons/favicon.ico" />
+    <meta name="apple-mobile-web-app-title" content="CYF+" />
+    <meta name="application-name" content="CYF+" />
+    <meta name="msapplication-TileColor" content="#9f00a7" />
+    <meta
+      name="msapplication-config"
+      content="/favicons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#00ff90" />
+  </head>
+</html>
+<body class="is-light-mode">
+  <a class="c-skip-link e-button" id="skip-link" href="#main">Skip to main</a>
+  <div class="l-layout">
+    <header class="l-layout__header l-header">
+  <div class="l-header__nav">
+    <h1 class="l-header__heading">
+      <a class="l-header__home" href="/">CYF&#43;</a>
+    </h1>
+
+    <button
+      class="l-header__action e-button e-button--icon js-menu-toggle is-fixed"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-button__icon l-header__icon"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+        />
+      </svg>
+
+      <span class="is-invisible">Open Menu.</span>
+    </button>
+  </div>
+</header>
+ <nav
+  class="l-layout__menu l-menu"
+  aria-label="Main Site Links."
+  id="site-menu"
+  hidden
+  tabindex="0"
+>
+  <div class="l-menu__container">
+    <h2 class="l-menu__heading e-heading__2">
+      <a href="/" class="l-menu__home">CYF&#43;</a>
+    </h2>
+    <button
+      class="l-menu__action e-button e-button--icon js-menu-toggle"
+      id="close-menu"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-button__icon"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18L18 6M6 6l12 12"
+        />
+      </svg>
+
+      <span class="is-invisible">Close Menu.</span>
+    </button>
+    <ul class="l-menu__primary e-list">
+      <li class="l-menu__item e-list__item">
+        <a class="l-menu__link e-link e-heading__1" href="/about">About</a>
+      </li>
+      <li class="l-menu__item e-list__item">
+        <a class="l-menu__link e-link e-heading__1" href="/versions"
+          >Versions</a
+        >
+      </li>
+      <li class="l-menu__item e-list__item">
+        <a class="l-menu__link e-link e-heading__1" href="/projects"
+          >Projects</a
+        >
+      </li>
+      <li class="l-menu__item e-list__item">
+        <a class="l-menu__link e-link e-heading__1" href="/primers">Primers</a>
+      </li>
+    </ul>
+
+    <div class="l-menu__secondary">
+      
+      <a class="l-menu__link e-link" href="#skip-link">
+        <span class="is-invisible">To top</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          width="48px"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="l-menu__icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3 4.5h14.25M3 9h9.75M3 13.5h5.25m5.25-.75L17.25 9m0 0L21 12.75M17.25 9v12"
+          />
+        </svg>
+      </a>
+      
+    </div>
+  </div>
+
+  <img
+    src="/pictures/depths/dddepth--005.webp"
+    alt=""
+    class="l-menu__bg"
+  />
+</nav>
+
+    <main id="main" class="l-layout__main l-main" tabindex="0">
+      
+
+<article>
+  <header class="l-page__header c-page-header">
+    <div class="c-page-header__container">
+      <div class="c-page-header__breadcrumbs">
+        
+<nav class="c-breadcrumbs">
+  <ol class="c-breadcrumbs__list">
+    <li class="c-breadcrumbs__item">
+      <a class="c-breadcrumbs__link" href="/prep/">Preps</a>
+    </li>
+  </ol>
+</nav>
+
+
+      </div>
+      <h1
+        class="c-page-header__title e-heading__1 is-invisible"
+      >
+        Preparation
+      </h1>
+        
+
+  
+
+  
+
+
+<h2 class="c-lastmod c-page-header__lastmod">
+  .Lastmod
+  <a href="https://github.com/CodeYourFuture/immersive-go-course/tree/main/prep">
+    <time datetime="2023-01-09T22:57:16Z">2023-01-09T22:57:16Z</time>
+  </a>
+</h2>
+
+  
+      <section class="c-page-header__toc c-toc" id="toc">
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#prerequisite-learning">Prerequisite learning</a></li>
+    <li><a href="#set-up-and-get-to-know-your-ide">Set up and get to know your IDE</a></li>
+    <li><a href="#learn-how-to-navigate-go-documentation">Learn how to navigate Go documentation</a></li>
+    <li><a href="#conventions-used-in-projects">Conventions used in projects</a>
+      <ol>
+        <li><a href="#command-line-examples">Command line examples</a></li>
+      </ol>
+    </li>
+    <li><a href="#working-on-the-projects">Working on the projects</a>
+      <ol>
+        <li><a href="#opening-the-right-directory">Opening the right directory</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+      </section>
+      
+    </div>
+  </header>
+
+  <section class="l-page__main c-copy"><h2 id="prerequisite-learning">Prerequisite learning</h2>
+<p>Before you start this course, there&rsquo;s a few things we assume you&rsquo;ve done:</p>
+<ul>
+<li>You&rsquo;re familiar with the essentials of writing code in JavaScript</li>
+<li>You have experience with JavaScript in the browser and in <a href="https://nodejs.org/en/">Node</a></li>
+<li>You&rsquo;ve completed the <a href="https://go.dev/tour/welcome/1">Tour of Go</a></li>
+</ul>
+<p>This is important because we don&rsquo;t cover the basic language features of Go: you need to be familiar with writing Go functions and methods, plus the basics of types in Go. You&rsquo;ll also need to know how to navigate <a href="https://pkg.go.dev/">packages and documentation</a>, and we have a <a href="#learn-how-to-navigate-go-documentation">short guide on how to do that</a>.</p>
+<p>Remember: you can <em>always</em> Google or ask for help if you get stuck.</p>
+<h2 id="set-up-and-get-to-know-your-ide">Set up and get to know your IDE</h2>
+<p>We&rsquo;re going to assume you&rsquo;re using <a href="https://code.visualstudio.com/">Visual Studio Code</a> in this course.</p>
+<p>VS Code is a lot more powerful that a simple text editor: it can help you write code, spot mistakes, and help you fix them. But it needs to know details of the programming language, so we need to install an extension to support go.</p>
+<p>Set up the Go extension for VS Code by following <a href="https://code.visualstudio.com/docs/languages/go">these instructions</a>. Have a read of the features listed on that page.</p>
+<p>Some of the really useful ones:</p>
+<ol>
+<li>Go to definition - when you call a function or use a variable, this will show you where it was defined. This can help to understand what code is doing and why, and even works when calling into things like the standard library.</li>
+<li>Go to references - this will show you what bits of code use a variable or function. Say you&rsquo;re changing a function to add a new parameter, this can help you find all the places you&rsquo;ll need to modify.</li>
+<li>Autocomplete - Go can guess what you&rsquo;re about to type, and save you time. But more importantly, it can tell you what exists - if you&rsquo;re looking to use something related to HTTP, and you think it&rsquo;s probably in the <code>http</code> package, you can type <code>http.</code> and see what&rsquo;s auto-completed for you - that could help you find the code you want without needing to switch to Google.</li>
+</ol>
+<p>Write a bit of Go in VS Code and experiment with these features. A small investment now will save a lot of time in the future!</p>
+<h2 id="learn-how-to-navigate-go-documentation">Learn how to navigate Go documentation</h2>
+<p>The <a href="https://pkg.go.dev/std">Go standard library</a> has lots of documentation and examples, such as <a href="https://pkg.go.dev/net/http">net/http</a>. To find documentation, you can use the search feature or Google something like <code>golang net/http</code>, which will generally help you find what you&rsquo;re looking for.</p>
+<p>The website <code>pkg.go.dev</code> also hosts documentation for other go packages that you might use: again you can use the search feature or Google for it.</p>
+<p>The structure is fairly similar between different packages. Let&rsquo;s take <code>fmt</code> as an example:</p>
+<ul>
+<li>At the start is a summary of the package, discussing what it is for and some important information.</li>
+<li>The Index lists all the <a href="https://www.callicoder.com/golang-packages/#exported-vs-unexported-names">functions that the package exports</a></li>
+<li>The Examples show you how to use the package (good place to start!)</li>
+<li>The Variables, Functions and Types sections contain specific documentation on what the package contains</li>
+<li>Lastly, Source Files is&hellip; the source code! Good Go libraries can be quite readable, so don&rsquo;t be scared to jump in. You&rsquo;ll probably learn a lot,</li>
+</ul>
+<blockquote>
+<p>💡 The best way to get familiar with a new package, particularly if the documentation is a bit dense (like for the the <code>fmt</code> package), is to look at the Examples section. It will have some basic and advanced usage that you can often use straight away.</p>
+</blockquote>
+<h2 id="conventions-used-in-projects">Conventions used in projects</h2>
+<h3 id="command-line-examples">Command line examples</h3>
+<p>In the projects you&rsquo;ll need to run some programs on the command line. To show this, and the output, we&rsquo;ll use an example like the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>&gt; echo <span style="color:#e6db74">&#34;Hello, world.&#34;</span>
+</span></span><span style="display:flex;"><span>Hello, world.
+</span></span></code></pre></div><p>What we mean is: &ldquo;run the command to the right of the <code>&gt;</code> sign&rdquo;: <code>echo &quot;Hello, world.&quot;</code></p>
+<p>Everything after that line is <em>output</em> from the command: <code>Hello, world.</code></p>
+<p>In the above example, the command is <code>echo</code> with the argument <code>&quot;Hello, world.&quot;</code>. Here&rsquo;s a more complex example using <code>curl</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>&gt; curl -i <span style="color:#e6db74">&#39;http://localhost:8080/&#39;</span>
+</span></span><span style="display:flex;"><span>HTTP/1.1 200 OK
+</span></span><span style="display:flex;"><span>Content-Type: text/html
+</span></span><span style="display:flex;"><span>Date: Sun, 24 Jul 2022 09:42:30 GMT
+</span></span><span style="display:flex;"><span>Content-Length: 42
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;em&gt;Hello, world&lt;/em&gt;
+</span></span></code></pre></div><p>It doesn&rsquo;t matter what this does: what&rsquo;s important is the input command and the expected output.</p>
+<p>Input command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>curl -i &#39;http://localhost:8080/&#39;
+</span></span></code></pre></div><p>Expected output:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>HTTP/1.1 200 OK
+</span></span><span style="display:flex;"><span>Content-Type: text/html
+</span></span><span style="display:flex;"><span>Date: Sun, 24 Jul 2022 09:42:30 GMT
+</span></span><span style="display:flex;"><span>Content-Length: 42
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;em&gt;Hello, world&lt;/em&gt;
+</span></span></code></pre></div><p><strong>Important</strong>: the output from commands that you run will often not be identical to the example. Dates, times and counts will be different.</p>
+<p>Sometimes we may put more than one command in the same snippet:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>&gt; echo hello
+</span></span><span style="display:flex;"><span>hello
+</span></span><span style="display:flex;"><span>&gt; echo goodbye
+</span></span><span style="display:flex;"><span>goodbye
+</span></span></code></pre></div><p>Generally each time a line starts with a <code>&gt;</code>, it&rsquo;s a new command (but <em>occasionally</em> it may be output from a previous one!)</p>
+<h2 id="working-on-the-projects">Working on the projects</h2>
+<p>To work on the projects:</p>
+<ul>
+<li><a href="https://github.com/CodeYourFuture/immersive-go-course/fork">Fork this repository</a> — this <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo">creates your own copy</a></li>
+<li>Work through <a href="../README.md">the projects in order</a> — they are designed to conceptually build on each other and increase in complexity</li>
+<li>For each project, open a <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">pull request</a> against your own fork with your implementation of the project. Don&rsquo;t put code for different projects into the same PR!</li>
+<li>Remember to make <a href="https://dustinspecker.com/posts/making-smaller-git-commits/">small, incremental commits</a> and to only include code for a <em>single</em> project in each commit</li>
+</ul>
+<p>In general, work through each project like this:</p>
+<ol>
+<li>Make it <strong>work</strong></li>
+<li>Make it <strong>right</strong></li>
+<li>Optional: Make it <strong>pretty</strong> (or fast)</li>
+</ol>
+<p>Making it &ldquo;right&rdquo; means ensuring the structure is clear, reasonably simple, and documented, with error handling and tests in place. But it does&rsquo;t mean perfect!</p>
+<p>In other words, resist the temptation to optimise or refactor individual pieces of the project, for example to use fancy techniques like go-routines and channels, until you have project working end-to-end. Sometimes it&rsquo;s only when you have the whole working project in front of you that you can see how the individual pieces should <em>really</em> work, and optimising too early can waste time.</p>
+<h3 id="opening-the-right-directory">Opening the right directory</h3>
+<p>When writing Go in VS Code, many of the helper features only work if you opened the folder directly containing the file named <code>go.mod</code>.</p>
+<p>So when working in <code>immersive-go-course</code>, you <em>need to open a new window for project directory with the code you&rsquo;re working on</em>.</p>
+<p>If you opened VS Code in the main (&ldquo;root&rdquo;) directory of <code>immersive-go-course</code>, you&rsquo;ll probably see a lot of red squiggly lines in your Go code and errors starting &ldquo;could not import&rdquo;.</p>
+<p>You can have more than one copy of VS Code open at a time if you need to.</p>
+</section>
+
+  
+
+</article>
+
+
+    </main><footer class="l-layout__footer l-footer">
+  <a
+    class="l-footer__github e-button e-button--icon"
+    href="https://github.com/CodeYourFuture/immersive-go-course/"
+  >
+    <svg
+      focusable="false"
+      class="e-button__icon"
+      role="presentation"
+      viewbox="0 0 98 96"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+        fill="currentColor"
+      />
+    </svg>
+    <span class="is-invisible">Find us on GitHub</span>
+  </a>
+  <p class="l-footer__impressum e-heading__6">
+    This
+    <a href="https://github.com/CodeYourFuture/immersive-go-course/"
+      >free and open source engineering programme</a
+    >
+    is a project of
+    <a href="https://codeyourfuture.io">Code Your Future</a>
+    <br />
+    This work is licensed under a Creative Commons Attribution-ShareAlike 4.0
+    International License.
+  </p>
+  <button
+    id="mode-toggle"
+    class="e__button--toggle e-button--icon l-footer__mode"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="e-icon e__button__icon e-icon--moon"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+      />
+    </svg>
+
+    <span class="is-invisible">Toggle between light and dark mode</span>
+  </button>
+</footer>
+
+  
+
+<script>
+  function randomBG() {
+    const style = document.createElement("style");
+    style.textContent = `body, html {background-image:url("\/pictures/svgs/neons/nnneon.svg"),url("\/pictures/svgs/quads/qqquad-5.svg"),radial-gradient(circle,var(--theme-color--paper) 0%,var(--theme-color--block) 50%,var(--theme-color--paper) 100%);
+      background-size: cover;
+    }`;
+
+    document.head.appendChild(style);
+  }
+
+  window.addEventListener("load", randomBG);
+</script>
+
+
+<script src="/scripts/app.min.js" defer></script>
+
+
+</div>
+</body>

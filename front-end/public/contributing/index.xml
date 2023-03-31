@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Contributings on Syllabus</title>
+    <link>/contributing/</link>
+    <description>Recent content in Contributings on Syllabus</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/contributing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Class Name]</title>
+      <link>/contributing/example/lesson-template/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/contributing/example/lesson-template/</guid>
+      <description>Learning Objectives By the end of this lesson a trainee will be able to
+Do X Describe Y List Z Contents Topic 1 Topic 1.1 Topic 2 Topic 3 Topic 4 Topic 1 High level explanation of Topic 1 - rely on the exercises
+Exercise 1: Always have exercises
+Exercise 2: Always have exercises
+Harder Exercise 3: Always have exercises
+Topic 2 High level explanation of Topic 2 - rely on the exercises</description>
+    </item>
+    
+    <item>
+      <title>Coursework</title>
+      <link>/contributing/example/homework-template/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/contributing/example/homework-template/</guid>
+      <description>Resources Resource 1 to learn more about Topic 1 Resource 2 for Topic 2 Coursework First part of Homework - Easy Second part of Homework - Intermediate/Hard [Bonus/Optional] Third part/optional - Hardest Research: Prepare for the next class Read this Some Tutorial or Video etc&amp;hellip; </description>
+    </item>
+    
+    <item>
+      <title>Editing The Syllabus</title>
+      <link>/contributing/pages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/contributing/pages/</guid>
+      <description>This website is built using an open source tool called Docusaurus V2. You can find the full docs for Docusaurus here.
+Editing a Page All documents can be found in the docs folder in their relevant folder.
+All files are written using Markdown.
+Docusaurus also has additionally Markdown functionality that you might find interesting.
+Additionally, you can scroll to the bottom of any page and click the edit button to edit directly in Github.</description>
+    </item>
+    
+    <item>
+      <title>Global Syllabus Team Minutes</title>
+      <link>/contributing/minutes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/contributing/minutes/</guid>
+      <description>{DATE HERE} Attendees:
+❗Actions from last time 📝 Agenda points ❗Actions {2023-03-02} Attendees: Sally, Keith, Ali, Greg
+❗Actions from last time Mitch: Invite Keith Bremer to a syllabus meeting Mitch: Raise an issue with acceptance criteria (for restructuring JS1?) Sally: Organise a regular joint PD &amp;amp; Tech syllabus team meetings Ali &amp;amp; Mitch: share concept maps Ali thought he had one for JS but can&amp;rsquo;t find it We have the syllabus from Fatemeh -&amp;gt; Mitch or Greg should share 📝 Agenda points SQL Keith: has a background as a trainer for Oracle + long-term involvement in CYF When you teach it: clear that there is not enough time to properly teach SQL Locking Transactions Aggregate functions Greg: worried that with a medium SQL module we are both failing advanced trainees who are not learning enough, and struggling trainees who need to practice writing small full stack apps Greg: Wish that the last module was a &amp;ldquo;full stack apps&amp;rdquo; module with absolute bare minimum of SQL Greg: Maybe we could have both?</description>
+    </item>
+    
+    <item>
+      <title>Instructor Notes</title>
+      <link>/contributing/example/instructors-teplate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/contributing/example/instructors-teplate/</guid>
+      <description>Presentations Name of Presentation - Name of Module [Platform] - 01/01/2020 Created by School and Individual Creator Name of Presentation - Name of Module [Platform] - 01/01/2020 Created by School and Individual Creator Videos Name of Video - 01/01/2020 Created by School and Individual Creator Name of Video - 01/01/2020 Created by School and Individual Creator Lesson Overview Topic 1 Explanation of the aims of the topic and any advice on how this can be delivered</description>
+    </item>
+    
+    <item>
+      <title>Join The Team</title>
+      <link>/contributing/team/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/contributing/team/</guid>
+      <description>Background Our syllabus is used by all of our schools to give them direction on what we teach, provide outlines for our lessons and be a central hub of CodeYourFuture&amp;rsquo;s education knowledge.
+Historically, all of the content was created and maintained by the Lead Teachers of each module. This has some benefits in that teachers get to teach their content immediately for instant feedback - however we&amp;rsquo;ve often found that incremental improvements have been harder to achieve as volunteers are moved onto the next module.</description>
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      <link>/contributing/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/contributing/overview/</guid>
+      <description>Preamble Syllabus Aims This syllabus has the following aims
+To direct teachers across our network to our content To share content developed by volunteers between our cities (slides, videos, exercises etc) To ease the load of planning lessons for our teachers To be a repository of exercises for our trainees To be a resource for our trainees to refer to Target Trainees The vast majority of our trainees fit this profile:</description>
+    </item>
+    
+    <item>
+      <title>React Module Syllabus Team Minutes</title>
+      <link>/contributing/react/minutes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/contributing/react/minutes/</guid>
+      <description>2022-11-07 Present: Ali, Tom
+Agenda Items Ali leaving the React module team (@Ali) Ali is planning to leave the React module syllabus team (as he originally planned), though will still be around in CYF to help His role was to set up the team and get the ball rolling, which has been successful All of the team are free to join the Global Syllabus team meeting Team time/task progress - something&amp;rsquo;s not working (@Tom) Not everyone in attendance at regular meetings, and often rescheduled Few agenda points and not much work in progress on the board This not a problem with the individuals in the team!</description>
+    </item>
+    
+    <item>
+      <title>Setup Guide</title>
+      <link>/contributing/setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/contributing/setup/</guid>
+      <description>Website Details This website is built using Docusaurus 2.
+1. Download the Code All of the code for this website can be found on the Syllabus Repository
+You should clone this repo using the command
+$ git clone https://github.com/CodeYourFuture/syllabus.git 2. Installation $ npm install 3. Local Development $ npm run start This command starts a local development server and open up a browser window. Most changes are reflected live without having to restart the server.</description>
+    </item>
+    
+    <item>
+      <title>Training</title>
+      <link>/contributing/training/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/contributing/training/</guid>
+      <description>Aims Participants will be able to:
+Run the syllabus locally Add a page to the syllabus Edit a page of the syllabus Be able to write simple markdown Understand the rules of making changes to the Syllabus Presentation An overview of how to work with the Syllabus can be found here</description>
+    </item>
+    
+  </channel>
+</rss>

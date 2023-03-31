@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gits on Syllabus</title>
+    <link>/git/</link>
+    <description>Recent content in Gits on Syllabus</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Branches</title>
+      <link>/git/branches/branches/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/git/branches/branches/</guid>
+      <description>import Feedback from &amp;ldquo;@theme/Feedback&amp;rdquo;;
+Learning objectives By the end of this class, you should be able to:
+Explain why branches can be useful when using Git. Create a branch, and add commits to it. Switch between branches. Create a pull request from a branch to the main branch. Work with another trainee on non-conflicting changes to a single branch. So far, we&amp;rsquo;ve seen that we can use Git to share our work, get code review, and view history.</description>
+    </item>
+    
+    <item>
+      <title>Coursework</title>
+      <link>/git/branches/homework/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/git/branches/homework/</guid>
+      <description>1) Read the Lesson Page Content (2 Hours) Before starting this coursework, read through the lesson and complete the exercies.
+2) Make and review pull requests with a partner (15 minutes) Find a partner to work with from your class.
+In the lesson exercises, you made two branches (one with a story, one with an extra ingredient). Make pull requests for both of your branches, and ask them to review your two pull requests.</description>
+    </item>
+    
+    <item>
+      <title>Coursework</title>
+      <link>/git/cli/homework/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/git/cli/homework/</guid>
+      <description>1) Read the Lesson Page Content (60 minutes) Before starting this coursework, read through the lesson and read the cheatsheet.
+https://syllabus.codeyourfuture.io/git/cli/lesson
+2) Git and Github for Poets (3 Hours) This video series gives you a good introduction to lots of different Git concepts on the command line. You might recognise the presenter from the Terminal week!
+https://www.youtube.com/watch?v=BCQHnlnPusY&amp;amp;list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV
+Watch videos 1-8 in this series, taking notes when you don&amp;rsquo;t understand something.</description>
+    </item>
+    
+    <item>
+      <title>Coursework</title>
+      <link>/git/desktop/homework/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/git/desktop/homework/</guid>
+      <description>1) Tell us about you - using Github! (1 hour) Follow the instructions in this repository to submit a description about yourself.
+This is how you&amp;rsquo;ll be submitting a lot of your homework in this course so please let us know if you have any challenges with doing it.
+https://github.com/CodeYourFuture/GitHomeworkTest
+2) Upload your Website to Github (2 Hours) To apply for this course you had to complete a website using what you&amp;rsquo;ve learnt so far.</description>
+    </item>
+    
+    <item>
+      <title>Coursework</title>
+      <link>/git/terminal/homework/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/git/terminal/homework/</guid>
+      <description>1) Read the Lesson Page Content (60 minutes) Before starting this coursework, read through the lesson and complete the exercises.
+https://syllabus.codeyourfuture.io/git/terminal/lesson
+2) Watch this video (15 minutes) This video gives a good, accessible introduction to the command line
+https://www.youtube.com/watch?v=oK8EvVeVltE
+3) OpenClassroom - Learn the Command Line in Terminal (4 Hours) This OpenClassroom course will take you through the basics of the learning the Terminal.
+Note: You do not need to use any additional software to complete this course.</description>
+    </item>
+    
+    <item>
+      <title>From Github Desktop To CLI</title>
+      <link>/git/desktop/from-desktop-to-cli-cheatsheet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/git/desktop/from-desktop-to-cli-cheatsheet/</guid>
+      <description>Everything that you&amp;rsquo;re going to be doing using Git CLI you can also do using Github Desktop.
+In this page, you&amp;rsquo;ll comparisons of how to complete command tasks on both Github Desktop and Git CLI.
+Viewing Changed Files To view the files that you have changed you can use
+git status This will show a list of files that have changed since the last time that you committed.
+Github Desktop Git CLI Including Files to Commit One key difference between Github Desktop and Git CLI is that you need to set which files will be committed to your repository.</description>
+    </item>
+    
+    <item>
+      <title>Github Desktop Cheatsheet</title>
+      <link>/git/desktop/cheatsheet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/git/desktop/cheatsheet/</guid>
+      <description>I want to get code from a repo onto my computer (Cloning) Follow these steps if you need to get code from a Github repository onto your computer (for example to complete your coursework).
+:::info Github Desktop might look a bit different if are cloning the first repository on your computer. :::
+Video Instructions Open the repository on Github in your browser For most of your coursework this will likely be https://github.</description>
+    </item>
+    
+    <item>
+      <title>Instructor Notes</title>
+      <link>/git/desktop/mentors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/git/desktop/mentors/</guid>
+      <description>Want to make a change to this week but don&amp;rsquo;t have the time? Click here
+Want to report a bug in this week? Click here
+IMPORTANT - Setup Needed For Trainees If you are teaching this class in the coming weeks you must instruct your trainees to complete the instructions below.
+Git Preparation
+If you trainees do not arrive with these steps completed then you will lose a lot of time on your first lesson.</description>
+    </item>
+    
+    <item>
+      <title>Lesson</title>
+      <link>/git/cli/lesson/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/git/cli/lesson/</guid>
+      <description>import Feedback from &amp;ldquo;@theme/Feedback&amp;rdquo;; import Tabs from &amp;lsquo;@theme/Tabs&amp;rsquo;; import TabItem from &amp;lsquo;@theme/TabItem&amp;rsquo;;
+Learning Objectives By the end of this class, you should be able to:
+To clone a repository using Git CLI To commit to a repository To push changes using Git CLI To view Git&amp;rsquo;s history log using Git CLI To view what uncommitted changes you have with git status Before you start Make sure that you&amp;rsquo;ve got Terminal / Git Bash / Windows WSL working correctly.</description>
+    </item>
+    
+    <item>
+      <title>Lesson</title>
+      <link>/git/desktop/lesson/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/git/desktop/lesson/</guid>
+      <description>import Feedback from &amp;ldquo;@theme/Feedback&amp;rdquo;;
+Most software engineers use a tool called Git to organise their code, and collaborate with other people.
+Git is a version control tool, used to keep the history of changes, and makes collaboration easier. We&amp;rsquo;ll see many of its uses throughout the course.
+Each week, you&amp;rsquo;re going to use Git to get a copy of your homework exercises, to submit your solutions, and to get feedback on your solutions.</description>
+    </item>
+    
+    <item>
+      <title>Lesson</title>
+      <link>/git/terminal/lesson/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/git/terminal/lesson/</guid>
+      <description>import Feedback from &amp;ldquo;@theme/Feedback&amp;rdquo;; import Tabs from &amp;lsquo;@theme/Tabs&amp;rsquo;; import TabItem from &amp;lsquo;@theme/TabItem&amp;rsquo;;
+Learning Objectives By the end of this class, you should be able to:
+Define the differences between a Terminal and a GUI and describe the benefits of both Open a terminal window Using the terminal navigate to a specified folder (using cd) Move up a level in a folder directory (using cd ..) Cancel a running task in the terminal (using ctrl+c) View all the files of the current directory they are in (using ls) Use arguments to augment the commands learnt in the lesson (e.</description>
+    </item>
+    
+    <item>
+      <title>Module Coordinator</title>
+      <link>/git/coordinator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/git/coordinator/</guid>
+      <description>1) Module Delivery This module is unusual as it follows an irregular delivery pattern
+The content has been written to be delivered in this specific way to make the best use of Trainee&amp;rsquo;s time through the course.
+See the Overview page for when the lessons are given.
+2) Preparation This module has some preparation work that should be set as coursework before the module starts
+You can find the preparation work here</description>
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      <link>/git/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/git/overview/</guid>
+      <description>Most software engineers use a tool called Git to organise their code, and collaborate with other people.
+Git is a version control tool, used to keep the history of changes, and make collaboration easier. We&amp;rsquo;ll see many of its uses throughout the course.
+Each week, you&amp;rsquo;re going to use Git to get a copy of your Coursework exercises, to submit your solutions, and to get feedback on your solutions. Today, you&amp;rsquo;re going to learn how to do these things.</description>
+    </item>
+    
+    <item>
+      <title>Preparation</title>
+      <link>/git/preparation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/git/preparation/</guid>
+      <description>It is important that you complete all of the following work before you get to the next class.
+1) Sign Up To GitHub (30 Minutes) If you did not do so during Fundmentals, sign up now. We&amp;rsquo;ll use GitHub to share code with each other.
+Sign up on https://github.com Let us know your GitHub username as we&amp;rsquo;ll need it for future assignments 2) Download and Install Github Desktop (30 minutes) 🔑 We&amp;rsquo;ll be using this tool in next weeks class so it&amp;rsquo;s very important that you set it up before class.</description>
+    </item>
+    
+  </channel>
+</rss>

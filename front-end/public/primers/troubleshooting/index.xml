@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Troubleshooting Primer on CYF&#43;</title>
+    <link>/primers/troubleshooting/</link>
+    <description>Recent content in Troubleshooting Primer on CYF&#43;</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/primers/troubleshooting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Troubleshooting Primer</title>
+      <link>/primers/troubleshooting/primer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/primers/troubleshooting/primer/</guid>
+      <description>Troubleshooting Primer About this document This document is a crash course in troubleshooting. It is aimed at people with some knowledge of computing and programming, but without significant professional experience in operating distributed software systems. This document does not aim to prepare readers to be oncall or be an incident responder. It aims primarily to describe the skills needed to make progress in day-to-day software operations work, which often involves a lot of troubleshooting in development and test environments.</description>
+    </item>
+    
+  </channel>
+</rss>

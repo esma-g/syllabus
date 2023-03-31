@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en-gb">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Syllabus</title>
+    <meta name="description" content="A free and open source immersive engineering programme. Practical, hands on projects in Go, distributed systems engineering, site reliability engineering, software engineering. Pace, scale, and complexity." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        animation: fade-in 0.2s;
+      }
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+     
+    <link
+      rel="stylesheet"
+      href="/bundled.min.6dc51603c53e46fdfe64b6dbf2f1a977.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="/bundled.min.6dc51603c53e46fdfe64b6dbf2f1a977.css" />
+    </noscript>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;700&family=Major+Mono+Display&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/favicons/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicons/favicon.ico" />
+    <meta name="apple-mobile-web-app-title" content="CYF+" />
+    <meta name="application-name" content="CYF+" />
+    <meta name="msapplication-TileColor" content="#9f00a7" />
+    <meta
+      name="msapplication-config"
+      content="/favicons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#00ff90" />
+  </head>
+</html>
+<body class="is-light-mode">
+  <a class="c-skip-link e-button" id="skip-link" href="#main">Skip to main</a>
+  <div class="l-layout">
+    <header class="l-layout__header l-header">
+  <div class="l-header__nav">
+    <h1 class="l-header__heading">
+      <a class="l-header__home" href="/">Syllabus</a>
+    </h1>
+
+    <button
+      class="l-header__action e-button e-button--icon js-menu-toggle is-fixed"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-button__icon l-header__icon"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+        />
+      </svg>
+
+      <span class="is-invisible">Open Menu.</span>
+    </button>
+  </div>
+</header>
+ <nav
+  class="l-layout__menu l-menu"
+  aria-label="Main Site Links."
+  id="site-menu"
+  hidden
+  tabindex="0"
+>
+  <div class="l-menu__container">
+    <h2 class="l-menu__heading e-heading__2">
+      <a href="/" class="l-menu__home">Syllabus</a>
+    </h2>
+    <button
+      class="l-menu__action e-button e-button--icon js-menu-toggle"
+      id="close-menu"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-button__icon"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18L18 6M6 6l12 12"
+        />
+      </svg>
+
+      <span class="is-invisible">Close Menu.</span>
+    </button>
+    <ul class="l-menu__primary e-list">
+      <li class="l-menu__item e-list__item">
+        <a class="l-menu__link e-link e-heading__1" href="/about">About</a>
+      </li>
+      <li class="l-menu__item e-list__item">
+        <a class="l-menu__link e-link e-heading__1" href="/versions"
+          >Versions</a
+        >
+      </li>
+      <li class="l-menu__item e-list__item">
+        <a class="l-menu__link e-link e-heading__1" href="/projects"
+          >Projects</a
+        >
+      </li>
+      <li class="l-menu__item e-list__item">
+        <a class="l-menu__link e-link e-heading__1" href="/primers">Primers</a>
+      </li>
+    </ul>
+
+    <div class="l-menu__secondary">
+      
+      <a class="l-menu__link e-link" href="#skip-link">
+        <span class="is-invisible">To top</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          width="48px"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="l-menu__icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3 4.5h14.25M3 9h9.75M3 13.5h5.25m5.25-.75L17.25 9m0 0L21 12.75M17.25 9v12"
+          />
+        </svg>
+      </a>
+      
+    </div>
+  </div>
+
+  <img
+    src="/pictures/depths/dddepth--005.webp"
+    alt=""
+    class="l-menu__bg"
+  />
+</nav>
+
+    <main id="main" class="l-layout__main l-main" tabindex="0">
+      
+
+<article>
+  <header class="l-page__header c-page-header">
+    <div class="c-page-header__container">
+      <div class="c-page-header__breadcrumbs">
+        
+<nav class="c-breadcrumbs">
+  <ol class="c-breadcrumbs__list">
+    <li class="c-breadcrumbs__item">
+      <a class="c-breadcrumbs__link" href="/guides/">Guides</a>
+    </li>
+  </ol>
+</nav>
+
+
+      </div>
+      <h1
+        class="c-page-header__title e-heading__1 is-invisible"
+      >
+        Coding 101
+      </h1>
+        
+
+  
+
+  
+
+
+  
+      <section class="c-page-header__toc c-toc" id="toc">
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#what-is-a-computer-program">What is a computer program</a></li>
+    <li><a href="#getting-started-with-javascript">Getting started with JavaScript</a></li>
+    <li><a href="#variables-and-assignments">Variables and assignments</a></li>
+    <li><a href="#simple-data-types--expressions">Simple data types &amp; Expressions</a>
+      <ol>
+        <li><a href="#numbers">Numbers</a></li>
+        <li><a href="#strings">Strings</a></li>
+        <li><a href="#booleans">Booleans</a></li>
+        <li><a href="#from-repl-to-consolelog">From REPL to console.log</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+      </section>
+      
+    </div>
+  </header>
+
+  <section class="l-page__main c-copy"><p><strong>What we will learn today?</strong></p>
+<ul>
+<li>What is a computer program?</li>
+<li>Getting started with JavaScript</li>
+</ul>
+<h2 id="what-is-a-computer-program">What is a computer program</h2>
+<blockquote>
+<p>Intro to programming logic – Making a sandwich (Source:
+<a href="http://static.zerorobotics.mit.edu/docs/team-activities/ProgrammingPeanutButterAndJelly.pdf">http://static.zerorobotics.mit.edu/docs/team-activities/ProgrammingPeanutButterAndJelly.pdf</a>)</p>
+</blockquote>
+<ol>
+<li>Ask the trainees what they think a program is at its most basic level
+<ul>
+<li>Guide, if necessary, towards the idea that its instructions or an action
+etc.</li>
+</ul>
+</li>
+<li>Focus on the idea of instructions:
+<ul>
+<li>Explain that like with a physical activity - tools and steps are required
+to carry out instructions</li>
+<li>Introduce the group activity of programming the activity of making a
+sandwich</li>
+</ul>
+</li>
+<li>Ask the trainees what items we will need to make a sandwich:
+<ul>
+<li>As they shout them out list them on the screen for the whole class to see</li>
+<li>Introduce the concept of objects and classes. Tie into the idea of how in a
+program these would be the &rsquo;tools&rsquo; required for an activity and how for our
+sandwich making task the items we have listed previously are our classes</li>
+</ul>
+</li>
+<li>Now that we have all of the tools we need to make a sandwich ask the trainees
+to shout out what they think the first step or instruction is:
+<ul>
+<li>Write the instruction out on the screen and ask the trainees which object
+would be needed to carry out that instruction</li>
+<li>Copy the instruction and place it under the object that the trainees have
+decided is responsible for it and introduce the idea of methods</li>
+<li>Continue asking the trainees for instructions and listing them under the
+objects that would be responsible for them (in the case where two objects
+are required to carry out an instruction try and break it down further with
+the trainees until only one object is responsible for any one instruction –
+could be a good way to introduce the idea of how specific you need to be in
+programming and the concepts that are detailed in the source example of
+this exercise)</li>
+</ul>
+</li>
+<li>Once the trainees are satisfied with the instructions take the best formed
+class and ask the trainees to come up with a one word summary for each
+instruction that is has. Explain the benefits of well named methods in
+programming and (maybe?) touch on naming conventions.</li>
+</ol>
+<h2 id="getting-started-with-javascript">Getting started with JavaScript</h2>
+<p>We will spend most of this lesson in Codepen. To get started, go to
+<a href="https://codepen.io/pen">https://codepen.io/pen</a> to create a new Pen. On the bottom left,
+click the &ldquo;Console&rdquo; button to open the console.</p>
+<p>You can place your cursor right behind the <code>&gt;</code> sign. Type a simple expression,
+such as <code>2 + 2</code> and hit enter. You will see expression, as well as its result,
+in the window above.</p>
+<p>You will be able to follow most of this session along just entering expressions
+in the console like this.</p>
+<h2 id="variables-and-assignments">Variables and assignments</h2>
+<p>For an expression or a value to be of any use to us, we need to store it in a
+variable.</p>
+<p>Variables have a name (<em>identifier</em>) that we can use to refer to a value. You
+can assign a value to a variable with the following statement:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">^</span>   <span style="color:#f92672">^</span> <span style="color:#f92672">^</span> <span style="color:#f92672">^</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">|</span>   <span style="color:#f92672">|</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">value</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">|</span>   <span style="color:#f92672">|</span> <span style="color:#a6e22e">assignment</span> <span style="color:#a6e22e">operator</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">|</span>   <span style="color:#a6e22e">identifier</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">declaration</span> <span style="color:#a6e22e">statement</span>
+</span></span></code></pre></div><p>Let&rsquo;s break this statement down:</p>
+<ul>
+<li><code>var</code>: With the <code>var</code> statement we tell the JavaScript engine that <code>x</code> is now
+a variable</li>
+<li><code>x</code>: The variable name/identifier. It can be short or long, but must not
+contain spaces and must not start with a number.</li>
+<li><code>=</code>: The equal sign is the assigmnent operator</li>
+<li><code>3</code>: The value that we assign to the variable. This can be any number, string
+or boolean, or any more complex data type that we will introduce later. You
+can also use an existing variable here.</li>
+<li><code>;</code>: THe semicolon is not strictly needed, but is generally used to terminate
+a statement.</li>
+</ul>
+<p>Now you can use the identifier instead of the actual value in an expression:</p>
+<p><code>x + x</code>, <code>x * x</code>, <code>console.log(x)</code></p>
+<h2 id="simple-data-types--expressions">Simple data types &amp; Expressions</h2>
+<h3 id="numbers">Numbers</h3>
+<p>Let&rsquo;s start with something seemingly simple - numbers. Here are some:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">15</span>;
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">3195803798</span>;
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1.4</span>;
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">0.0000005</span>;
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">0</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">23</span>;
+</span></span></code></pre></div><p>You will see that there are whole numbers (no decimal point) and real numbers
+(decimal point), which in JavaScript are so-called “floating point” numbers.
+Numbers can be positive or negative and they support all the basic math
+operators that you would expect:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ae81ff">2</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span>; <span style="color:#75715e">// 4
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#ae81ff">2</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">5</span>; <span style="color:#75715e">// -3
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">3</span>; <span style="color:#75715e">// 6
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#ae81ff">10</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>; <span style="color:#75715e">// 5
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#ae81ff">3</span> <span style="color:#f92672">*</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>; <span style="color:#75715e">// -6
+</span></span></span></code></pre></div><p>Operators have the same precedence as in algebra: <code>*</code> and <code>/</code> have higher
+precedence than <code>+</code> and <code>-</code>.</p>
+<ul>
+<li><strong>TODO:</strong> Do math exercise</li>
+<li><strong>TODO:</strong> What about Infinity, Math.PI, IEEE floating points, NaN</li>
+</ul>
+<h3 id="strings">Strings</h3>
+<p>Strings represent any sort of text. They are delimited by single quotes (<code>'</code>) or
+double quotes (<code>”</code>) and can be of any length.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;</span>; <span style="color:#75715e">// empty string
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#e6db74">&#34;&#34;</span>; <span style="color:#75715e">// empty string
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#e6db74">&#34;Hello&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;I am learning JavaScript&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;It\&#39;s been a great journey so far!&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;Double quotes work as well&#34;</span>;
+</span></span></code></pre></div><blockquote>
+<p>If you need single or double quotes <em>inside the string</em>, you need to “escape”
+them by putting a backslash in front of them. If you don&rsquo;t do this, the
+JavaScript engine will think the string ends here, because it encounters a
+quote.</p>
+</blockquote>
+<p>The most common operation on strings is to append one string to another. This is
+called <em>string concatenation</em>. It&rsquo;s achieved by the plus (<code>+</code>) operator:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#e6db74">&#34;Hello&#34;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;World&#34;</span>; <span style="color:#75715e">// &#34;HelloWorld&#34;
+</span></span></span></code></pre></div><ul>
+<li><strong>TODO:</strong> Introduce string concatenation</li>
+<li><strong>TODO:</strong> What about basic string functions, like substr, replace etc?</li>
+</ul>
+<h3 id="booleans">Booleans</h3>
+<p><a href="https://en.wikipedia.org/wiki/Boolean_data_type">Booleans</a> are a data type that
+can only have two values: <code>true</code> and <code>false</code>.</p>
+<p>Like numbers, they can be combined using operators, but there are different
+operators for booleans (analoguous to
+<a href="https://en.wikipedia.org/wiki/Boolean_algebra">Boolean algebra</a>). The most
+important ones are:</p>
+<ul>
+<li><code>!</code> (NOT), which negates a value:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#f92672">!</span><span style="color:#66d9ef">true</span>; <span style="color:#75715e">// false
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#f92672">!</span><span style="color:#66d9ef">false</span>; <span style="color:#75715e">// true
+</span></span></span></code></pre></div><ul>
+<li><code>&amp;&amp;</code> (AND), which is only true if both operands are true:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">false</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#66d9ef">false</span>; <span style="color:#75715e">// false
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">true</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#66d9ef">false</span>; <span style="color:#75715e">// false
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">false</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#66d9ef">true</span>; <span style="color:#75715e">// false
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">true</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#66d9ef">true</span>; <span style="color:#75715e">// true
+</span></span></span></code></pre></div><ul>
+<li><code>||</code> (OR), which is true if at least one of the operands is true:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">false</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#66d9ef">false</span>; <span style="color:#75715e">// false
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">true</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#66d9ef">false</span>; <span style="color:#75715e">// true
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">false</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#66d9ef">true</span>; <span style="color:#75715e">// true
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">true</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#66d9ef">true</span>; <span style="color:#75715e">// true
+</span></span></span></code></pre></div><p><strong>TODO:</strong> When to introduce truthiness and falsiness? Probably in <code>comparisons</code>?</p>
+<hr>
+<blockquote>
+<p><strong>Exercise</strong>: Put simple mathematical expressions into the console: <code>2 * 2</code>,
+<code>2 + 2</code>, <code>5 * 7 - 13</code> &gt; <strong>Exercise</strong>: Calculate the area of a circle (<code>r * r * pi</code>). Do a quick Google search on how to use PI in JavaScript.</p>
+<p>See what happens when you &ldquo;add&rdquo; two strings together</p>
+<p>Research the JS Math library. sqrt, floor, ceil, round</p>
+<p>Write an expression that outputs the percentage of trainees who are female.
+Make it so it outputs it as <code>58%</code>, and make sure you use the actual numbers of
+women and the total number of trainees. Solution: <code>console.log(Math.round(7 / 17 * 100) + &quot;%&quot;);</code></p>
+</blockquote>
+<h3 id="from-repl-to-consolelog">From REPL to console.log</h3>
+<ul>
+<li>Single expressions are not very useful, you want to write applications</li>
+<li>More than one statement? Move it to the <code>JS</code> box in Codepen</li>
+<li>Now you don&rsquo;t get any immediate feedback</li>
+<li>Use <code>console.log</code> to print to the console: <code>console.log(3 + 3);</code></li>
+<li>Write statements below each other</li>
+</ul>
+<blockquote>
+<p><strong>THOUGHT:</strong> Codepen does not have a &ldquo;run&rdquo; button, so it&rsquo;s quite intransparent
+when it actually re-runs a program. Maybe a different tool is better? A simple
+jsbin configuration, maybe?</p>
+</blockquote>
+</section>
+
+  
+
+</article>
+
+
+    </main><footer class="l-layout__footer l-footer">
+  <a
+    class="l-footer__github e-button e-button--icon"
+    href="https://github.com/CodeYourFuture/syllabus/"
+  >
+    <svg
+      focusable="false"
+      class="e-button__icon"
+      role="presentation"
+      viewbox="0 0 98 96"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+        fill="currentColor"
+      />
+    </svg>
+    <span class="is-invisible">Find us on GitHub</span>
+  </a>
+  <p class="l-footer__impressum e-heading__6">
+    This
+    <a href="https://github.com/CodeYourFuture/syllabus/"
+      >free and open source engineering programme</a
+    >
+    is a project of
+    <a href="https://codeyourfuture.io">Code Your Future</a>
+    <br />
+    This work is licensed under a Creative Commons Attribution-ShareAlike 4.0
+    International License.
+  </p>
+  <button
+    id="mode-toggle"
+    class="e__button--toggle e-button--icon l-footer__mode"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="e-icon e__button__icon e-icon--moon"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+      />
+    </svg>
+
+    <span class="is-invisible">Toggle between light and dark mode</span>
+  </button>
+</footer>
+
+  
+
+<script>
+  function randomBG() {
+    const style = document.createElement("style");
+    style.textContent = `body, html {background-image:url("\/pictures/svgs/neons/nnneon.svg"),url("\/pictures/svgs/quads/qqquad-04.svg"),radial-gradient(circle,var(--theme-color--paper) 0%,var(--theme-color--block) 50%,var(--theme-color--paper) 100%);
+      background-size: cover;
+    }`;
+
+    document.head.appendChild(style);
+  }
+
+  window.addEventListener("load", randomBG);
+</script>
+
+
+<script src="/scripts/app.min.js" defer></script>
+
+
+</div>
+</body>

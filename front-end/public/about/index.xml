@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About on CYF&#43;</title>
+    <link>/about/</link>
+    <description>Recent content in About on CYF&#43;</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contributing</title>
+      <link>/about/contributing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/contributing/</guid>
+      <description>Contributing to Code Your Future Immersive Go Course This repository is a permissively licensed, open source work. We welcome contributions, both as corrections/improvements and additions, and recommend filing an issue for discussion before investing too much work.
+Goals This repository primarily exists to help junior software engineers get experience with the Go programming language, and learn about topics that would be useful as a software engineer working in production.
+It is intended to be followed without needing support (i.</description>
+    </item>
+    
+    <item>
+      <title>We made this</title>
+      <link>/about/contributors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/contributors/</guid>
+      <description> tgvashworth 117 illicitonion 18 SallyMcGrath 13 sre-is-laura 8 bandya2003 2 mbarrin 1 </description>
+    </item>
+    
+  </channel>
+</rss>

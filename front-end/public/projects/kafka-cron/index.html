@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en-gb">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>CYF&#43;</title>
+    <meta name="description" content="A free and open source immersive engineering programme. Practical, hands on projects in Go, distributed systems engineering, site reliability engineering, software engineering. Pace, scale, and complexity." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        animation: fade-in 0.2s;
+      }
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+     
+    <link
+      rel="stylesheet"
+      href="/bundled.min.f44ec27dd539fe9647de9751483e4bcd.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="/bundled.min.f44ec27dd539fe9647de9751483e4bcd.css" />
+    </noscript>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;700&family=Major+Mono+Display&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/favicons/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicons/favicon.ico" />
+    <meta name="apple-mobile-web-app-title" content="CYF+" />
+    <meta name="application-name" content="CYF+" />
+    <meta name="msapplication-TileColor" content="#9f00a7" />
+    <meta
+      name="msapplication-config"
+      content="/favicons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#00ff90" />
+  </head>
+</html>
+<body class="is-light-mode">
+  <a class="c-skip-link e-button" id="skip-link" href="#main">Skip to main</a>
+  <div class="l-layout">
+    <header class="l-layout__header l-header">
+  <div class="l-header__nav">
+    <h1 class="l-header__heading">
+      <a class="l-header__home" href="/">CYF&#43;</a>
+    </h1>
+
+    <button
+      class="l-header__action e-button e-button--icon js-menu-toggle is-fixed"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-button__icon l-header__icon"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+        />
+      </svg>
+
+      <span class="is-invisible">Open Menu.</span>
+    </button>
+  </div>
+</header>
+ <nav
+  class="l-layout__menu l-menu"
+  aria-label="Main Site Links."
+  id="site-menu"
+  hidden
+  tabindex="0"
+>
+  <div class="l-menu__container">
+    <h2 class="l-menu__heading e-heading__2">
+      <a href="/" class="l-menu__home">CYF&#43;</a>
+    </h2>
+    <button
+      class="l-menu__action e-button e-button--icon js-menu-toggle"
+      id="close-menu"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-button__icon"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18L18 6M6 6l12 12"
+        />
+      </svg>
+
+      <span class="is-invisible">Close Menu.</span>
+    </button>
+    <ul class="l-menu__primary e-list">
+      <li class="l-menu__item e-list__item">
+        <a class="l-menu__link e-link e-heading__1" href="/about">About</a>
+      </li>
+      <li class="l-menu__item e-list__item">
+        <a class="l-menu__link e-link e-heading__1" href="/versions"
+          >Versions</a
+        >
+      </li>
+      <li class="l-menu__item e-list__item">
+        <a class="l-menu__link e-link e-heading__1" href="/projects"
+          >Projects</a
+        >
+      </li>
+      <li class="l-menu__item e-list__item">
+        <a class="l-menu__link e-link e-heading__1" href="/primers">Primers</a>
+      </li>
+    </ul>
+
+    <div class="l-menu__secondary">
+      
+      <a class="l-menu__link e-link" href="#skip-link">
+        <span class="is-invisible">To top</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          width="48px"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="l-menu__icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3 4.5h14.25M3 9h9.75M3 13.5h5.25m5.25-.75L17.25 9m0 0L21 12.75M17.25 9v12"
+          />
+        </svg>
+      </a>
+      
+    </div>
+  </div>
+
+  <img
+    src="/pictures/depths/dddepth--005.webp"
+    alt=""
+    class="l-menu__bg"
+  />
+</nav>
+
+    <main id="main" class="l-layout__main l-main" tabindex="0">
+      
+
+<article>
+  <header class="l-page__header c-page-header">
+    <div class="c-page-header__container">
+      <div class="c-page-header__breadcrumbs">
+        
+<nav class="c-breadcrumbs">
+  <ol class="c-breadcrumbs__list">
+    <li class="c-breadcrumbs__item">
+      <a class="c-breadcrumbs__link" href="/projects/">Projects</a>
+    </li>
+  </ol>
+</nav>
+
+
+      </div>
+      <h1
+        class="c-page-header__title e-heading__1 is-invisible"
+      >
+        Distributed Cron Based on Kafka
+      </h1>
+         
+      <a
+        class="c-page-header__edit e-heading__5 e-link is-none--lt-container"
+        href="https://github.com/CodeYourFuture/immersive-go-course/tree/main/projects/kafka-cron/README.md"
+        >Edit on Github</a
+      >
+       
+
+  
+
+  
+
+
+<h2 class="c-lastmod c-page-header__lastmod">
+  .Lastmod
+  <a href="https://github.com/CodeYourFuture/immersive-go-course/tree/main/kafka-cron">
+    <time datetime="2023-01-08T15:59:51Z">2023-01-08T15:59:51Z</time>
+  </a>
+</h2>
+
+  
+      <section class="c-page-header__toc c-toc" id="toc">
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#learning-objectives">Learning Objectives</a></li>
+    <li><a href="#project">Project</a>
+      <ol>
+        <li><a href="#background-on-cron">Background on cron</a></li>
+        <li><a href="#background-on-apache-kafka">Background on Apache Kafka</a></li>
+        <li><a href="#part-1-distributed-cron-with-one-queue">Part 1: Distributed cron with one queue</a></li>
+        <li><a href="#part-2-distributed-cron-with-multiple-queues">Part 2: Distributed cron with multiple queues</a></li>
+        <li><a href="#part-3-handling-errors">Part 3: Handling errors</a></li>
+        <li><a href="#part-4-monitoring-and-alerting">Part 4: Monitoring and Alerting</a>
+          <ol>
+            <li><a href="#running-the-prometheus-jmx-exporter-to-get-kafka-metrics">Running the Prometheus JMX Exporter to get Kafka metrics</a></li>
+            <li><a href="#running-prometheus-alertmanager-and-grafana">Running Prometheus, Alertmanager, and Grafana</a></li>
+            <li><a href="#alertmanager">Alertmanager</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#extensions">Extensions</a>
+      <ol>
+        <li>
+          <ol>
+            <li><a href="#comprehensive-alerting-design-and-runbooks">Comprehensive Alerting Design and Runbooks</a></li>
+          </ol>
+        </li>
+        <li><a href="#kafka-chaos">Kafka Chaos</a></li>
+        <li><a href="#dealing-with-long-running-jobs-and-load-challenging">Dealing with long-running jobs and load (challenging)</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+      </section>
+      
+    </div>
+  </header>
+
+  <section class="l-page__main c-copy"><p>In this project we&rsquo;re going to build a simple distributed <code>cron</code> system, based on the Apache Kafka distributed queue system.</p>
+<blockquote>
+<p><strong>Note:</strong> This project requires us to have Docker with <a href="https://docs.docker.com/compose/">Compose</a> installed. Compose is a tool for defining and running multi-container Docker applications. With Compose, we use a YAML file to configure the application’s services. Then, with a single command, we create and start all the services from the configuration.</p>
+</blockquote>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<ul>
+<li>How can we use a distributed queue in software architecture?</li>
+<li>How can we deal with errors in a system based on distributed queues?</li>
+<li>How can we instrument a complex application with metrics? How should we design alerting?</li>
+</ul>
+<p>Timebox: 5 days</p>
+<h2 id="project">Project</h2>
+<h3 id="background-on-cron">Background on cron</h3>
+<p>We are going to implement a distributed version of the <code>cron</code> job scheduler (read about <a href="https://en.wikipedia.org/wiki/Cron">cron</a> if you are not familiar with it). Cron jobs are defined by two attributes: the command to be executed, and either the schedule that the job should run on or a definition of the times that the job should execute. The schedule is defined according
+to the <code>crontab</code> format (you can find parsers for this format for Golang - the most widely used is <a href="https://github.com/robfig/cron">robfig/cron</a>).</p>
+<p>The <code>cron</code> tool common to Unix operating systems runs jobs on a schedule. Cron only works on a single hosts. We want to create a version of cron that can schedule jobs across multiple workers, running on different hosts.</p>
+<h3 id="background-on-apache-kafka">Background on Apache Kafka</h3>
+<p>Kafka is an open-source distributed queue. You can read about the core Kafka concepts in the <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2017/09/Kafka.pdf">Kafka: a Distributed Messaging System for Log Processing paper</a>.</p>
+<p>After reading that paper you should understand:</p>
+<ul>
+<li>How Kafka stores data</li>
+<li>What producers, consumers, and brokers are</li>
+<li>What topics and partitions are</li>
+</ul>
+<h3 id="part-1-distributed-cron-with-one-queue">Part 1: Distributed cron with one queue</h3>
+<p>In this section of the project, we will start by creating a functional distributed cron system. We will build two separate programs:</p>
+<ul>
+<li>A Kafka producer that reads configuration files for jobs and queues tasks for execution</li>
+<li>A Kafka consumer that dequeues jobs from a queue and runs them</li>
+</ul>
+<p>Kafka itself is just a queue that lets you communicate in a structured and asynchronous way between producers and consumers. Therefore, all the scheduling logic for managing recurring jobs must be part of your producer (although it is recommended to reuse a suitable library to assist with parsing crontabs and scheduling). Every time a job is due to be run, your producer creates a new message and writes it to Kafka, for a consumer to dequeue and run.</p>
+<p>We&rsquo;ll need to be able to run Kafka. The easiest way is to use <code>docker-compose</code>. The <a href="https://github.com/conduktor/kafka-stack-docker-compose">conduktor/kafka-stack-docker-compose</a> project provides several starter configurations for running Kafka. The config for <code>zk-single-kafka-single.yml</code> will work for development purposes.</p>
+<p>There is a <a href="https://docs.confluent.io/kafka-clients/go/current/overview.html#go-example-code">Golang Kafka client</a> that we will use to interact with Kafka.</p>
+<p>We may want to run other Docker containers later, so we may want to make our own copy of that configuration that we can add to.</p>
+<p>Our producer program needs to be able to do the following:</p>
+<ul>
+<li>Read and parse a file with cron job definitions (we&rsquo;ll set up our own for this project, don&rsquo;t reuse the system cron config file because we will want to modify the format later)</li>
+<li>Write a message to Kafka specifying the command to run, the intended start time of the job, and any other information that we think is necessary. It probably makes sense to encode this information as JSON (see <a href="https://gobyexample.com/json">Go By Example: JSON</a> if you have never worked with JSON in Golang before)</li>
+<li>We will also need to <a href="https://kafka.apache.org/documentation/#quickstart_createtopic">create a Kafka topic</a>. In a production environment we would probably use separate tooling to manage topics (perhaps Terraform), but for this project, we can <a href="https://github.com/confluentinc/examples/blob/7.3.0-post/clients/cloud/go/producer.go#L39">create our Kafka topic using code</a>.</li>
+</ul>
+<p>Our consumer program needs to be able to do the following things:</p>
+<ul>
+<li>Read job information from a Kafka queue (decoding JSON)</li>
+<li>Execute the commands to run the jobs (assume this is a simple one-line command that you can <code>exec</code> for now)</li>
+<li>Because the producer is writing jobs to the queue when they are ready to run, your consumer does not need to do any scheduling or to parse crontab format</li>
+</ul>
+<p>We want to run two consumers - therefore, when we create our topic, we should create two partitions of the topic. We will also need to specify a key for each Kafka message that we produce - Kafka assigns messages to partitions based on a hash of the message ID. We can use a package such as <a href="https://pkg.go.dev/github.com/google/UUID">google&rsquo;s UUID package</a> to generate keys.</p>
+<p>We can build Docker containers for our producer and consumer and add these to our docker-compose configuration. We should create a Makefile or script to make this repeatable.</p>
+<p>Test our implementation and observe both of our consumers running jobs scheduled by your producer. What happens if we only create one partition in our topic? What happens if we create three?</p>
+<blockquote>
+<p><strong>Note:</strong> For the purposes of keeping this project scope tractable, we are ignoring two things. The first is security: simply run commands as the user that our consumer runs as. The second thing is that we are assuming the jobs to be run consist of commands available on the consumers. You may address these concerns later in an optional extension of the project if you have time.</p>
+</blockquote>
+<h3 id="part-2-distributed-cron-with-multiple-queues">Part 2: Distributed cron with multiple queues</h3>
+<p>A new requirement: our distributed cron system needs to be able to schedule jobs to run in multiple clusters. Imagine that we want to support users who have data stored in specific clusters and they want to make sure their cron jobs are running near their data.</p>
+<p>We don&rsquo;t really need to set up any clusters - just write our program as though you had multiple sets of consumer workers in different clusters.</p>
+<ul>
+<li>Define a set of clusters in our program (two is fine, <code>cluster-a</code> and <code>cluster-b</code>)</li>
+<li>Each cluster should have its own Kafka topic</li>
+<li>Update the job format so that jobs must specify what cluster to run in</li>
+<li>Run separate consumers that are configured to read from each cluster-specific topic</li>
+</ul>
+<p>Test that our new program and Kafka configuration works as expected.</p>
+<p>How would you do this sort of a migration in a running production environment, where you could not drop existing jobs?</p>
+<h3 id="part-3-handling-errors">Part 3: Handling errors</h3>
+<p>What happens if there is a problem running a job? Maybe the right thing is retry it.</p>
+<p>This should be a configurable property of our cron jobs: update our program to add this to the job configurations and message format.</p>
+<p>However: we don&rsquo;t want to risk retry jobs displacing first-time runs of other jobs. This is why some queue-based systems <a href="https://www.uber.com/en-IE/blog/reliable-reprocessing/">use separate queues for retries</a>.</p>
+<p>We can create a second set of topics for jobs that fail the first time and need to be retried (we need one retry topic for each cluster). If a job fails, the consumer should write the job to the corresponding retry topic for the cluster (and decrement the remaining allowed attempts in the job definition).</p>
+<p>Run some instances of your consumer program that read from your retry queues (we can make this a command-line option in your consumer).</p>
+<p>Define a job that fails and observe your retry consumers retrying and eventually discarding it.</p>
+<p>Define a job that randomly fails some percent of the time, and observe your retry consumers retrying and eventually completing it.</p>
+<h3 id="part-4-monitoring-and-alerting">Part 4: Monitoring and Alerting</h3>
+<p>In software operations, we want to know what our software is doing and how it is performing.</p>
+<p>One very useful technique is to have our program export metrics. Metrics are basically values that our program makes available (the industry standard is to export and scrape over HTTP).</p>
+<p>Specialised programs, such as Prometheus, can then fetch metrics regularly from all the running instances of our program, store the history of these metrics, and do useful arithmetic on them (like computing rates, averages, and maximums). We can use this data to do troubleshooting and to alert if things go wrong.</p>
+<p>Read the <a href="https://prometheus.io/docs/introduction/overview/">Overview of Prometheus</a> if you are not familiar with Prometheus.</p>
+<p>The <a href="https://prometheus.io/docs/guides/go-application/">Prometheus Guide to Instrumenting a Go Application</a> describes how to add metrics to a Golang application.</p>
+<p>First, consider:</p>
+<ul>
+<li>What kinds of things may go wrong with our system? (it is useful to look at errors your code is handling, as inspiration)</li>
+<li>What would users&rsquo; expectations be of this system?</li>
+<li>What metrics can we add that will tell us when the system is not working as intended?</li>
+<li>What metrics can we add that might help us to troubleshoot the system and understand how it is operating? Read back through the first three parts of this exercise to try and identify the properties of the system that we might want to know about.</li>
+</ul>
+<p>Asking these questions should guide us in designing the metrics that our consumers and producer should export.
+Think about what kinds of problems can happen both in the infrastructure - Kafka, your consumers and producers - and in the submitted jobs.</p>
+<p>Add metrics to your programs. Verify that they work as expected using <code>curl</code> or your web browser.</p>
+<h4 id="running-the-prometheus-jmx-exporter-to-get-kafka-metrics">Running the Prometheus JMX Exporter to get Kafka metrics</h4>
+<p>Kafka doesn&rsquo;t export Prometheus metrics natively. However, we can use the official
+<a href="https://github.com/prometheus/jmx_exporter">Prometheus JMX exporter</a> to expose its metrics.</p>
+<blockquote>
+<p><strong>Note:</strong> Kafka is a Java program. We don&rsquo;t need to know much about Java programs in order to run them, but it&rsquo;s useful to know that Java programs run in a host process called a Java Virtual Machine (JVM). The JVM also allows for injecting extra code called Java agents, which can modify how a program is run.</p>
+</blockquote>
+<p>The Prometheus JMX exporter can run as a Java agent (alongside a Java program such as Kafka) or else as a standalone HTTP server, which collects metrics from a JVM running elsewhere and re-exports them as Prometheus metrics. If you&rsquo;re using <a href="https://github.com/conduktor/kafka-stack-docker-compose">conduktor/kafka-stack-docker-compose</a> as suggested above then your image contains the <code>jmx_prometheus_javaagent</code> already.</p>
+<p>You need to create a <code>config.yaml</code>. A config file that will collect all metrics is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>rules:
+</span></span><span style="display:flex;"><span>- pattern: &#34;.*&#34;
+</span></span></code></pre></div><p>Now, update the Kafka service in your <code>docker-compose.yml</code>. Add a volume - for example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>    volumes:
+</span></span><span style="display:flex;"><span>      - ./kafka-jmx-config.yaml:/kafka-jmx-config.yaml
+</span></span></code></pre></div><p>Finally, you need to add a new line in your <code>environment</code> section for your Kafka server in your <code>docker-compose.yml</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>KAFKA_OPTS: -javaagent:/usr/share/java/cp-base-new/jmx_prometheus_javaagent-0.14.0.jar=8999:/kafka-jmx-config.yaml
+</span></span></code></pre></div><p>The version of the <code>jmx_prometheus_javaagent</code> jar might change in a later version of the <code>cp-kafka</code> image, so if you have any issues running the software, this would be the first thing to check. You can&rsquo;t just map a newer version of the agent as a volume as this is likely to cause runtime errors due to multiple version of the agent on the Java classpath.</p>
+<p>Now you should be able to see JVM and Kafka metrics on http://localhost:8999. Check this using <code>curl</code> or your web browser.</p>
+<h4 id="running-prometheus-alertmanager-and-grafana">Running Prometheus, Alertmanager, and Grafana</h4>
+<p>Next, we can add Prometheus, AlertManager, and Grafana, a common monitoring stack, to our <code>docker-compose</code> configuration. Here is an example configuration that we can adapt: <a href="https://dzlab.github.io/monitoring/2021/12/30/monitoring-stack-docker/">https://dzlab.github.io/monitoring/2021/12/30/monitoring-stack-docker/</a>. AlertManager is used for notifying operators of unexpected conditions, and Grafana is useful for building dashboards that allow us to troubleshoot and understand our system&rsquo;s operation.</p>
+<p>If your computer is struggling to run such a complex <code>docker-compose</code> system in a performant fashion, you can cut down the number of Kafka topics and consumers that you are running to a minimum (just one producer and consumer/retry consumer pair are fine - don&rsquo;t run sets of these for multiple clusters if your computer is under too much load).</p>
+<p>We&rsquo;ll need to set up a Prometheus configuration to scrape our producers and consumers. Prometheus <a href="https://prometheus.io/docs/prometheus/latest/configuration/configuration/">configuration</a> is quite complex but we can adapt this <a href="https://github.com/prometheus/prometheus/blob/main/documentation/examples/prometheus.yml">example configuration</a>.</p>
+<p>For example, to scrape your Kafka metrics, you can add ths to the Prometheus configuration:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>scrape_configs:
+</span></span><span style="display:flex;"><span>  - job_name: &#34;kafka&#34;
+</span></span><span style="display:flex;"><span>    static_configs:
+</span></span><span style="display:flex;"><span>      - targets: [&#34;kafka1:8999&#34;]
+</span></span></code></pre></div><p>Once you have adapted the sample Prometheus configuration to scrape metrics from your running producer and consumer(s) and from the JMX exporter that is exporting the Kafka metrics, you should check that Prometheus is correctly scraping all those metrics. If you haven&rsquo;t changed the default port, you can access Prometheus&rsquo;s status page at http://localhost:9090/.</p>
+<p>You can now try out some queries in the Prometheus UI.</p>
+<p>For example, let&rsquo;s say that our consumers are exporting a metric <code>job_runtime</code> that describes how long it takes to run jobs. And let&rsquo;s say the metric is labelled with the name of the queue the consumer is reading from.</p>
+<p>Because this metric is describing a population of observed latencies, the best metric type to use is a <a href="https://prometheus.io/docs/practices/histograms/">histogram</a>.</p>
+<p>We can query this as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>histogram_quantile(0.9, sum by (queue, le)(rate(job_runtime[10m])))
+</span></span></code></pre></div><p>This will give you the 90th percentile job runtime (i.e. the runtime where 90% of jobs complete this fast or faster) over the past 10 minutes (the <code>rate</code> function does this for histogram queries - it&rsquo;s a little counterintuitive).</p>
+<p>For some more PromQL examples, see the <a href="https://prometheus.io/docs/prometheus/latest/querying/examples/">Prometheus Query Examples page</a>.</p>
+<h4 id="alertmanager">Alertmanager</h4>
+<p>Next, write an <a href="https://prometheus.io/docs/alerting/latest/alertmanager/">AlertManager configuration</a> and set up at least one alert.</p>
+<p>For instance:</p>
+<ul>
+<li>We could alert on the age of jobs being unqueued - if this rises too high (more than a few seconds) then users&rsquo; jobs aren&rsquo;t being executed in a timely fashion. We should use a percentile for this calculation.</li>
+<li>We could also alert on failure to queue jobs, and failure to read from the queue.</li>
+<li>We expect to see fetch requests against all of our topics. If we don&rsquo;t, it may mean that our consumers are not running, or are otherwise broken. We could set up alerts on the <code>kafka_server_BrokerTopicMetrics_Count{name=&quot;TotalFetchRequestsPerSec&quot;}</code> metric to check this.</li>
+</ul>
+<p>For critical alerts in a production environment we would usually use PagerDuty or a similar tool, but for our purposes the easiest way to configure an alert is to use email.
+This article describes how to send <a href="https://www.robustperception.io/sending-email-with-the-alertmanager-via-gmail/">Alertmanager email using GMail</a> as an email server.</p>
+<blockquote>
+<p><strong>Note:</strong> If you do this, be careful not to check your <code>GMAIL_AUTH_TOKEN</code> into GitHub - we should never check ANY token into source control. Instead, we can check in a template file and use a tool such as <a href="https://tldp.org/LDP/abs/html/here-docs.html">heredoc</a> to substitute the value of an environment variable (our token) into the final generated Alertmanager configuration (and include this step in a build script/Makefile). It is also advisable a throwaway GMail account for this purpose, for additional security - just in case.</p>
+</blockquote>
+<p>We can also build a Grafana dashboard to display our Prometheus metrics. The <a href="https://grafana.com/tutorials/grafana-fundamentals/">Grafana Fundamentals</a> tutorial will walk you through how to do this (although we will need to use our own application and not their sample application).</p>
+<h2 id="extensions">Extensions</h2>
+<h4 id="comprehensive-alerting-design-and-runbooks">Comprehensive Alerting Design and Runbooks</h4>
+<p>You should have at least one alert defined. However, for a production system, we need a comprehensive set of alerts that we can rely on to
+tell us when our system is not meeting user expectations. Try to implement the smallest set of alerts that covers all cases.
+Use <a href="https://docs.google.com/document/d/199PqyG3UsyXlwieHaqbGiWVa8eMWi8zzAn0YfcApr8Q/preview">symptom-based alerting</a> and avoid cause-based alerting.
+Write a short README about how you designed your alerts.</p>
+<p>Now, for each alert, write a playbook that describes how to handle that type of alert. Information to include:</p>
+<ul>
+<li>A summary of the relevant system architecture (you can include a diagram, either as an image or using <a href="https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/">mermaid.js</a>).</li>
+<li>What the likely user impact is of the alert (e.g. &ldquo;all scheduled tasks will fail&rdquo; or &ldquo;tasks will be slow to execute&rdquo;).</li>
+<li>What kinds of things might cause this alert?</li>
+<li>How would the engineer receiving that alert narrow down the possible causes and troubleshoot?</li>
+<li>How should the engineer address each possible cause that you can foresee?</li>
+</ul>
+<p>A useful way to proceed is to think about all of the entities in your system: services, topics, and so on.
+What would happen if each of these disappeared?
+Now consider all the places where communication occurs in your system. What would happen if each of these communication paths failed, or if a software bug caused wrong messages to be sent? Don&rsquo;t forget that your monitoring system itself is a communication link to your production systems.</p>
+<p>Your alert definitions should include a link to your playbooks on GitHub.</p>
+<h3 id="kafka-chaos">Kafka Chaos</h3>
+<p>Try running multiple Kafka brokers and Zookeeper servers with our producers and consumers (using another of the <a href="https://github.com/conduktor/kafka-stack-docker-compose">conduktor/kafka-stack-docker-compose</a>) configurations. Experiment with downing Kafka and Zookeeper containers.</p>
+<p>How many containers being down can our system tolerate?</p>
+<p>What happens to the Kafka system logs and the metrics that our binaries export? Did our alerts fire? If not, consider how they could be improved - remember, the point of them is to tell us when something&rsquo;s wrong!</p>
+<h3 id="dealing-with-long-running-jobs-and-load-challenging">Dealing with long-running jobs and load (challenging)</h3>
+<p>What does our system do if someone submits a very long-running job? Try testing this with the <code>sleep</code> command.</p>
+<p>If this is an issue for the stable operation of our system, or for running jobs in a timely fashion, what can we do about this?</p>
+<p>If your system had problems, did our alerts fire?</p>
+<p>How can we prevent our consumers getting overloaded if compute-intensive jobs are submitted?</p>
+</section>
+
+  
+<footer class="c-page-footer c-copy">
+  <h4 class="c-page-footer__section">
+    <a
+      class="c-page-footer__section-link e-link"
+      href="/projects"
+      >projects</a
+    >
+  </h4>
+   
+  <nav class="c-page-footer__section-nav">
+    <a
+      class="e-button e-button--icon c-page-footer__edit"
+      href="https://github.com/CodeYourFuture/immersive-go-course/tree/main/projects/kafka-cron/README.md"
+      ><svg
+        role="presentation"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-button__icon"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125"
+        />
+      </svg>
+      <span class="is-invisible">Edit this page on GitHub</span></a
+    >
+    
+    
+  </nav>
+</footer>
+
+
+</article>
+
+
+    </main><footer class="l-layout__footer l-footer">
+  <a
+    class="l-footer__github e-button e-button--icon"
+    href="https://github.com/CodeYourFuture/immersive-go-course/"
+  >
+    <svg
+      focusable="false"
+      class="e-button__icon"
+      role="presentation"
+      viewbox="0 0 98 96"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+        fill="currentColor"
+      />
+    </svg>
+    <span class="is-invisible">Find us on GitHub</span>
+  </a>
+  <p class="l-footer__impressum e-heading__6">
+    This
+    <a href="https://github.com/CodeYourFuture/immersive-go-course/"
+      >free and open source engineering programme</a
+    >
+    is a project of
+    <a href="https://codeyourfuture.io">Code Your Future</a>
+    <br />
+    This work is licensed under a Creative Commons Attribution-ShareAlike 4.0
+    International License.
+  </p>
+  <button
+    id="mode-toggle"
+    class="e__button--toggle e-button--icon l-footer__mode"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="e-icon e__button__icon e-icon--moon"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+      />
+    </svg>
+
+    <span class="is-invisible">Toggle between light and dark mode</span>
+  </button>
+</footer>
+
+  
+
+<script>
+  function randomBG() {
+    const style = document.createElement("style");
+    style.textContent = `body, html {background-image:url("\/pictures/svgs/neons/nnneon.svg"),url("\/pictures/svgs/quads/qqquad-5.svg"),radial-gradient(circle,var(--theme-color--paper) 0%,var(--theme-color--block) 50%,var(--theme-color--paper) 100%);
+      background-size: cover;
+    }`;
+
+    document.head.appendChild(style);
+  }
+
+  window.addEventListener("load", randomBG);
+</script>
+
+
+<script src="/scripts/app.min.js" defer></script>
+
+
+</div>
+</body>

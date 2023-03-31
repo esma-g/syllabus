@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Guides on Syllabus</title>
+    <link>/guides/</link>
+    <description>Recent content in Guides on Syllabus</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/guides/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>/guides/intro-to-tests/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/guides/intro-to-tests/</guid>
+      <description>Introduction to tests What does this cover This introduction is designed to give you a high-level overview on the basics of testing, which you&amp;rsquo;ll need when you&amp;rsquo;re tackling the problems in your coursework at Code Your Future. In this introduction to testing we&amp;rsquo;ll cover the following things:
+Why test ? Code specification What is a test ? Anatomy of a test ( using Jest ) Running tests Understanding test feedback ( using Jest ) Why test ?</description>
+    </item>
+    
+    <item>
+      <title>Asking Questions</title>
+      <link>/guides/asking-questions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/guides/asking-questions/</guid>
+      <description>Asking Questions Often trainees at Code Your Future find it difficult to get help. This is because we are dealing with complicated questions that people need lots of details about to be able to answer. To debug code, mentors need to be able to see and work with the exact code you are running. To help solve problems, mentors need to understand the exact problem you are working on. So when you ask questions, to get proper help quickly, put as much context into your question as you can.</description>
+    </item>
+    
+    <item>
+      <title>Code Style Guide</title>
+      <link>/guides/code-style-guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/guides/code-style-guide/</guid>
+      <description>Why should I read this? There are many different ways of writing code that achieve the same goal. However, programmers generally agree that there are some ways of writing code that are more understandable and readable than other ways.
+To help write more understandable code, programmers follow a style guide. It provides guidelines for how to write code, how to structure it, common problems to avoid, etc.
+Before you start Using Prettier to format code automatically Some of the guidelines are so common that there are automatic tools to do it for you!</description>
+    </item>
+    
+    <item>
+      <title>Coding 101</title>
+      <link>/guides/coding-101/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/guides/coding-101/</guid>
+      <description>What we will learn today?
+What is a computer program? Getting started with JavaScript What is a computer program Intro to programming logic – Making a sandwich (Source: http://static.zerorobotics.mit.edu/docs/team-activities/ProgrammingPeanutButterAndJelly.pdf)
+Ask the trainees what they think a program is at its most basic level Guide, if necessary, towards the idea that its instructions or an action etc. Focus on the idea of instructions: Explain that like with a physical activity - tools and steps are required to carry out instructions Introduce the group activity of programming the activity of making a sandwich Ask the trainees what items we will need to make a sandwich: As they shout them out list them on the screen for the whole class to see Introduce the concept of objects and classes.</description>
+    </item>
+    
+    <item>
+      <title>Creating a React App</title>
+      <link>/guides/create-a-react-app/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/guides/create-a-react-app/</guid>
+      <description>The Facebook team behind React have created a tool to help you create and set up React projects. It is called Create React App. The official documentation is available here.
+Install &amp;amp; set up a Create React App by following the steps below:
+Open your terminal and cd to where you keep your projects In your terminal, run (this may take several minutes to complete): npx create-react-app@latest pokedex --use-npm --template @codeyourfuture (Note: for the React module lessons, you should name your app pokedex, but if you are creating another app, you can name it whatever you like.</description>
+    </item>
+    
+    <item>
+      <title>Deploying to Netlify</title>
+      <link>/guides/deployment-netlify/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/guides/deployment-netlify/</guid>
+      <description>In this guide, we&amp;rsquo;ll learn how to set up automatic website deployment.
+Deploying is the process of making your site available to everyone on the internet. This is important so you can share your site with the world! Using GitHub and Netlify we can set up automatic deployment, so that every time you update your site it is deployed!
+Guide Content Deploying Your First Site How to set up automatic deployment for your first site.</description>
+    </item>
+    
+    <item>
+      <title>Deploying to Render</title>
+      <link>/guides/deployment-render/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/guides/deployment-render/</guid>
+      <description>In this guide, we&amp;rsquo;ll learn how to set up automatic website deployment to Render.
+:::tip
+This guide is intended for trainees completing the Node, Databases or Final Projects. If you have not reached this part of the course yet, please use the Netlify Deployment guide instead.
+:::
+Guide Content How to connect your GitHub account to Render How to connect your GitHub account to Render How to deploy a server on Render How to deploy a server on Render How to create a PostgreSQL Database on Render How to create a PostgreSQL Database on Render Connecting a client to a database on Render Connecting a client to a database on Render </description>
+    </item>
+    
+    <item>
+      <title>How to get help</title>
+      <link>/guides/escalation-policy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/guides/escalation-policy/</guid>
+      <description>When you get stuck during the coursework you should follow the following:
+1) Search Online First, when you get stuck you should search online for the answer to your problem. This is a key skill that is really great for you to develop.
+Good websites to find solutions are
+StackOverflow Be careful that you only use Answers to questions that are quite recent. Programming moves quickly! W3Schools These are beginners guides to many web technologies YouTube Finding a good explainer video can be a good way to gain an overview of the area you are having problems with If you have an error message, copy and paste it into Google.</description>
+    </item>
+    
+    <item>
+      <title>React Cheatsheet</title>
+      <link>/guides/react-cheatsheet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/guides/react-cheatsheet/</guid>
+      <description>Recipes Recipe Links Including an image in your React app https://codesandbox.io/s/showing-images-in-create-react-app-tyyd9?file=/src/App.js Including an image in your React app (alternative method) https://codesandbox.io/s/showing-images-in-create-react-app-0n77h?file=/src/App.js Importing a CSS file into your React component https://codesandbox.io/s/using-css-in-create-react-app-2cu6y?file=/src/App.js Including a custom font in your React app https://codesandbox.io/s/using-custom-fonts-into-create-react-app-tjw28?file=/src/App.js Mapping over an array with JSX https://codesandbox.io/s/mapping-over-an-array-with-jsx-qsqzh?file=/src/App.js Conditional rendering with JSX https://codesandbox.io/s/conditional-rendering-with-jsx-b2ryk?file=/src/App.js Quick React setup https://codesandbox.io/s/affectionate-dream-fmg69?file=/src/App.js Using a 3rd-party library in your React app (example: &amp;ldquo;lodash&amp;rdquo;) In your terminal, run the following command:</description>
+    </item>
+    
+    <item>
+      <title>Reviewing</title>
+      <link>/guides/marking-guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/guides/marking-guide/</guid>
+      <description>How To Evaluate Coursework Details on how we give feedback in code review are on the docs site:
+Coursework Feedback Docs
+Overview Completeness The code achieves all of the tasks in the coursework [read more about completeness] The code achieves the task in an intended way and solves the &amp;ldquo;general&amp;rdquo; problem [read more about intention] The code covers all edge cases [read more about edge cases] The code does not contain any obvious bugs The code handles error responses as well as success responses [read more about errors] Code Style The code follows a consistent style The code follows CodeYourFuture&amp;rsquo;s coding standards: [read more about coding standards] The code is well indented: [read more about indentation] The code uses good variable names: [read more about naming variables] The code uses good function names: [read more about naming functions] The code uses code which is easy to read and understand: [read more about readability] The code should not use hard coded values: [read more about hard coded values] Clarity The code is broken up into small reusable functions: [read more about small functions] Code is not repeated in several locations of the coursework: [read more about DRY] The coursework does not have commented out code: [read more about commented out code] There is no dead code in the coursework: [read more about unreachable code] There is no extra or debug logging: [read more about debug logging] Explanations Complete All Tasks Completion of all of the tasks is essential.</description>
+    </item>
+    
+    <item>
+      <title>Useful Links</title>
+      <link>/guides/useful-links/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/guides/useful-links/</guid>
+      <description>This page aims to give you the best links for working as a developer and improving your skills.
+This developer roadmap gives a very good overview of what a senior developer should know or be aware of in the modern front-end, back-end or devops world. It&amp;rsquo;s useful as something to aim for, but remember it&amp;rsquo;s impossible to be extremely good at all of this so don&amp;rsquo;t feel overwhelmed! Front-end development The Front-end Developer Handbook is an amazing resource containing everything related to front-end development.</description>
+    </item>
+    
+    <item>
+      <title>What we teach and why</title>
+      <link>/guides/paradigm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/guides/paradigm/</guid>
+      <description>What are we actually teaching? We can only teach a subset of programming in our syllabus and because we teach React, that means that we teach functional programming. Further, we teach declarative programming. Our strategy is to build a coherent journey in programming that guides our trainees to their final project with the tools to write great React code. After this, they will go off into many different directions, and they should!</description>
+    </item>
+    
+  </channel>
+</rss>

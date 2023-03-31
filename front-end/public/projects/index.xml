@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on CYF&#43;</title>
+    <link>/projects/</link>
+    <description>Recent content in Projects on CYF&#43;</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Batch Processing</title>
+      <link>/projects/batch-processing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/batch-processing/</guid>
+      <description>In this project, you&amp;rsquo;ll build a simple image processing pipeline: reading a list of image URLs from a CSV file, downloading each image, processing it, and uploading it to cloud storage.
+⚠️ This project requires you to have access to an Amazon AWS account, with permissions to configure IAM and S3. Ask on CYF Slack for help with that.
+⚠️ You need a GitHub repo to complete this because we&amp;rsquo;ll be using GitHub Actions.</description>
+    </item>
+    
+    <item>
+      <title>Buggy App</title>
+      <link>/projects/buggy-app/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/buggy-app/</guid>
+      <description>In this project, you&amp;rsquo;re going to run, debug, and fix a buggy application. This code here is a &amp;ldquo;notes&amp;rdquo; application with users and notes. It simulates a real-world application that has grown and developed over time: the code isn&amp;rsquo;t perfect, there are tests missing and it contains bugs. The task is to find and fix these bugs. There are at least 5 distinct and important bugs for you to find a fix.</description>
+    </item>
+    
+    <item>
+      <title>CLI &amp; Files</title>
+      <link>/projects/cli-files/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/cli-files/</guid>
+      <description>In this project you&amp;rsquo;re going to get familiar with the Go programming language by rebuilding two very common tools that programmers and computer administrators use all the time: cat and ls.
+Timebox: 4 days
+Objectives: Install and use cobra Use go build/go install/go get etc Understand what a process is &amp;amp; the basics of process - lifecycle Accept arguments on the CLI Open, read (and close) files from CLI arguments Reading directories for files Project You&amp;rsquo;re going to build a command-line application that reads data from your computer&amp;rsquo;s file system.</description>
+    </item>
+    
+    <item>
+      <title>Distributed Cron Based on Kafka</title>
+      <link>/projects/kafka-cron/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/kafka-cron/</guid>
+      <description>In this project we&amp;rsquo;re going to build a simple distributed cron system, based on the Apache Kafka distributed queue system.
+Note: This project requires us to have Docker with Compose installed. Compose is a tool for defining and running multi-container Docker applications. With Compose, we use a YAML file to configure the application’s services. Then, with a single command, we create and start all the services from the configuration.
+Learning Objectives How can we use a distributed queue in software architecture?</description>
+    </item>
+    
+    <item>
+      <title>Docker &amp; Cloud Deployment</title>
+      <link>/projects/docker-cloud/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/docker-cloud/</guid>
+      <description>In this project, you&amp;rsquo;ll build a simple Go server application and Dockerise it to run within a container. You&amp;rsquo;ll write tests that run against the container, and then build GitHub actions to automate continuous testing and release of the application. You&amp;rsquo;ll then run it in the cloud by pushing the container image to Amazon AWS Elastic Container Repository, and then launch it in Amazon AWS Elastic Container Service using the user interface.</description>
+    </item>
+    
+    <item>
+      <title>File Parsing</title>
+      <link>/projects/file-parsing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/file-parsing/</guid>
+      <description>In this project we&amp;rsquo;ll practice parsing data from files in different formats.
+Many larger projects require reading configuration data or files, and often times it&amp;rsquo;s also convenient to write a small program to understand or process some data, and being comfortable quickly doing so can be very helpful.
+Timebox: 2 days
+Objectives: Write Go code to parse data in non-standard formats. Write tests for Go code. Become comfortable leveraging libraries to parse standard formats in slightly non-standard ways.</description>
+    </item>
+    
+    <item>
+      <title>GRPC Client and Server Communication</title>
+      <link>/projects/grpc-client-server/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/grpc-client-server/</guid>
+      <description>Timebox: 3 days
+Learning objectives: Learn what gRPC is and how it differs from HTTP Understand what kinds of issues can occur in a real system and how to defend against them Learn what observability is, and what are some kinds of observability you&amp;rsquo;d find in use in production? What is gRPC? We&amp;rsquo;ve used simple HTTP request so far, making and handling GET and POST requests.
+RPC is another way to communicate between clients and servers (or frontends and backends).</description>
+    </item>
+    
+    <item>
+      <title>Memcached Clusters: Replicated and Sharded</title>
+      <link>/projects/memcached-clusters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/memcached-clusters/</guid>
+      <description>This project should be done after reading Section 2 of the Distributed Systems Primer.
+Timebox: 2 days
+Learning objectives: Understand the differences between sharded and replicated datastores Use mcrouter, a widely-used proxy that can be used to create both sharded and replicated memcached clusters Read about mcrouter Read the FaceBook Engineering mcrouter blog post.
+Running A Replicated Memcached Cluster Make sure you have Docker and Docker Compose installed on your machine.</description>
+    </item>
+    
+    <item>
+      <title>Multiple servers</title>
+      <link>/projects/multiple-servers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/multiple-servers/</guid>
+      <description>Create file server to serve static HTML files. Create an API server that serves JSON from a database. Run the API and file server as two separate servers. Try to load the website &amp;amp; see CORS issue. Put nginx in front of the file server and the API so they are on a single port and hostname. Learn about how to run services in VMs in the cloud. Replicate this local setup in the cloud on a single VM, with all services running on the same host.</description>
+    </item>
+    
+    <item>
+      <title>Output and Error Handling</title>
+      <link>/projects/output-and-error-handling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/output-and-error-handling/</guid>
+      <description>In this project you&amp;rsquo;re going to get familiar with conventions around output and exit codes. You will learn about error handling, and how to apply these in the Go programming language.
+Timebox: 3 days
+Learning Objectives: Write to standard out and standard error Exit programs with conventional exit codes Explain when to propagate errors Decide when to wrap errors, and terminate due to errors. Project Most programs can run into problems.</description>
+    </item>
+    
+    <item>
+      <title>RAFT implementation</title>
+      <link>/projects/raft-otel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/raft-otel/</guid>
+      <description>RAFT implementation with Distributed Tracing In this project we&amp;rsquo;re going to build (or reuse) an implementation of RAFT, a distributed consensus algorithm, and we are going to use distributed tracing to understand its behaviour.
+Learning Objectives
+How is distributed tracing different from logging and from metrics? How can we use distributed tracing to get a detailed understanding of complex application behaviour? How can costs of distributed tracing be minimized? Timebox: 5 days</description>
+    </item>
+    
+    <item>
+      <title>Server and database</title>
+      <link>/projects/server-database/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/server-database/</guid>
+      <description>In this project, we will build another server. This one will have a simple API that serves data in JSON form. We will them convert the backend to read from a Postgres database, serving data for the API. We will then turn off the database and learn how to handle errors correctly.
+Timebox: 6 days
+Learning objectives: Build a simple API server that talks JSON Understand how a server and a database work together Use SQL to read data from a database Accept data over a POST request and write it to the database Project We&amp;rsquo;re going to be using JSON in this project.</description>
+    </item>
+    
+    <item>
+      <title>Servers &amp; HTTP requests</title>
+      <link>/projects/http-auth/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/http-auth/</guid>
+      <description>In this project we are going to learn about long-lived processes, some networking and the fundamentals of HTTP.
+Timebox: 6 days
+Learning objectives: Use Go&amp;rsquo;s net/http package to build start a simple server that responds to local requests Get to know HTTP GET and response codes Get familiar with cURL Define URL, header, body and content-type Accept parameters in via GET in the query string Accept data via a POST request Setup authentication via basic HTTP auth Write tests for the above Project Making an HTTP server Create a new go module in this http-auth directory: go mod init http-auth.</description>
+    </item>
+    
+  </channel>
+</rss>

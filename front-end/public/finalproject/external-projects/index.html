@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en-gb">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Syllabus</title>
+    <meta name="description" content="A free and open source immersive engineering programme. Practical, hands on projects in Go, distributed systems engineering, site reliability engineering, software engineering. Pace, scale, and complexity." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        animation: fade-in 0.2s;
+      }
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+     
+    <link
+      rel="stylesheet"
+      href="/bundled.min.6dc51603c53e46fdfe64b6dbf2f1a977.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="/bundled.min.6dc51603c53e46fdfe64b6dbf2f1a977.css" />
+    </noscript>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;700&family=Major+Mono+Display&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/favicons/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicons/favicon.ico" />
+    <meta name="apple-mobile-web-app-title" content="CYF+" />
+    <meta name="application-name" content="CYF+" />
+    <meta name="msapplication-TileColor" content="#9f00a7" />
+    <meta
+      name="msapplication-config"
+      content="/favicons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#00ff90" />
+  </head>
+</html>
+<body class="is-light-mode">
+  <a class="c-skip-link e-button" id="skip-link" href="#main">Skip to main</a>
+  <div class="l-layout">
+    <header class="l-layout__header l-header">
+  <div class="l-header__nav">
+    <h1 class="l-header__heading">
+      <a class="l-header__home" href="/">Syllabus</a>
+    </h1>
+
+    <button
+      class="l-header__action e-button e-button--icon js-menu-toggle is-fixed"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-button__icon l-header__icon"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+        />
+      </svg>
+
+      <span class="is-invisible">Open Menu.</span>
+    </button>
+  </div>
+</header>
+ <nav
+  class="l-layout__menu l-menu"
+  aria-label="Main Site Links."
+  id="site-menu"
+  hidden
+  tabindex="0"
+>
+  <div class="l-menu__container">
+    <h2 class="l-menu__heading e-heading__2">
+      <a href="/" class="l-menu__home">Syllabus</a>
+    </h2>
+    <button
+      class="l-menu__action e-button e-button--icon js-menu-toggle"
+      id="close-menu"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-button__icon"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18L18 6M6 6l12 12"
+        />
+      </svg>
+
+      <span class="is-invisible">Close Menu.</span>
+    </button>
+    <ul class="l-menu__primary e-list">
+      <li class="l-menu__item e-list__item">
+        <a class="l-menu__link e-link e-heading__1" href="/about">About</a>
+      </li>
+      <li class="l-menu__item e-list__item">
+        <a class="l-menu__link e-link e-heading__1" href="/versions"
+          >Versions</a
+        >
+      </li>
+      <li class="l-menu__item e-list__item">
+        <a class="l-menu__link e-link e-heading__1" href="/projects"
+          >Projects</a
+        >
+      </li>
+      <li class="l-menu__item e-list__item">
+        <a class="l-menu__link e-link e-heading__1" href="/primers">Primers</a>
+      </li>
+    </ul>
+
+    <div class="l-menu__secondary">
+      
+      <a class="l-menu__link e-link" href="#skip-link">
+        <span class="is-invisible">To top</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          width="48px"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="l-menu__icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3 4.5h14.25M3 9h9.75M3 13.5h5.25m5.25-.75L17.25 9m0 0L21 12.75M17.25 9v12"
+          />
+        </svg>
+      </a>
+      
+    </div>
+  </div>
+
+  <img
+    src="/pictures/depths/dddepth--005.webp"
+    alt=""
+    class="l-menu__bg"
+  />
+</nav>
+
+    <main id="main" class="l-layout__main l-main" tabindex="0">
+      
+
+<article>
+  <header class="l-page__header c-page-header">
+    <div class="c-page-header__container">
+      <div class="c-page-header__breadcrumbs">
+        
+<nav class="c-breadcrumbs">
+  <ol class="c-breadcrumbs__list">
+    <li class="c-breadcrumbs__item">
+      <a class="c-breadcrumbs__link" href="/finalproject/">Finalprojects</a>
+    </li>
+  </ol>
+</nav>
+
+
+      </div>
+      <h1
+        class="c-page-header__title e-heading__1 is-invisible"
+      >
+        External Projects
+      </h1>
+        
+
+  
+
+  
+
+
+  
+      <section class="c-page-header__toc c-toc" id="toc">
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#past-projects">Past Projects</a></li>
+    <li><a href="#goals">Goals</a></li>
+    <li><a href="#we-will-need-a-product-owner-from-your-organisation-on-the-team">We will need a Product Owner from your organisation on the team</a></li>
+    <li><a href="#what-is-a-good-project">What is a Good Project?</a>
+      <ol>
+        <li><a href="#functionality">Functionality</a></li>
+        <li><a href="#technical-functionality">Technical Functionality</a></li>
+        <li><a href="#limitations">Limitations</a></li>
+      </ol>
+    </li>
+    <li><a href="#next-steps">Next Steps</a>
+      <ol>
+        <li><a href="#1-details-form">1) Details Form</a></li>
+        <li><a href="#2-design-mock-ups">2) Design Mock-Ups</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+      </section>
+      
+    </div>
+  </header>
+
+  <section class="l-page__main c-copy"><p>At CodeYourFuture we try to find interesting, tech-for-good projects that stretch the abilities of our trainees whilst helping an NGO or Charity solve a business problem they are facing.</p>
+<p>If you are one of these charities, or know one we could work with, you can find more information below.</p>
+<h2 id="past-projects">Past Projects</h2>
+<p>Here are examples of web apps we built as a Final Project:</p>
+<ul>
+<li><a href="https://over-the-line.uk/">Over The Line with The Compass Collective</a></li>
+<li><a href="https://ldn8-horizon-chatterbox-talent.netlify.app/">Chatterbox Talents</a></li>
+<li><a href="https://bugsquashers-edu.netlify.app/">The Breteau Foundation</a></li>
+<li><a href="https://akwaaba.netlify.app/">Akwaaba</a></li>
+</ul>
+<p>You can find example project briefs on the <a href="./projects">Project Brief page</a>.</p>
+<h2 id="goals">Goals</h2>
+<p>With the final projects, we’re looking to give our trainees:</p>
+<ul>
+<li>Experience of collaborating in a team to deliver software</li>
+<li>An opportunity to solve real world business problems</li>
+<li>The chance to bring together the different things they’ve learned</li>
+<li>A real example to talk about in job interviews and guide their interests</li>
+</ul>
+<p>and to give our partners:</p>
+<ul>
+<li>A useful piece of software that they can use as-is or build on after the project</li>
+</ul>
+<p>More details can be found on the <a href="./intro">Intro</a> and <a href="./prep">Preparation</a> pages.</p>
+<h2 id="we-will-need-a-product-owner-from-your-organisation-on-the-team">We will need a Product Owner from your organisation on the team</h2>
+<p>Having an active Product Owner leads to faster delivery with better solutions.</p>
+<p>Historically, one of the most common blockers to a successful project has been slow communication between stakeholders and our trainees. Trainees may likely become blocked, spin wheels, or go off on a tangent if they have a burning question and can&rsquo;t get it answered.</p>
+<p>In an ideal world, you are able to answer trainee questions within one working day. If this might not be possible, let us know and we will select an Internal Product Manager who will be empowered to make decisions on your behalf.</p>
+<p>The <a href="https://docs.codeyourfuture.io/volunteers/teams-1/cyf-products-final-projects/roles/product-owner">Product Owner role</a> and commitment is described in detail on our docs.</p>
+<h2 id="what-is-a-good-project">What is a Good Project?</h2>
+<p>It&rsquo;s important that the projects that we work on fulfill some base requirements to make sure they go smoothly.</p>
+<p>All Final Projects aim to be a <a href="https://www.agilealliance.org/glossary/mvp/">Minimum Viable Product</a>. This means they may be rough around the edges but have all of the core functionality working.</p>
+<h3 id="functionality">Functionality</h3>
+<p>A Good Final Project should have the following qualities</p>
+<ol>
+<li>
+<p>Be an interactive website</p>
+<ul>
+<li>This means a website that a user can interact with to create, read, upload, delete data.</li>
+<li>For example, a photo hosting service, Q+A Service or Custom Events Platform would fulfil this criteria</li>
+<li>A static website like the <a href="https://www.codeyourfuture.io">CodeYourFuture website</a> would <strong>not</strong></li>
+</ul>
+</li>
+<li>
+<p>Be completable in four weeks of work</p>
+<ul>
+<li>This means the website should not be too large that they can&rsquo;t finish it or too small that they complete it too quickly</li>
+<li>For example, a newsletter sign-up form would be too small</li>
+<li>For example, a full content management system would be too large</li>
+</ul>
+</li>
+<li>
+<p>Be well-defined</p>
+<ul>
+<li>This means that from day one our trainees understand what they are building</li>
+<li>For example, a well defined project should be able to answer using <a href="https://www.mountaingoatsoftware.com/agile/user-stories">User Stories</a> <strong>all</strong> of the functionality of the project</li>
+<li>We <strong>can</strong> work with Charities to define projects if they contact us early enough</li>
+</ul>
+</li>
+</ol>
+<h3 id="technical-functionality">Technical Functionality</h3>
+<p><em>Don&rsquo;t know what anything here means? That&rsquo;s fine! The above section covers this in less technical details</em></p>
+<p>We use the following technologies at CodeYourFuture</p>
+<ul>
+<li>JavaScript</li>
+<li>React</li>
+<li>Node with Express</li>
+<li>MongoDB or PostgreSQL</li>
+</ul>
+<p>An external Final Project should use all of these technologies into a single Full Stack package. This is important as we want our trainees to use all of the skills that they have learnt in our course.</p>
+<p>If your tech stack is far outside of the above core frameworks, send your project anyway and we will assess it case-by-case.</p>
+<h3 id="limitations">Limitations</h3>
+<p>As Junior Developers, our trainees do have some limits on what they can produce</p>
+<ul>
+<li>Visual Design Complexity
+<ul>
+<li>An overly complex design will take a lot longer for our trainees to develop. Try to keep your designs simple and functional.</li>
+</ul>
+</li>
+<li>Instant Answers
+<ul>
+<li>You shouldn&rsquo;t expect our trainees to be able to give instant answers to any technical questions you might have. They will get there with time however!</li>
+</ul>
+</li>
+</ul>
+<h2 id="next-steps">Next Steps</h2>
+<h3 id="1-details-form">1) Details Form</h3>
+<p>A good next step to getting started with defining your project is to complete this form.</p>
+<p><a href="https://forms.gle/Gn85Kdna6QB2Qfcp9">CodeYourFuture - Projects Specification Form</a></p>
+<p>It is important that you answer all of these questions in <strong>as much</strong> details as possible. Even irrelevant details will help us understand what you are trying to achieve.</p>
+<h3 id="2-design-mock-ups">2) Design Mock-Ups</h3>
+<p>Finally, you should work with us to create some simple designs of your product. This will give us insight into exactly what you want. These will not be the final designs of what we will be building; they&rsquo;re just a tool to help us work out what you want built.</p>
+<p>You needn&rsquo;t use any specialised tools to design this. Paint or Pen &amp; Paper will do for this step. If you want to use a digital tool we recommend <a href="https://excalidraw.com/">Excalidraw</a>.</p>
+<p>Try to think about how each individual page will look. Will the user need to create an account? Think of the form they will need to fill in. Does the user view content on a page? What content should be included?</p>
+<p>Get in contact with your local Programme Manager to arrange this.</p>
+</section>
+
+  
+
+</article>
+
+
+    </main><footer class="l-layout__footer l-footer">
+  <a
+    class="l-footer__github e-button e-button--icon"
+    href="https://github.com/CodeYourFuture/syllabus/"
+  >
+    <svg
+      focusable="false"
+      class="e-button__icon"
+      role="presentation"
+      viewbox="0 0 98 96"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+        fill="currentColor"
+      />
+    </svg>
+    <span class="is-invisible">Find us on GitHub</span>
+  </a>
+  <p class="l-footer__impressum e-heading__6">
+    This
+    <a href="https://github.com/CodeYourFuture/syllabus/"
+      >free and open source engineering programme</a
+    >
+    is a project of
+    <a href="https://codeyourfuture.io">Code Your Future</a>
+    <br />
+    This work is licensed under a Creative Commons Attribution-ShareAlike 4.0
+    International License.
+  </p>
+  <button
+    id="mode-toggle"
+    class="e__button--toggle e-button--icon l-footer__mode"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="e-icon e__button__icon e-icon--moon"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+      />
+    </svg>
+
+    <span class="is-invisible">Toggle between light and dark mode</span>
+  </button>
+</footer>
+
+  
+
+<script>
+  function randomBG() {
+    const style = document.createElement("style");
+    style.textContent = `body, html {background-image:url("\/pictures/svgs/neons/nnneon.svg"),url("\/pictures/svgs/quads/qqquad-04.svg"),radial-gradient(circle,var(--theme-color--paper) 0%,var(--theme-color--block) 50%,var(--theme-color--paper) 100%);
+      background-size: cover;
+    }`;
+
+    document.head.appendChild(style);
+  }
+
+  window.addEventListener("load", randomBG);
+</script>
+
+
+<script src="/scripts/app.min.js" defer></script>
+
+
+</div>
+</body>

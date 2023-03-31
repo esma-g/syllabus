@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Syllabus</title>
+    <link>/</link>
+    <description>Recent content on Syllabus</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>/guides/intro-to-tests/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/guides/intro-to-tests/</guid>
+      <description>Introduction to tests What does this cover This introduction is designed to give you a high-level overview on the basics of testing, which you&amp;rsquo;ll need when you&amp;rsquo;re tackling the problems in your coursework at Code Your Future. In this introduction to testing we&amp;rsquo;ll cover the following things:
+Why test ? Code specification What is a test ? Anatomy of a test ( using Jest ) Running tests Understanding test feedback ( using Jest ) Why test ?</description>
+    </item>
+    
+    <item>
+      <title>[Class Name]</title>
+      <link>/contributing/example/lesson-template/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/contributing/example/lesson-template/</guid>
+      <description>Learning Objectives By the end of this lesson a trainee will be able to
+Do X Describe Y List Z Contents Topic 1 Topic 1.1 Topic 2 Topic 3 Topic 4 Topic 1 High level explanation of Topic 1 - rely on the exercises
+Exercise 1: Always have exercises
+Exercise 2: Always have exercises
+Harder Exercise 3: Always have exercises
+Topic 2 High level explanation of Topic 2 - rely on the exercises</description>
+    </item>
+    
+    <item>
+      <title>Asking Questions</title>
+      <link>/guides/asking-questions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/guides/asking-questions/</guid>
+      <description>Asking Questions Often trainees at Code Your Future find it difficult to get help. This is because we are dealing with complicated questions that people need lots of details about to be able to answer. To debug code, mentors need to be able to see and work with the exact code you are running. To help solve problems, mentors need to understand the exact problem you are working on. So when you ask questions, to get proper help quickly, put as much context into your question as you can.</description>
+    </item>
+    
+    <item>
+      <title>AWS &amp; DynamoDB Workshop</title>
+      <link>/workshops/aws-dynamodb-workshop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workshops/aws-dynamodb-workshop/</guid>
+      <description>What we will learn today?
+Databases overview MongoDB Mongo Shell Mongo with Node Before we start Download and install MongoDb from https://www.mongodb.com/download-center#community. Follow the instructions for your platform (Windows, Linux or OS X).
+Also download and install RoboMongo from https://robomongo.org/download.
+Open two instances of terminal. Run mongod—this will start MongoDB then run mongo on the other window.
+In the mongo shell (terminal), run the command version() and you should get the version of Mongo printed on the terminal</description>
+    </item>
+    
+    <item>
+      <title>Branches</title>
+      <link>/git/branches/branches/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/git/branches/branches/</guid>
+      <description>import Feedback from &amp;ldquo;@theme/Feedback&amp;rdquo;;
+Learning objectives By the end of this class, you should be able to:
+Explain why branches can be useful when using Git. Create a branch, and add commits to it. Switch between branches. Create a pull request from a branch to the main branch. Work with another trainee on non-conflicting changes to a single branch. So far, we&amp;rsquo;ve seen that we can use Git to share our work, get code review, and view history.</description>
+    </item>
+    
+    <item>
+      <title>Code Style Guide</title>
+      <link>/guides/code-style-guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/guides/code-style-guide/</guid>
+      <description>Why should I read this? There are many different ways of writing code that achieve the same goal. However, programmers generally agree that there are some ways of writing code that are more understandable and readable than other ways.
+To help write more understandable code, programmers follow a style guide. It provides guidelines for how to write code, how to structure it, common problems to avoid, etc.
+Before you start Using Prettier to format code automatically Some of the guidelines are so common that there are automatic tools to do it for you!</description>
+    </item>
+    
+    <item>
+      <title>Coding 101</title>
+      <link>/guides/coding-101/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/guides/coding-101/</guid>
+      <description>What we will learn today?
+What is a computer program? Getting started with JavaScript What is a computer program Intro to programming logic – Making a sandwich (Source: http://static.zerorobotics.mit.edu/docs/team-activities/ProgrammingPeanutButterAndJelly.pdf)
+Ask the trainees what they think a program is at its most basic level Guide, if necessary, towards the idea that its instructions or an action etc. Focus on the idea of instructions: Explain that like with a physical activity - tools and steps are required to carry out instructions Introduce the group activity of programming the activity of making a sandwich Ask the trainees what items we will need to make a sandwich: As they shout them out list them on the screen for the whole class to see Introduce the concept of objects and classes.</description>
+    </item>
+    
+    <item>
+      <title>Coursework</title>
+      <link>/contributing/example/homework-template/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/contributing/example/homework-template/</guid>
+      <description>Resources Resource 1 to learn more about Topic 1 Resource 2 for Topic 2 Coursework First part of Homework - Easy Second part of Homework - Intermediate/Hard [Bonus/Optional] Third part/optional - Hardest Research: Prepare for the next class Read this Some Tutorial or Video etc&amp;hellip; </description>
+    </item>
+    
+    <item>
+      <title>Coursework</title>
+      <link>/git/branches/homework/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/git/branches/homework/</guid>
+      <description>1) Read the Lesson Page Content (2 Hours) Before starting this coursework, read through the lesson and complete the exercies.
+2) Make and review pull requests with a partner (15 minutes) Find a partner to work with from your class.
+In the lesson exercises, you made two branches (one with a story, one with an extra ingredient). Make pull requests for both of your branches, and ask them to review your two pull requests.</description>
+    </item>
+    
+    <item>
+      <title>Coursework</title>
+      <link>/git/cli/homework/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/git/cli/homework/</guid>
+      <description>1) Read the Lesson Page Content (60 minutes) Before starting this coursework, read through the lesson and read the cheatsheet.
+https://syllabus.codeyourfuture.io/git/cli/lesson
+2) Git and Github for Poets (3 Hours) This video series gives you a good introduction to lots of different Git concepts on the command line. You might recognise the presenter from the Terminal week!
+https://www.youtube.com/watch?v=BCQHnlnPusY&amp;amp;list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV
+Watch videos 1-8 in this series, taking notes when you don&amp;rsquo;t understand something.</description>
+    </item>
+    
+    <item>
+      <title>Coursework</title>
+      <link>/git/desktop/homework/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/git/desktop/homework/</guid>
+      <description>1) Tell us about you - using Github! (1 hour) Follow the instructions in this repository to submit a description about yourself.
+This is how you&amp;rsquo;ll be submitting a lot of your homework in this course so please let us know if you have any challenges with doing it.
+https://github.com/CodeYourFuture/GitHomeworkTest
+2) Upload your Website to Github (2 Hours) To apply for this course you had to complete a website using what you&amp;rsquo;ve learnt so far.</description>
+    </item>
+    
+    <item>
+      <title>Coursework</title>
+      <link>/git/terminal/homework/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/git/terminal/homework/</guid>
+      <description>1) Read the Lesson Page Content (60 minutes) Before starting this coursework, read through the lesson and complete the exercises.
+https://syllabus.codeyourfuture.io/git/terminal/lesson
+2) Watch this video (15 minutes) This video gives a good, accessible introduction to the command line
+https://www.youtube.com/watch?v=oK8EvVeVltE
+3) OpenClassroom - Learn the Command Line in Terminal (4 Hours) This OpenClassroom course will take you through the basics of the learning the Terminal.
+Note: You do not need to use any additional software to complete this course.</description>
+    </item>
+    
+    <item>
+      <title>Creating a React App</title>
+      <link>/guides/create-a-react-app/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/guides/create-a-react-app/</guid>
+      <description>The Facebook team behind React have created a tool to help you create and set up React projects. It is called Create React App. The official documentation is available here.
+Install &amp;amp; set up a Create React App by following the steps below:
+Open your terminal and cd to where you keep your projects In your terminal, run (this may take several minutes to complete): npx create-react-app@latest pokedex --use-npm --template @codeyourfuture (Note: for the React module lessons, you should name your app pokedex, but if you are creating another app, you can name it whatever you like.</description>
+    </item>
+    
+    <item>
+      <title>Databases (SQL)</title>
+      <link>/db/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/db/</guid>
+      <description>Week Content Workshop Week 1 Introduction to SQL Week 2 More SQL and integration with NodeJS Week 3 More integration with NodeJS Coordination Coordination details for this module can be found on the Module Coordinator&amp;rsquo;s page.</description>
+    </item>
+    
+    <item>
+      <title>Deploying to Netlify</title>
+      <link>/guides/deployment-netlify/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/guides/deployment-netlify/</guid>
+      <description>In this guide, we&amp;rsquo;ll learn how to set up automatic website deployment.
+Deploying is the process of making your site available to everyone on the internet. This is important so you can share your site with the world! Using GitHub and Netlify we can set up automatic deployment, so that every time you update your site it is deployed!
+Guide Content Deploying Your First Site How to set up automatic deployment for your first site.</description>
+    </item>
+    
+    <item>
+      <title>Deploying to Render</title>
+      <link>/guides/deployment-render/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/guides/deployment-render/</guid>
+      <description>In this guide, we&amp;rsquo;ll learn how to set up automatic website deployment to Render.
+:::tip
+This guide is intended for trainees completing the Node, Databases or Final Projects. If you have not reached this part of the course yet, please use the Netlify Deployment guide instead.
+:::
+Guide Content How to connect your GitHub account to Render How to connect your GitHub account to Render How to deploy a server on Render How to deploy a server on Render How to create a PostgreSQL Database on Render How to create a PostgreSQL Database on Render Connecting a client to a database on Render Connecting a client to a database on Render </description>
+    </item>
+    
+    <item>
+      <title>Editing The Syllabus</title>
+      <link>/contributing/pages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/contributing/pages/</guid>
+      <description>This website is built using an open source tool called Docusaurus V2. You can find the full docs for Docusaurus here.
+Editing a Page All documents can be found in the docs folder in their relevant folder.
+All files are written using Markdown.
+Docusaurus also has additionally Markdown functionality that you might find interesting.
+Additionally, you can scroll to the bottom of any page and click the edit button to edit directly in Github.</description>
+    </item>
+    
+    <item>
+      <title>External Projects</title>
+      <link>/finalproject/external-projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/finalproject/external-projects/</guid>
+      <description>At CodeYourFuture we try to find interesting, tech-for-good projects that stretch the abilities of our trainees whilst helping an NGO or Charity solve a business problem they are facing.
+If you are one of these charities, or know one we could work with, you can find more information below.
+Past Projects Here are examples of web apps we built as a Final Project:
+Over The Line with The Compass Collective Chatterbox Talents The Breteau Foundation Akwaaba You can find example project briefs on the Project Brief page.</description>
+    </item>
+    
+    <item>
+      <title>Final Project - Week 1</title>
+      <link>/finalproject/week-1/lesson/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/finalproject/week-1/lesson/</guid>
+      <description>import Feedback from &amp;ldquo;@theme/Feedback&amp;rdquo;;
+Overview Welcome Getting Setup Agile Development What is Agile Development? What is a Product Manager? Daily Stand-ups Sprints Mid-week Check-ins What are we going to build? Sprint Planning Exit criteria and tracking the trainees work Welcome 1. Getting Setup (15 minutes) Once you have your team and your assignment, start by sorting out the basic administrative requirements.
+1.1. Introductions Before we introduce ourselves let&amp;rsquo;s introduce one of the tools we&amp;rsquo;ll be using to collaborate during the project, Miro.</description>
+    </item>
+    
+    <item>
+      <title>Final Project - Week 2</title>
+      <link>/finalproject/week-2/lesson/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/finalproject/week-2/lesson/</guid>
+      <description>import Feedback from &amp;ldquo;@theme/Feedback&amp;rdquo;;
+Overview Demo Retrospective User research Sprint Planning Technical Support Cooling periods Demo (60 minutes) Led by Trainees, presented back to the class
+Integrate all of your work together and share your progress so far with the mentors.
+Your presentation should last no more than five minutes and could include:
+Slides detailing what you&amp;rsquo;ve done this week UI/UX designs of your project A video of your project A live example of your project If you want to prepare a quick presentation you can use this template</description>
+    </item>
+    
+    <item>
+      <title>Final Project - Week 3</title>
+      <link>/finalproject/week-3/lesson/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/finalproject/week-3/lesson/</guid>
+      <description>See Week 2 for instructions for this week. You are working as a team to deliver a product, so will continue using that format through the Final Projects
+Overview Check In Reminder about the tracker and exit criteria Check In: how are the contributions of all team members so far? Here&amp;rsquo;s what we expect: It&amp;rsquo;s important to evaluate our contributions to the group.
+A full stack developer must deliver features that touch each part of the stack.</description>
+    </item>
+    
+    <item>
+      <title>Final Project - Week 4</title>
+      <link>/finalproject/week-4/lesson/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/finalproject/week-4/lesson/</guid>
+      <description>See Week 2 for instructions for this week.
+Make sure to check in again on the contributions per team members, as detailed on Week 3
+Each team must fill out their handover document once they have finished the final project development. This document is important to ensure the Product Owner and technical team that would continue working on this product has all necessary information about what has been done.</description>
+    </item>
+    
+    <item>
+      <title>Final Project Preparation</title>
+      <link>/finalproject/prep/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/finalproject/prep/</guid>
+      <description>Checklist to organise Final Projects Getting the Final Projects ready is not a task that can be done a week before the module. A lot of decisions have to be made beforehand, so this high-level list of the steps Volunteers and PROM (Programme Managers) should do in order to get everything ready for Final Projects. It also has the main links of important documents.
+When you are on the React Module</description>
+    </item>
+    
+    <item>
+      <title>Final Project Roles</title>
+      <link>/finalproject/roles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/finalproject/roles/</guid>
+      <description>In the Final Project we have several roles that volunteers and trainees should adopt.
+These roles should in total create a balanced team. Each team must have at least one of each of the below roles.
+Volunteer Roles Product Manager / Scrum Master Full role description of roles
+Your main role is to coordinate the team and make sure everyone knows what they are working on. They can provide support in:</description>
+    </item>
+    
+    <item>
+      <title>Final Projects</title>
+      <link>/finalproject/intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/finalproject/intro/</guid>
+      <description>Learning Goals During the Project you will work on your technical and communication skills. At the end of this module you&amp;rsquo;ll learn the following:
+Technical skills:
+How to build a complete full-stack application Understanding how each part of an application relates to each other What it means to work on a feature How to work with Git in a team setting How to write readable code Communication skills:
+How to communicate effectively with team members Keeping track of your project&amp;rsquo;s progress Knowing if you understand what&#39;s asked of you How to communicate with non-developers about what you&amp;rsquo;re doing Learning how to be solutions-oriented How to work in a Agile setting Objectives The final projects form the final module of the course, comprising four weeks following the completion of the last teaching-based module (currently the database module).</description>
+    </item>
+    
+    <item>
+      <title>From Github Desktop To CLI</title>
+      <link>/git/desktop/from-desktop-to-cli-cheatsheet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/git/desktop/from-desktop-to-cli-cheatsheet/</guid>
+      <description>Everything that you&amp;rsquo;re going to be doing using Git CLI you can also do using Github Desktop.
+In this page, you&amp;rsquo;ll comparisons of how to complete command tasks on both Github Desktop and Git CLI.
+Viewing Changed Files To view the files that you have changed you can use
+git status This will show a list of files that have changed since the last time that you committed.
+Github Desktop Git CLI Including Files to Commit One key difference between Github Desktop and Git CLI is that you need to set which files will be committed to your repository.</description>
+    </item>
+    
+    <item>
+      <title>Github Desktop Cheatsheet</title>
+      <link>/git/desktop/cheatsheet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/git/desktop/cheatsheet/</guid>
+      <description>I want to get code from a repo onto my computer (Cloning) Follow these steps if you need to get code from a Github repository onto your computer (for example to complete your coursework).
+:::info Github Desktop might look a bit different if are cloning the first repository on your computer. :::
+Video Instructions Open the repository on Github in your browser For most of your coursework this will likely be https://github.</description>
+    </item>
+    
+    <item>
+      <title>Global Syllabus Team Minutes</title>
+      <link>/contributing/minutes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/contributing/minutes/</guid>
+      <description>{DATE HERE} Attendees:
+❗Actions from last time 📝 Agenda points ❗Actions {2023-03-02} Attendees: Sally, Keith, Ali, Greg
+❗Actions from last time Mitch: Invite Keith Bremer to a syllabus meeting Mitch: Raise an issue with acceptance criteria (for restructuring JS1?) Sally: Organise a regular joint PD &amp;amp; Tech syllabus team meetings Ali &amp;amp; Mitch: share concept maps Ali thought he had one for JS but can&amp;rsquo;t find it We have the syllabus from Fatemeh -&amp;gt; Mitch or Greg should share 📝 Agenda points SQL Keith: has a background as a trainer for Oracle + long-term involvement in CYF When you teach it: clear that there is not enough time to properly teach SQL Locking Transactions Aggregate functions Greg: worried that with a medium SQL module we are both failing advanced trainees who are not learning enough, and struggling trainees who need to practice writing small full stack apps Greg: Wish that the last module was a &amp;ldquo;full stack apps&amp;rdquo; module with absolute bare minimum of SQL Greg: Maybe we could have both?</description>
+    </item>
+    
+    <item>
+      <title>How to get help</title>
+      <link>/guides/escalation-policy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/guides/escalation-policy/</guid>
+      <description>When you get stuck during the coursework you should follow the following:
+1) Search Online First, when you get stuck you should search online for the answer to your problem. This is a key skill that is really great for you to develop.
+Good websites to find solutions are
+StackOverflow Be careful that you only use Answers to questions that are quite recent. Programming moves quickly! W3Schools These are beginners guides to many web technologies YouTube Finding a good explainer video can be a good way to gain an overview of the area you are having problems with If you have an error message, copy and paste it into Google.</description>
+    </item>
+    
+    <item>
+      <title>Instructor Notes</title>
+      <link>/contributing/example/instructors-teplate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/contributing/example/instructors-teplate/</guid>
+      <description>Presentations Name of Presentation - Name of Module [Platform] - 01/01/2020 Created by School and Individual Creator Name of Presentation - Name of Module [Platform] - 01/01/2020 Created by School and Individual Creator Videos Name of Video - 01/01/2020 Created by School and Individual Creator Name of Video - 01/01/2020 Created by School and Individual Creator Lesson Overview Topic 1 Explanation of the aims of the topic and any advice on how this can be delivered</description>
+    </item>
+    
+    <item>
+      <title>Instructor Notes</title>
+      <link>/git/desktop/mentors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/git/desktop/mentors/</guid>
+      <description>Want to make a change to this week but don&amp;rsquo;t have the time? Click here
+Want to report a bug in this week? Click here
+IMPORTANT - Setup Needed For Trainees If you are teaching this class in the coming weeks you must instruct your trainees to complete the instructions below.
+Git Preparation
+If you trainees do not arrive with these steps completed then you will lose a lot of time on your first lesson.</description>
+    </item>
+    
+    <item>
+      <title>Interviews</title>
+      <link>/workshops/interviews/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workshops/interviews/</guid>
+      <description>There are many kinds of interview. We have workshops to help prepare you for some of them:
+Interview type Technical Interviews </description>
+    </item>
+    
+    <item>
+      <title>JavaScript Testing Workshop</title>
+      <link>/workshops/js-testing-workshop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workshops/js-testing-workshop/</guid>
+      <description>What will we learn today? Tracing Code Testing Unit Testing Unit Testing Frameworks - JEST Test-driven Development More on Testing Test coverage Refactoring Modules Fork and Clone the js-exercises-tdd repo
+Tracing Code What is Code? Computer code is a set of rules or instructions. It is made up of words and numbers and when you put them in the right order it will tell your computer what you want it to do.</description>
+    </item>
+    
+    <item>
+      <title>Join The Team</title>
+      <link>/contributing/team/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/contributing/team/</guid>
+      <description>Background Our syllabus is used by all of our schools to give them direction on what we teach, provide outlines for our lessons and be a central hub of CodeYourFuture&amp;rsquo;s education knowledge.
+Historically, all of the content was created and maintained by the Lead Teachers of each module. This has some benefits in that teachers get to teach their content immediately for instant feedback - however we&amp;rsquo;ve often found that incremental improvements have been harder to achieve as volunteers are moved onto the next module.</description>
+    </item>
+    
+    <item>
+      <title>Lesson</title>
+      <link>/git/cli/lesson/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/git/cli/lesson/</guid>
+      <description>import Feedback from &amp;ldquo;@theme/Feedback&amp;rdquo;; import Tabs from &amp;lsquo;@theme/Tabs&amp;rsquo;; import TabItem from &amp;lsquo;@theme/TabItem&amp;rsquo;;
+Learning Objectives By the end of this class, you should be able to:
+To clone a repository using Git CLI To commit to a repository To push changes using Git CLI To view Git&amp;rsquo;s history log using Git CLI To view what uncommitted changes you have with git status Before you start Make sure that you&amp;rsquo;ve got Terminal / Git Bash / Windows WSL working correctly.</description>
+    </item>
+    
+    <item>
+      <title>Lesson</title>
+      <link>/git/desktop/lesson/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/git/desktop/lesson/</guid>
+      <description>import Feedback from &amp;ldquo;@theme/Feedback&amp;rdquo;;
+Most software engineers use a tool called Git to organise their code, and collaborate with other people.
+Git is a version control tool, used to keep the history of changes, and makes collaboration easier. We&amp;rsquo;ll see many of its uses throughout the course.
+Each week, you&amp;rsquo;re going to use Git to get a copy of your homework exercises, to submit your solutions, and to get feedback on your solutions.</description>
+    </item>
+    
+    <item>
+      <title>Lesson</title>
+      <link>/git/terminal/lesson/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/git/terminal/lesson/</guid>
+      <description>import Feedback from &amp;ldquo;@theme/Feedback&amp;rdquo;; import Tabs from &amp;lsquo;@theme/Tabs&amp;rsquo;; import TabItem from &amp;lsquo;@theme/TabItem&amp;rsquo;;
+Learning Objectives By the end of this class, you should be able to:
+Define the differences between a Terminal and a GUI and describe the benefits of both Open a terminal window Using the terminal navigate to a specified folder (using cd) Move up a level in a folder directory (using cd ..) Cancel a running task in the terminal (using ctrl+c) View all the files of the current directory they are in (using ls) Use arguments to augment the commands learnt in the lesson (e.</description>
+    </item>
+    
+    <item>
+      <title>Module Coordinator</title>
+      <link>/git/coordinator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/git/coordinator/</guid>
+      <description>1) Module Delivery This module is unusual as it follows an irregular delivery pattern
+The content has been written to be delivered in this specific way to make the best use of Trainee&amp;rsquo;s time through the course.
+See the Overview page for when the lessons are given.
+2) Preparation This module has some preparation work that should be set as coursework before the module starts
+You can find the preparation work here</description>
+    </item>
+    
+    <item>
+      <title>MongoDB</title>
+      <link>/mongodb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/</guid>
+      <description>Preparation Before starting this module there is some preparation work to get you setup.
+Make sure you complete it before attending class.
+Content Week Content Week 1 Intro to Mongo Week 2 More Mongo Week 3 Advanced Mongo Coordination Coordination details for this module can be found on the Module Coordinator&amp;rsquo;s page</description>
+    </item>
+    
+    <item>
+      <title>MongoDB 101</title>
+      <link>/workshops/mongodb-101/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workshops/mongodb-101/</guid>
+      <description>What we will learn today?
+SQL vs NoSQL Why MongoDB? Mongo Shell Basic Commands MongoDB administration Aggregation Replication Sharding What&amp;rsquo;s next? Before we start Download and install MongoDB from https://www.mongodb.com/download-center#community. Follow the instructions for your platform (Windows, Linux or OS X).
+Open two instances of terminal. Run mongod in the first instance - this will start MongoDB.
+In the second instance, first download the sample data script: curl https://gist.githubusercontent.com/agiamas/35b2b954cc942f95709273d3cb9d2cf3/raw/b1bb399942dab287832d41b3b75f6b54c6f00bb1/mongodb_data.js &amp;gt; mongo_data.</description>
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      <link>/contributing/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/contributing/overview/</guid>
+      <description>Preamble Syllabus Aims This syllabus has the following aims
+To direct teachers across our network to our content To share content developed by volunteers between our cities (slides, videos, exercises etc) To ease the load of planning lessons for our teachers To be a repository of exercises for our trainees To be a resource for our trainees to refer to Target Trainees The vast majority of our trainees fit this profile:</description>
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      <link>/fundamentals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/fundamentals/</guid>
+      <description>Week Content Learning Objectives Week 1 Requirements Learning objectives Week 2 Iteration Learning objectives Week 3 Delivery Learning objectives About This Course To understand this course, we must understand these goals:
+I am part of a cohort :man_and_woman_holding_hands::skin-tone-4: Start as we mean to go on 🧰 Break down problems 🧩 Ship it! :boat: Goals I am part of a cohort :man_and_woman_holding_hands::skin-tone-4: The key outcome of Fundamentals is that trainees and mentors start getting to know each other and build the sense of togetherness and mutual support that will carry us through the programme.</description>
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      <link>/git/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/git/overview/</guid>
+      <description>Most software engineers use a tool called Git to organise their code, and collaborate with other people.
+Git is a version control tool, used to keep the history of changes, and make collaboration easier. We&amp;rsquo;ll see many of its uses throughout the course.
+Each week, you&amp;rsquo;re going to use Git to get a copy of your Coursework exercises, to submit your solutions, and to get feedback on your solutions. Today, you&amp;rsquo;re going to learn how to do these things.</description>
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      <link>/html-css/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html-css/</guid>
+      <description>Weeks Content Learning Objectives Lesson 1 Fundamentals • Semantics Learning objectives Lesson 2 Forms • Structuring Data Learning objectives Lesson 3 Layout • Flexbox • Grid Learning objectives Lesson 4 Ship it • Putting it all together Learning objectives Coordination Coordination details for this module can be found on the Module Coordinator&amp;rsquo;s page.</description>
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      <link>/js-core-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/js-core-1/</guid>
+      <description>Preparation Before starting this module, make sure you have completed all of the steps in the Preparation page.
+It is essential you complete all of the steps before you attend this module.
+Content Week Content Week 1 Hello world (of jS): variables, strings, types, numbers, statements, expressions, functions. Week 2 Logic and Loops: booleans, conditionals, comparisons, operators. Introducing loops: for, for/of, do, do/while. Week 3 Logic and Arrays: Truthy, falsy, null, and undefined.</description>
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      <link>/js-core-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/js-core-2/</guid>
+      <description>Week Content Week 1 Objects Week 2 TDD, arrays of Objects Week 3 JS in the Browser (DOM, and AJAX) Week 4 More JS in the Browser Coordination Coordination details for this module can be found on the Module Coordinator&amp;rsquo;s page</description>
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      <link>/js-core-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/js-core-3/</guid>
+      <description>Module Learning Objectives The learner should be able to create a single-page application that retrieves data from an API using fetch parses medium-complexity JSON responses and extracts data use DOM manipulation to build a website uses event handlers to respond to user interactions The learner should understand the basics of HTTP GET requests as they are used in practice The learner should understand the concept of Promise and how fetch is an implementation of it The learner should be able to demonstrate a good understanding of the JavaScript language and syntax in solving practical problems The learner should understand the concepts around this and scope Content Week Content Week 1 Debugging Week 2 Fetch, AJAX, APIS Week 3 Scope &amp;amp; this Week 4 Coordination Coordination details for this module can be found on the Module Coordinator&amp;rsquo;s page</description>
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      <link>/node/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/node/</guid>
+      <description>Preparation Before starting this module there is some preparation work to get you setup.
+Make sure you complete it before attending class.
+Content Week Content Week 1 Node, Express workshop Week 2 Templating Week 3 Node Best Practices Coordination Coordination details for this module can be found on the Module Coordinator&amp;rsquo;s page</description>
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      <link>/react/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/</guid>
+      <description>Week Content Coursework Before the module starts Preparation Link Week 1 React 101 Link Week 2 Reacting to Changes Link Week 3 Fetching Data Link React Router Routing (optional) Class Components Class Components (optional) Overall Learning Objectives - React module By the end of the three lessons &amp;amp; homework, trainees should be able to build a React application:
+Written with components Appropriately composed/nested Split across multiple files Uses props to pass values between components Data like numbers/strings/objects/arrays Functions as event handlers Uses state to react to user interaction E.</description>
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      <link>/workshops/accessibility/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workshops/accessibility/</guid>
+      <description>Content Week 1. Intro to Accessibility 2. Accessibility for Devs Learning Objectives In this series of workshops we cover the following Learning Objectives
+1. Intro to Accessibility Participants will be able to:
+List the 4 main groups of disabilities (visual, hearing, motor, cognitive) Define what accessibility is Recall some specific conditions for each categories Define what an invisible disability is and give some examples Define situations where you can experience an accessibility issue, for touch, see, hear and speak or a combination of more than one of them (could be done as coursework) List some reasons why accessibility is important to consider Illustrate what each letter in SCULPT mean Apply advice to check colours and give good text links and alt texts Create an alternative text when sharing photo on social media.</description>
+    </item>
+    
+    <item>
+      <title>Practice Day</title>
+      <link>/finalproject/demoday/practice-day/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/finalproject/demoday/practice-day/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Preparation</title>
+      <link>/finalproject/demoday/preparation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/finalproject/demoday/preparation/</guid>
+      <description>Learning Outcomes By the end of this session you will be able to
+Describe what Demo Day is and what will happen on the day List the aims of the Demo Day presentations Build a presentation that will impress employers Write a description about yourself that is succinct and memorable Highlight what makes a presentation good or bad Use software to create videos of your projects to ensure your presentation goes smoothly Slideshow What is Demo Day?</description>
+    </item>
+    
+    <item>
+      <title>Preparation</title>
+      <link>/git/preparation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/git/preparation/</guid>
+      <description>It is important that you complete all of the following work before you get to the next class.
+1) Sign Up To GitHub (30 Minutes) If you did not do so during Fundmentals, sign up now. We&amp;rsquo;ll use GitHub to share code with each other.
+Sign up on https://github.com Let us know your GitHub username as we&amp;rsquo;ll need it for future assignments 2) Download and Install Github Desktop (30 minutes) 🔑 We&amp;rsquo;ll be using this tool in next weeks class so it&amp;rsquo;s very important that you set it up before class.</description>
+    </item>
+    
+    <item>
+      <title>Processing.js Workshop</title>
+      <link>/workshops/processing-js-workshop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workshops/processing-js-workshop/</guid>
+      <description>If you enjoyed using JavaScript to make drawings and animations, we recommend further study and play with the almost identical p5.js library. It&amp;rsquo;s better.
+Where to start coding with p5.js We recommend the site called OpenProcessing - it makes it easy to click &amp;ldquo;new sketch&amp;rdquo; and start immediately Alternatively, here&amp;rsquo;s a starting sketch that defines functions the way you have learned so far If you want to use CodePen, here&amp;rsquo;s a p5.</description>
+    </item>
+    
+    <item>
+      <title>Project Briefings</title>
+      <link>/finalproject/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/finalproject/projects/</guid>
+      <description>New for 2023 Tip of our Tongues Good PR In A Class of Our Own Careless Whisper Study Buddies Jobs From The Boards Hub Planner A Set 2022 Deskeando We are here STAR Logistical Lunch Development Planner Energise! Goal! &amp;lt; 2021 Glossary Class Behaviour Register Feedback Tracker Quiz App Slack Dashboard Class Planner Q &amp;amp; A Graduate Directory Knowledge Checklist Language Exchange Website </description>
+    </item>
+    
+    <item>
+      <title>React Cheatsheet</title>
+      <link>/guides/react-cheatsheet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/guides/react-cheatsheet/</guid>
+      <description>Recipes Recipe Links Including an image in your React app https://codesandbox.io/s/showing-images-in-create-react-app-tyyd9?file=/src/App.js Including an image in your React app (alternative method) https://codesandbox.io/s/showing-images-in-create-react-app-0n77h?file=/src/App.js Importing a CSS file into your React component https://codesandbox.io/s/using-css-in-create-react-app-2cu6y?file=/src/App.js Including a custom font in your React app https://codesandbox.io/s/using-custom-fonts-into-create-react-app-tjw28?file=/src/App.js Mapping over an array with JSX https://codesandbox.io/s/mapping-over-an-array-with-jsx-qsqzh?file=/src/App.js Conditional rendering with JSX https://codesandbox.io/s/conditional-rendering-with-jsx-b2ryk?file=/src/App.js Quick React setup https://codesandbox.io/s/affectionate-dream-fmg69?file=/src/App.js Using a 3rd-party library in your React app (example: &amp;ldquo;lodash&amp;rdquo;) In your terminal, run the following command:</description>
+    </item>
+    
+    <item>
+      <title>React Module Syllabus Team Minutes</title>
+      <link>/contributing/react/minutes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/contributing/react/minutes/</guid>
+      <description>2022-11-07 Present: Ali, Tom
+Agenda Items Ali leaving the React module team (@Ali) Ali is planning to leave the React module syllabus team (as he originally planned), though will still be around in CYF to help His role was to set up the team and get the ball rolling, which has been successful All of the team are free to join the Global Syllabus team meeting Team time/task progress - something&amp;rsquo;s not working (@Tom) Not everyone in attendance at regular meetings, and often rescheduled Few agenda points and not much work in progress on the board This not a problem with the individuals in the team!</description>
+    </item>
+    
+    <item>
+      <title>Reviewing</title>
+      <link>/guides/marking-guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/guides/marking-guide/</guid>
+      <description>How To Evaluate Coursework Details on how we give feedback in code review are on the docs site:
+Coursework Feedback Docs
+Overview Completeness The code achieves all of the tasks in the coursework [read more about completeness] The code achieves the task in an intended way and solves the &amp;ldquo;general&amp;rdquo; problem [read more about intention] The code covers all edge cases [read more about edge cases] The code does not contain any obvious bugs The code handles error responses as well as success responses [read more about errors] Code Style The code follows a consistent style The code follows CodeYourFuture&amp;rsquo;s coding standards: [read more about coding standards] The code is well indented: [read more about indentation] The code uses good variable names: [read more about naming variables] The code uses good function names: [read more about naming functions] The code uses code which is easy to read and understand: [read more about readability] The code should not use hard coded values: [read more about hard coded values] Clarity The code is broken up into small reusable functions: [read more about small functions] Code is not repeated in several locations of the coursework: [read more about DRY] The coursework does not have commented out code: [read more about commented out code] There is no dead code in the coursework: [read more about unreachable code] There is no extra or debug logging: [read more about debug logging] Explanations Complete All Tasks Completion of all of the tasks is essential.</description>
+    </item>
+    
+    <item>
+      <title>Setup Guide</title>
+      <link>/contributing/setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/contributing/setup/</guid>
+      <description>Website Details This website is built using Docusaurus 2.
+1. Download the Code All of the code for this website can be found on the Syllabus Repository
+You should clone this repo using the command
+$ git clone https://github.com/CodeYourFuture/syllabus.git 2. Installation $ npm install 3. Local Development $ npm run start This command starts a local development server and open up a browser window. Most changes are reflected live without having to restart the server.</description>
+    </item>
+    
+    <item>
+      <title>Training</title>
+      <link>/contributing/training/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/contributing/training/</guid>
+      <description>Aims Participants will be able to:
+Run the syllabus locally Add a page to the syllabus Edit a page of the syllabus Be able to write simple markdown Understand the rules of making changes to the Syllabus Presentation An overview of how to work with the Syllabus can be found here</description>
+    </item>
+    
+    <item>
+      <title>Useful Links</title>
+      <link>/guides/useful-links/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/guides/useful-links/</guid>
+      <description>This page aims to give you the best links for working as a developer and improving your skills.
+This developer roadmap gives a very good overview of what a senior developer should know or be aware of in the modern front-end, back-end or devops world. It&amp;rsquo;s useful as something to aim for, but remember it&amp;rsquo;s impossible to be extremely good at all of this so don&amp;rsquo;t feel overwhelmed! Front-end development The Front-end Developer Handbook is an amazing resource containing everything related to front-end development.</description>
+    </item>
+    
+    <item>
+      <title>What we teach and why</title>
+      <link>/guides/paradigm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/guides/paradigm/</guid>
+      <description>What are we actually teaching? We can only teach a subset of programming in our syllabus and because we teach React, that means that we teach functional programming. Further, we teach declarative programming. Our strategy is to build a coherent journey in programming that guides our trainees to their final project with the tools to write great React code. After this, they will go off into many different directions, and they should!</description>
+    </item>
+    
+  </channel>
+</rss>

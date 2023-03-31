@@ -1,0 +1,18 @@
+{{ define "main" }}
+<article>
+  <header class="l-page__header c-page-header">
+    <div class="c-page-header__container">
+      <h1 class="c-page-header__title e-heading__1">{{.Title}}</h1>
+    </div>
+  </header>
+
+  <section class="c-splash">
+    {{.Content}} {{- range site.Menus.main }}
+    <a href="{{ .URL }}">
+      {{ .Name }} {{- with .Page }} {{- with .Params.version -}} ({{ . }}) {{-
+      end }} {{- end }}
+    </a>
+    {{- end }}
+  </section>
+</article>
+{{ end }}

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en-gb">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Syllabus</title>
+    <meta name="description" content="A free and open source immersive engineering programme. Practical, hands on projects in Go, distributed systems engineering, site reliability engineering, software engineering. Pace, scale, and complexity." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        animation: fade-in 0.2s;
+      }
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+     
+    <link
+      rel="stylesheet"
+      href="/bundled.min.6dc51603c53e46fdfe64b6dbf2f1a977.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="/bundled.min.6dc51603c53e46fdfe64b6dbf2f1a977.css" />
+    </noscript>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;700&family=Major+Mono+Display&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/favicons/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicons/favicon.ico" />
+    <meta name="apple-mobile-web-app-title" content="CYF+" />
+    <meta name="application-name" content="CYF+" />
+    <meta name="msapplication-TileColor" content="#9f00a7" />
+    <meta
+      name="msapplication-config"
+      content="/favicons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#00ff90" />
+  </head>
+</html>
+<body class="is-light-mode">
+  <a class="c-skip-link e-button" id="skip-link" href="#main">Skip to main</a>
+  <div class="l-layout">
+    <header class="l-layout__header l-header">
+  <div class="l-header__nav">
+    <h1 class="l-header__heading">
+      <a class="l-header__home" href="/">Syllabus</a>
+    </h1>
+
+    <button
+      class="l-header__action e-button e-button--icon js-menu-toggle is-fixed"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-button__icon l-header__icon"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+        />
+      </svg>
+
+      <span class="is-invisible">Open Menu.</span>
+    </button>
+  </div>
+</header>
+ <nav
+  class="l-layout__menu l-menu"
+  aria-label="Main Site Links."
+  id="site-menu"
+  hidden
+  tabindex="0"
+>
+  <div class="l-menu__container">
+    <h2 class="l-menu__heading e-heading__2">
+      <a href="/" class="l-menu__home">Syllabus</a>
+    </h2>
+    <button
+      class="l-menu__action e-button e-button--icon js-menu-toggle"
+      id="close-menu"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="e-button__icon"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18L18 6M6 6l12 12"
+        />
+      </svg>
+
+      <span class="is-invisible">Close Menu.</span>
+    </button>
+    <ul class="l-menu__primary e-list">
+      <li class="l-menu__item e-list__item">
+        <a class="l-menu__link e-link e-heading__1" href="/about">About</a>
+      </li>
+      <li class="l-menu__item e-list__item">
+        <a class="l-menu__link e-link e-heading__1" href="/versions"
+          >Versions</a
+        >
+      </li>
+      <li class="l-menu__item e-list__item">
+        <a class="l-menu__link e-link e-heading__1" href="/projects"
+          >Projects</a
+        >
+      </li>
+      <li class="l-menu__item e-list__item">
+        <a class="l-menu__link e-link e-heading__1" href="/primers">Primers</a>
+      </li>
+    </ul>
+
+    <div class="l-menu__secondary">
+      
+      <a class="l-menu__link e-link" href="#skip-link">
+        <span class="is-invisible">To top</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          width="48px"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="l-menu__icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3 4.5h14.25M3 9h9.75M3 13.5h5.25m5.25-.75L17.25 9m0 0L21 12.75M17.25 9v12"
+          />
+        </svg>
+      </a>
+      
+    </div>
+  </div>
+
+  <img
+    src="/pictures/depths/dddepth--005.webp"
+    alt=""
+    class="l-menu__bg"
+  />
+</nav>
+
+    <main id="main" class="l-layout__main l-main" tabindex="0">
+      
+
+<article>
+  <header class="l-page__header c-page-header">
+    <div class="c-page-header__container">
+      <div class="c-page-header__breadcrumbs">
+        
+<nav class="c-breadcrumbs">
+  <ol class="c-breadcrumbs__list">
+    <li class="c-breadcrumbs__item">
+      <a class="c-breadcrumbs__link" href="/guides/">Guides</a>
+    </li>
+  </ol>
+</nav>
+
+
+      </div>
+      <h1
+        class="c-page-header__title e-heading__1 is-invisible"
+      >
+        Code Style Guide
+      </h1>
+        
+
+  
+
+  
+
+
+  
+      <section class="c-page-header__toc c-toc" id="toc">
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#why-should-i-read-this">Why should I read this?</a></li>
+    <li><a href="#before-you-start">Before you start</a>
+      <ol>
+        <li><a href="#using-prettier-to-format-code-automatically">Using Prettier to format code automatically</a></li>
+      </ol>
+    </li>
+    <li><a href="#essential">Essential</a>
+      <ol>
+        <li><a href="#indent-your-code">Indent your code</a></li>
+        <li><a href="#dont-leave-lots-of-commented-out-code">Don&rsquo;t leave lots of commented out code</a></li>
+        <li><a href="#saving-old-versions-with-git">Saving old versions with Git</a></li>
+        <li><a href="#dont-leave-unused-variables">Don&rsquo;t leave unused variables</a></li>
+        <li><a href="#think-of-good-names-for-your-variables">Think of good names for your variables</a></li>
+        <li><a href="#use-camelcase">Use <code>camelCase</code></a></li>
+        <li><a href="#avoid-short-names">Avoid short names</a></li>
+        <li><a href="#describe-what-the-variable-isdoes">Describe what the variable is/does</a></li>
+        <li><a href="#using-let-const-and-var">Using <code>let</code>, <code>const</code> and <code>var</code></a>
+          <ol>
+            <li><a href="#using-var">Using <code>var</code></a></li>
+            <li><a href="#using-let">Using <code>let</code></a></li>
+            <li><a href="#using-const">Using <code>const</code></a></li>
+          </ol>
+        </li>
+        <li><a href="#avoid-long-functions">Avoid Long Functions</a></li>
+      </ol>
+    </li>
+    <li><a href="#advanced">Advanced</a>
+      <ol>
+        <li><a href="#remember-your-audience">Remember your audience</a></li>
+        <li><a href="#good-scoping-of-your-variables">Good scoping of your variables</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+      </section>
+      
+    </div>
+  </header>
+
+  <section class="l-page__main c-copy"><h2 id="why-should-i-read-this">Why should I read this?</h2>
+<p>There are many different ways of writing code that achieve the same goal. However, programmers generally agree that there are some ways of writing code that are more understandable and <em>readable</em> than other ways.</p>
+<p>To help write more understandable code, programmers follow a <em>style guide</em>. It provides guidelines for how to write code, how to structure it, common problems to avoid, etc.</p>
+<h2 id="before-you-start">Before you start</h2>
+<h3 id="using-prettier-to-format-code-automatically">Using Prettier to format code automatically</h3>
+<p>Some of the guidelines are so common that there are automatic tools to do it for you! One of these tools is called Prettier. You should have installed this tool when you <a href="https://docs.codeyourfuture.io/course-processes/before-the-course/getting-setup#extensions">set up your VS Code extensions</a>.</p>
+<p>Prettier is a tool that rearranges your code (called <em>formatting</em>). It follows a set of rules that programmers have agreed make your code easier to read and understand.</p>
+<p>You might have a common problem when running Prettier. If you see something like this:</p>
+<p><img src="./assets/prettier-error.png" alt="Invalid code with red highlight"></p>
+<p>Then you have written some code that is invalid and Prettier can&rsquo;t format it. A common issue is a missing bracket, so try looking for that first.</p>
+<h2 id="essential">Essential</h2>
+<p>From when you begin programming it is essential that you follow the guidelines below - a good habit is much easier to get in to when you start!</p>
+<h3 id="indent-your-code">Indent your code</h3>
+<p>You may have noticed that programmers tend to <em>indent</em> their code by starting a line of code with some space.</p>
+<p>Here&rsquo;s an example in HTML:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">p</span>&gt;Hello world!&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span></code></pre></div><p>And JavaScript:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">isVegetarian</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Macaroni and Cheese&#34;</span>;
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Steak and Chips&#34;</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Indentation helps us to read our code by visually marking how the code is going to run. Programmers rely on this extra information to quickly read and understand code.</p>
+<p>There are some guidelines about where to add indentation. For example, lines of code are indented when they are inside a function, an <code>if</code> statement or a <code>for</code> loop. Additionally, if any of those structures are inside another structure, then they are indented further.</p>
+<p>The guidelines about where to add indentation can be complex, but the good news is that <strong>Prettier adds indentation automatically</strong> for us! However it is good to pay attention to where indentation is added, as you may find yourself writing code in an environment where Prettier is not installed.</p>
+<h3 id="dont-leave-lots-of-commented-out-code">Don&rsquo;t leave lots of commented out code</h3>
+<p>When you are debugging a problem, you might comment out some sections of your code.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// 🛑 Don&#39;t do this!
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">addToShoppingList</span>(<span style="color:#a6e22e">item</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// console.log(&#34;Shopping list before&#34;, shoppingList);
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// console.log(&#34;Adding item&#34;, item);
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">shoppingList</span>.<span style="color:#a6e22e">add</span>(<span style="color:#a6e22e">item</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// console.log(&#34;Shopping list after&#34;, shoppingList);
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><p>In this example, there is some extra debugging information that is commented out.</p>
+<p>Once you have solved the problem, you should remove large sections of commented out code. When you (or someone else) are reading your code, you want to know only the important pieces. Removing commented out code helps find the relevant code faster and easier.</p>
+<h3 id="saving-old-versions-with-git">Saving old versions with Git</h3>
+<p>You might be worried about &ldquo;losing&rdquo; some experimental code that you want to &ldquo;save&rdquo; by commenting it out. However, this can cause confusion about which bits of code still work.</p>
+<p>If you want to save some code, remember that you can commit it using Git. It will then be saved it forever. If you decide to remove the code later you can delete it and make another commit. And if you want it back again, you can always look at the deleted code in the git history.</p>
+<h3 id="dont-leave-unused-variables">Don&rsquo;t leave unused variables</h3>
+<p>As you write code, you may make changes to the variables that you are using. You may rename some variables, make some new variables or change how the variables are used. This may leave some variables that are <em>unused</em>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">orderTaxi</span>(<span style="color:#a6e22e">pickUpTime</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">driverName</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">getDriverName</span>();
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">customerName</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">getCustomerName</span>(); <span style="color:#75715e">// 🛑 Don&#39;t do this!
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">driverName</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> will pick you up at </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">pickUpTime</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>In this example, the <code>customerName</code> variable isn&rsquo;t used anywhere.</p>
+<p>You should remove any variables that are unused. This is because if you (or someone else) is reading your code, it can be confusing if you see a variable and then find out later that it isn&rsquo;t used. It could make you think that there&rsquo;s a bug, because the variable must have been put there for a reason!</p>
+<h3 id="think-of-good-names-for-your-variables">Think of good names for your variables</h3>
+<p>Making our code understandable by others is critical to being a programmer. One of the main tools in our toolbox is good naming for our variables and function names.</p>
+<p>There are no strict rules to follow when thinking of variable names, but there are some general guidelines.</p>
+<p>:::tip
+When thinking about whether a variable name is good, try to imagine that you are reading the code again in the future and you have forgotten exactly how it works.</p>
+<p>Do the variable names help explain what the code is supposed to do?
+:::</p>
+<h3 id="use-camelcase">Use <code>camelCase</code></h3>
+<p>When writing JavaScript, programmers tend to use a convention called <em><code>camelCase</code></em>. This means starting your variable name with a lower case letter, and then every &ldquo;word&rdquo; after that starts with an upper case letter.</p>
+<ul>
+<li><code>startingLocation</code></li>
+<li><code>timeToDestination</code></li>
+<li><code>trafficOnRoute</code></li>
+</ul>
+<p>By doing this it makes it easier to read variable name that have multiple &ldquo;words&rdquo;.</p>
+<h3 id="avoid-short-names">Avoid short names</h3>
+<p>Very short variable names can be difficult to understand since the purpose of the variable can be unclear. They are also difficult remember, especially if there are many similarly named variables. Try to avoid short names or abbreviations.</p>
+<p>Here are some examples of <strong>bad</strong> names that you should avoid:</p>
+<ul>
+<li>Single letters like <code>x</code> or <code>y</code></li>
+<li>Abbreviations like <code>evt</code> instead of <code>event</code></li>
+<li>Generic names like <code>array</code> or <code>string</code></li>
+</ul>
+<h3 id="describe-what-the-variable-isdoes">Describe what the variable is/does</h3>
+<p>A good variable name quickly explains what it represents to anyone reading the code. Try to describe what the variable is or what it does within in code.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// 🛑 Try to avoid this
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">song</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// ✅ This is better
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">isPlaying</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
+</span></span></code></pre></div><p>In this example, the variable name <code>song</code> doesn&rsquo;t tell us what it is used for. The <code>isPlaying</code> variable name is better since it tells us whether a song is playing or not.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// 🛑 Try to avoid this
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">percentage</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// ✅ This is better
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getPercentage</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><p>In this example, the function calculates a percentage and returns it. Therefore it is good to name it using the &ldquo;get&rdquo; verb to show that it returns something.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// 🛑 Try to avoid this
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">isOldEnough</span>(<span style="color:#a6e22e">number</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// ✅ This is better
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">isOldEnough</span>(<span style="color:#a6e22e">yearOfBirth</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><p>Finally, parameters of functions should also have names that properly represent what is going to be received into the function.</p>
+<h3 id="using-let-const-and-var">Using <code>let</code>, <code>const</code> and <code>var</code></h3>
+<p>In JavaScript there are three ways to define a variable - <code>let</code>, <code>const</code> and <code>var</code>. The rules on using them at CodeYourFuture are as follows</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">myAge</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">21</span>; <span style="color:#75715e">// 🛑 Do not use
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">yourAge</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">21</span>; <span style="color:#75715e">// ✅ Use for values that change
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">secondsInMinute</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">60</span>; <span style="color:#75715e">// ✅ Use for values that never change
+</span></span></span></code></pre></div><h4 id="using-var">Using <code>var</code></h4>
+<p>You should <strong>never</strong> use <code>var</code>. This is an outdated way of writing JavaScript code and it is always better to use <code>let</code> or <code>const</code>.</p>
+<p>The reason it still exists is because lots of code already uses it and so it can&rsquo;t be removed from JavaScript safely.</p>
+<h4 id="using-let">Using <code>let</code></h4>
+<p>You should use <code>let</code> for a variable that will change, for example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">buttonClickedCount</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">buttonClickedCount</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">buttonClickedCount</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+</span></span></code></pre></div><h4 id="using-const">Using <code>const</code></h4>
+<p>For other variables that will never change you should use <code>const</code>, for example</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">centimetersInMeter</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>;
+</span></span></code></pre></div><h3 id="avoid-long-functions">Avoid Long Functions</h3>
+<p>Sometimes writing long functions are unavoidable, however most of the time is better to split a long function into a few shorter ones.</p>
+<p>This will</p>
+<ol>
+<li>Make your code easier to read</li>
+<li>Make your code easier to maintain</li>
+<li>Make your code easier to review by out volunteers</li>
+</ol>
+<p>When you writing code you should also try to keep in mind that you will only ever write the code once, but you will read the code many times. Always aim to write code that is readable.</p>
+<p>For more details you can read these useful articles</p>
+<ul>
+<li>(The Art of Writing Small and Plain Functions)[https://dmitripavlutin.com/the-art-of-writing-small-and-plain-functions/]</li>
+</ul>
+<h2 id="advanced">Advanced</h2>
+<p>These additional rules may be harder for you to understand at the start of your programming journey however they are important concepts as your develop.</p>
+<h3 id="remember-your-audience">Remember your audience</h3>
+<p>Remember that you are communicating with another programmer!</p>
+<p>Don&rsquo;t forget that the person reading your code probably has some understanding of the <em>context</em>. If your function is named <code>getCustomer</code>, it&rsquo;s probably fine to name variables <code>name</code>, <code>age</code>, etc instead of <code>customerName</code>, <code>customerAge</code>. You don&rsquo;t need to explain <em>everything</em>.</p>
+<p><strong>Naming variables is more of an art than a science</strong>. Often you need some experience reading other people&rsquo;s code before you get really good at it.</p>
+<p>:::tip
+When reading other people&rsquo;s code, think about the variable names. If the names are not clear, make sure you understand the code first, then think about what names you would use instead.
+:::</p>
+<h3 id="good-scoping-of-your-variables">Good scoping of your variables</h3>
+<p>Define your variables with the narrowest scope they can have. This is easiest to explain with an example&hellip;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">findLongestFirstName</span>(<span style="color:#a6e22e">fullNames</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">longest</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">firstName</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">fullNames</span>.<span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">firstName</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">fullNames</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34; &#34;</span>)[<span style="color:#ae81ff">0</span>];
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">longest</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">firstName</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">longest</span>.<span style="color:#a6e22e">length</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">longest</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">firstName</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">longest</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>It is considered better code to combine the two highlighted lines into one like this&hellip;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">findLongestFirstName</span>(<span style="color:#a6e22e">fullNames</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">longest</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">fullNames</span>.<span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">firstName</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">fullNames</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34; &#34;</span>)[<span style="color:#ae81ff">0</span>];
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">longest</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">firstName</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">longest</span>.<span style="color:#a6e22e">length</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">longest</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">firstName</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">longest</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>This is important as when a function (or your code more generally) becomes more complex it will be harder to keep track of what variable is used where.</p>
+</section>
+
+  
+
+</article>
+
+
+    </main><footer class="l-layout__footer l-footer">
+  <a
+    class="l-footer__github e-button e-button--icon"
+    href="https://github.com/CodeYourFuture/syllabus/"
+  >
+    <svg
+      focusable="false"
+      class="e-button__icon"
+      role="presentation"
+      viewbox="0 0 98 96"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+        fill="currentColor"
+      />
+    </svg>
+    <span class="is-invisible">Find us on GitHub</span>
+  </a>
+  <p class="l-footer__impressum e-heading__6">
+    This
+    <a href="https://github.com/CodeYourFuture/syllabus/"
+      >free and open source engineering programme</a
+    >
+    is a project of
+    <a href="https://codeyourfuture.io">Code Your Future</a>
+    <br />
+    This work is licensed under a Creative Commons Attribution-ShareAlike 4.0
+    International License.
+  </p>
+  <button
+    id="mode-toggle"
+    class="e__button--toggle e-button--icon l-footer__mode"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="e-icon e__button__icon e-icon--moon"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+      />
+    </svg>
+
+    <span class="is-invisible">Toggle between light and dark mode</span>
+  </button>
+</footer>
+
+  
+
+<script>
+  function randomBG() {
+    const style = document.createElement("style");
+    style.textContent = `body, html {background-image:url("\/pictures/svgs/neons/nnneon.svg"),url("\/pictures/svgs/quads/qqquad-04.svg"),radial-gradient(circle,var(--theme-color--paper) 0%,var(--theme-color--block) 50%,var(--theme-color--paper) 100%);
+      background-size: cover;
+    }`;
+
+    document.head.appendChild(style);
+  }
+
+  window.addEventListener("load", randomBG);
+</script>
+
+
+<script src="/scripts/app.min.js" defer></script>
+
+
+</div>
+</body>
