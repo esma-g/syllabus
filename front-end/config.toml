@@ -1,14 +1,45 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "Syllabus"
+title = "<Syllabus>"
 languageLang = "en"
 sectionPagesMenu = "main"
+[menu]
+[[menu.tools]]
+name = "Requirements"
+url = "/requirements/"
+weight = 1
+[[menu.tools]]
+name = "Learning Objectives"
+url = "/objectives/"
+weight = 2
+[[menu.tools]]
+name = "Backlog"
+url = "/backlog/"
+weight = 3
+[[menu.tools]]
+name = "Timeline"
+url = "/"
+weight = 4
+[[menu.tools]]
+name = "Product"
+url = "/product/"
+weight = 5
+[[menu.tools]]
+name = "Success"
+url = "/success"
+weight = 6
+[[menu.tools]]
+name = "Delivery"
+url = "/delivery"
+weight = 7
 
 [params]
-description = "A free and open source immersive engineering programme. Practical, hands on projects in Go, distributed systems engineering, site reliability engineering, software engineering. Pace, scale, and complexity."
+description = "A free and open source web development programme."
+org = "https://github.com/CodeYourFuture"
 repo = "https://github.com/CodeYourFuture/syllabus/"
 tree = "https://github.com/CodeYourFuture/syllabus/tree/main/"
 edit = "https://github.com/CodeYourFuture/syllabus/edit/main/"
+orgapi = "https://api.github.com/repos/CodeYourFuture/"
 
 [markup]
 [markup.tableOfContents]
