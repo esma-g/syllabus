@@ -1,5 +1,28 @@
+@mixin light-palette {
+  --theme-color--paper: hsl(263, 40%, 96%, 0.95);
+  --theme-color--ink: hsla(220, 78%, 29%, 1);
+  --theme-color--ink-fade: hsla(220, 78%, 29%, 0.25);
+  --theme-color--accent: hsl(146, 100%, 46%);
+  --theme-color--shade: hsla(228, 70%, 53%, 0.5);
+  --theme-color--brand: hsl(0, 100%, 67%);
+  --theme-color--pop: hsl(262, 100%, 67%);
+
+  --theme-color--contrast-max: hsla(0, 0%, 100%, 1);
+  //greys
+  --hue: 260;
+  --sat: 35%;
+  --lum: 90%;
+  --alpha: 0.95;
+  --hsl: var(--hue), var(--sat), var(--lum);
+  --theme-color--block: hsla(var(--hsl), var(--alpha));
+  --theme-color--outline: hsl(var(--hsl) / 0.25);
+  // backdrop
+  --theme-color--backdrop-from: hsl(var(--hsl) / 0.25);
+  --theme-color--backdrop-to: hsl(var(--hsl) / 0.2);
+}
+
 @mixin dark-palette {
-  --theme-color--paper: hsla(326, 11%, 24%, 0.95);
+  --theme-color--paper: hsl(274deg 13% 5% / 95%);
   --theme-color--ink: hsla(228, 100%, 88%, 1);
   --theme-color--ink-fade: rgba(240, 240, 240, 0.25);
   --theme-color--accent: hsl(217, 53%, 44%);
@@ -10,24 +33,6 @@
   // backdrop
   --theme-color--backdrop-from: hsla(0, 0%, 0%, 0.99);
   --theme-color--backdrop-to: hsla(0, 0%, 0%, 0.69);
-}
-
-@mixin light-palette {
-  --theme-color--paper: hsla(299, 9%, 86%, 0.95);
-  --theme-color--ink: hsla(220, 78%, 29%, 1);
-  --theme-color--ink-fade: hsla(220, 78%, 29%, 0.25);
-  --theme-color--accent: hsl(211, 100%, 46%);
-  --theme-color--shade: hsla(228, 70%, 53%, 0.5);
-  --theme-color--brand: hsl(351, 100%, 67%);
-  --theme-color--pop: hsl(351, 100%, 67%);
-
-  --theme-color--contrast-max: hsla(0, 0%, 100%, 1);
-  //greys
-  --theme-color--block: hsla(0, 0%, 100%, 0.9);
-  --theme-color--outline: hsla(0, 0%, 89%, 1);
-  // backdrop
-  --theme-color--backdrop-from: hsla(0, 0%, 100%, 0.79);
-  --theme-color--backdrop-to: hsla(0, 0%, 100%, 0.59);
 }
 
 :root {

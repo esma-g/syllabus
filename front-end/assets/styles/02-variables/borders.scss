@@ -1,6 +1,8 @@
 :root {
   --theme-border: 0.5px solid var(--theme-color--pop);
   --theme-border--thick: 4px solid;
+  --theme-border-radius: 0.5em;
+  --theme-border-radius--maxi: 2.5em;
   --theme-border-image: linear-gradient(
       45deg,
       var(--theme-color--accent),
