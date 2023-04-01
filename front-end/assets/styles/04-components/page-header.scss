@@ -29,7 +29,6 @@
     var(--theme-spacing--container) minmax(var(--gap), 1fr);
 
   pointer-events: none; // just make sure we retain the option of breakout hero headers without interfering with the weirdy menu button
-
   &__container {
     pointer-events: all;
     display: grid;
@@ -42,9 +41,10 @@
       ".           .   lastmod  " min-content / 1fr var(--gap) minmax(0, 1fr);
   }
   &__title {
-    line-height: 1;
-    text-transform: uppercase;
+    line-height: 0.75;
     text-shadow: -2px 1px 0 var(--theme-color--pop);
+    background-color: var(--theme-color--accent);
+    margin-bottom: var(--theme-spacing--1);
   }
   &__lastmod,
   &__edit {
@@ -74,5 +74,10 @@
       box-sizing: content-box;
       right: 0;
     }
+  }
+
+  &__picture {
+    grid-area: container;
+    animation: morph 32s ease-in-out infinite;
   }
 }

@@ -1,6 +1,6 @@
 .l-header {
   @include grid-assign(title, main, menu, container);
-  @include pattern(dots, var(--theme-color--pop), null, true, 0.5);
+  @include pattern(dots, var(--theme-color--accent), true, 0.25);
   grid-template:
     " . ......... . " var(--theme-spacing--gutter)
     " . container ." minmax(0, 1fr)

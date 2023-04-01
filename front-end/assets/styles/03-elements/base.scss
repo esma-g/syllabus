@@ -18,17 +18,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background-image: linear-gradient(
-    45deg,
-    var(--theme-color--paper) 0%,
-    var(--theme-color--block) 50%,
-    var(--theme-color--outline) 100%
-  );
-  animation: morph 32s ease-in-out infinite;
-  transition: all 1s;
-}
-
 @keyframes fade-in {
   0% {
     opacity: 0;

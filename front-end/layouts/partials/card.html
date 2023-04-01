@@ -1,4 +1,4 @@
-{{ $fallBack := readDir "static/pictures/svgs/neons" | shuffle |first 1 }} {{
+{{ $fallBack := readDir "static/pictures/illos" | shuffle |first 1 }} {{
 $fallBackProjects := readDir "static/pictures/depths" | shuffle |first 1 }}
 
 <a class="c-card" href="{{.Permalink}}">
@@ -6,7 +6,6 @@ $fallBackProjects := readDir "static/pictures/depths" | shuffle |first 1 }}
   <!-- just random pictures -->
   <img loading="lazy" class="c-card__image" src="{{ if eq .Section "projects"
   }}{{ range $fallBackProjects }}{{ $.Site.BaseURL }}pictures/depths/{{ .Name
-  }}{{ end }} {{ else }}{{ range
-  $fallBack}}{{$.Site.BaseURL}}pictures/svgs/neons/{{ .Name }}{{ end }}{{ end
-  }}" alt="" />
+  }}{{ end }} {{ else }}{{ range $fallBack}}{{$.Site.BaseURL}}pictures/illos/{{
+  .Name }}{{ end }}{{ end }}" alt="" />
 </a>
