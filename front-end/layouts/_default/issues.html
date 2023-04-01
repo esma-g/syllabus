@@ -1,0 +1,23 @@
+{{ define "main" }}
+<article>
+  <header class="l-page__header c-page-header">
+    <div class="c-page-header__container">
+      <h1 class="c-page-header__title e-heading__1">📅 {{.Title}}</h1>
+      <h2 class="c-page-header__subtitle e-heading__2">
+        {{.Params.backlog}}<a
+          class="c-page-header__link"
+          href="{{.Site.Params.org}}/{{.Params.backlog}}"
+          >🔗</a
+        >
+      </h2>
+      <p class="c-page-header__description e-heading__3">
+        {{.Params.description}}
+      </p>
+    </div>
+  </header>
+
+  <section class="c-content">{{.Content}}</section>
+
+  {{ partial "issues.html" .}}
+</article>
+{{ end }}
