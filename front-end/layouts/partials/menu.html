@@ -30,14 +30,16 @@
 
       <span class="is-invisible">Close Menu.</span>
     </button>
-    <div class="l-menu__primary">
+    <ul class="l-menu__primary e-list">
       {{- range site.Menus.main }}
-      <a href="{{ .URL }}">
-        {{ .Name }} {{- with .Page }} {{- with .Params.version -}} ({{ . }}) {{-
-        end }} {{- end }}
-      </a>
+      <li class="l-menu__link e-link">
+        <a href="{{ .URL }}">
+          {{ .Name }} {{- with .Page }} {{- with .Params.version -}} ({{ . }})
+          {{- end }} {{- end }}
+        </a>
+      </li>
       {{- end }}
-    </div>
+    </ul>
 
     <div class="l-menu__secondary">
       {{ if and (gt .WordCount 400 ) (.TableOfContents)}}

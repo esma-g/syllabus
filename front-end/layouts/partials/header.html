@@ -1,8 +1,12 @@
 <header class="l-layout__header l-header">
-  <div class="l-header__nav">
+  <div class="l-header__container">
     <h1 class="l-header__heading">
       <a class="l-header__home" href="/">{{.Site.Title}}</a>
     </h1>
+    <nav class="l-header__main">
+      <!-- hugo main site menu -->
+      {{ partial "menu.html" . }}
+    </nav>
 
     <button
       class="l-header__action e-button e-button--icon js-menu-toggle is-fixed"
