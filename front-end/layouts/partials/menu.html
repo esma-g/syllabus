@@ -7,7 +7,7 @@
 >
   <div class="l-menu__container">
     <h2 class="l-menu__heading e-heading__2">
-      <a href="/" class="l-menu__home">{{.Site.Title}}</a>
+      <a href="/" class="l-menu__home">Menu</a>
     </h2>
     <button
       class="l-menu__action e-button e-button--icon js-menu-toggle"
@@ -33,7 +33,7 @@
     <ul class="l-menu__primary e-list">
       {{- range site.Menus.main }}
       <li class="l-menu__link e-link">
-        <a href="{{ .URL }}">
+        <a class="e-heading__3" href="{{ .URL }}">
           {{ .Name }} {{- with .Page }} {{- with .Params.version -}} ({{ . }})
           {{- end }} {{- end }}
         </a>
@@ -85,9 +85,11 @@
     </div>
   </div>
 
+  {{/*
   <img
-    src="{{.Site.BaseURL}}pictures/depths/dddepth--005.webp"
+    src="{{.Site.BaseURL}}pictures/illos/icecream-bots-laptops.png"
     alt=""
     class="l-menu__bg"
   />
+  */}}
 </nav>

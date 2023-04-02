@@ -15,9 +15,9 @@
           >🔗</a
         >
       </h2>
-      <p class="c-page-header__description e-heading__3">
-        {{.Params.description}}
-      </p>
+      <nav class="c-page-header__breadcrumbs">
+        {{ partial "breadcrumbs.html" . }}
+      </nav>
     </div>
   </header>
 

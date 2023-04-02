@@ -3,34 +3,35 @@ languageCode = "en-us"
 title = "<Syllabus>"
 languageLang = "en"
 sectionPagesMenu = "main"
+enableEmoji = true
 [menu]
 [[menu.tools]]
 name = "Requirements"
-url = "/requirements/"
+url = "requirements"
 weight = 1
 [[menu.tools]]
 name = "Learning Objectives"
-url = "/objectives/"
+url = "objectives"
 weight = 2
 [[menu.tools]]
-name = "Backlog"
-url = "/backlog/"
+name = "Timeline"
+url = ""
 weight = 3
 [[menu.tools]]
-name = "Timeline"
-url = "/"
+name = "Product"
+url = "product"
 weight = 4
 [[menu.tools]]
-name = "Product"
-url = "/product/"
+name = "Backlog"
+url = "backlog"
 weight = 5
 [[menu.tools]]
 name = "Success"
-url = "/success"
+url = "success"
 weight = 6
 [[menu.tools]]
 name = "Delivery"
-url = "/delivery"
+url = "delivery"
 weight = 7
 
 [params]

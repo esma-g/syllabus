@@ -1,32 +1,38 @@
 <header class="l-layout__header l-header">
   <div class="l-header__container">
     <h1 class="l-header__heading">
-      <a class="l-header__home" href="/">{{.Site.Title}}</a>
+      <a class="l-header__home" href="/">&lt;CYF&gt;</a>
     </h1>
-    <nav class="l-header__main">
-      <!-- hugo main site menu -->
-      {{ partial "menu.html" . }}
+    <nav class="l-header__nav" aria-label="Main Site Links.">
+      {{/*
+      <ul class="l-header__list e-heading__6">
+        <li class="l-header__item">
+          <a class="l-header__link" href="{{.Site.BaseURL}}/overview"
+            >Overview</a
+          >
+        </li>
+
+        <li class="l-header__item">
+          <a class="l-header__link" href="{{.Site.BaseURL}}/resources"
+            >Resources</a
+          >
+        </li>
+
+        <li class="l-header__item">
+          <a class="l-header__link" href="{{.Site.BaseURL}}/about">About</a>
+        </li>
+      </ul>
+      */}}
     </nav>
-
     <button
-      class="l-header__action e-button e-button--icon js-menu-toggle is-fixed"
+      class="l-header__action e-button e-button--icon js-menu-toggle e-heading__3"
     >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="e-button__icon l-header__icon"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
-        />
-      </svg>
-
+      🟰
       <span class="is-invisible">Open Menu.</span>
     </button>
   </div>
 </header>
+<nav class="l-layout__menu">
+  <!-- hugo main site menu -->
+  {{ partial "menu.html" . }}
+</nav>

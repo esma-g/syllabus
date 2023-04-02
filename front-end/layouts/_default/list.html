@@ -7,9 +7,9 @@
 
     <aside class="c-toc c-page-header__toc is-none--lt-container">
       <ol>
-        {{ range .Pages }}
+        {{ $parent := .FirstSection.Permalink}} {{ range .Site.Menus.tools }}
         <li>
-          <a href="{{.Permalink}}">{{.Title}}</a>
+          <a href="{{$parent}}{{.URL}}">{{.Name}}</a>
         </li>
         {{ end}}
       </ol>
@@ -17,34 +17,14 @@
   </div>
 </header>
 
-<!-- version pages -->
-{{ if (eq .Section "versions") }}
+<!-- ordered views -->
+
 <article class="{{ with .Content }}c-copy{{end}}">
   {{ .Content }}
   <ol class="c-timeline">
-    {{ range .Pages.Reverse }}
+    {{ range (where (.Sections) ".Params.timeline" "=" true) }}
     <li class="c-timeline__entry">{{ partial "timeline.html" . }}</li>
     {{ end }}
   </ol>
 </article>
 {{ partial "breadcrumbs.html" . }} {{ end }}
-<!-- 
-  end version pages 
--->
-<!-- 
-  other list pages 
--->
-{{ if not (eq .Section "versions") }}
-<!-- 
-  main content 
--->
-{{ with .Content }}
-<article class="c-copy">{{.}}</article>
-{{ end}}
-<!-- 
-  page links
--->
-{{ partial "cells.html" .}}
-
-<!-- end if not Versions -->
-{{ end}} {{end}}
