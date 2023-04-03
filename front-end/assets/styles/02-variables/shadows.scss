@@ -1,3 +1,6 @@
 :root {
-  --theme-box-shadow: 0px 9.25px 20px hsla(var(--hsl), var(--alpha));
+  --theme-box-shadow: hsla(var(--hsl), var(--alpha)) 0px 0px 0px 1px,
+    hsla(var(--hsl), var(--alpha)) 0px 1px 0px 0px,
+    hsla(var(--hsl), var(--alpha)) 0px 0px 8px 0px,
+    0px 9.25px 20px hsla(var(--hsl), var(--alpha));
 }

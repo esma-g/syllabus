@@ -1,38 +1,56 @@
 @mixin light-palette {
-  --theme-color--paper: hsl(263, 40%, 96%, 0.95);
-  --theme-color--ink: hsla(220, 78%, 29%, 1);
-  --theme-color--ink-fade: hsla(220, 78%, 29%, 0.25);
+  // these brand colours are set and then everything else is derived from the key
+  --theme-color--brand: hsla(0, 100%, 67%, 1);
   --theme-color--accent: hsl(146, 100%, 46%);
-  --theme-color--shade: hsla(228, 70%, 53%, 0.5);
-  --theme-color--brand: hsl(0, 100%, 67%);
-  --theme-color--pop: hsl(262, 100%, 67%);
-
-  --theme-color--contrast-max: hsla(0, 0%, 100%, 1);
-  //greys
+  --theme-color--pop: hsla(262, 100%, 67%, 1);
+  // key
   --hue: 260;
   --sat: 35%;
   --lum: 90%;
   --alpha: 0.95;
   --hsl: var(--hue), var(--sat), var(--lum);
+  // now build all the shades
+  --theme-color--paper: hsl(
+    var(--hue),
+    calc(var(--sat) * 1.2),
+    calc(var(--lum) * 1.06),
+    var(--alpha)
+  );
+  --theme-color--ink: hsla(
+    var(--hue),
+    calc(var(--sat) * 2.2),
+    calc(var(--lum) * 0.3),
+    var(--alpha)
+  );
+  --theme-color--ink-fade: hsla(
+    var(--hue),
+    calc(var(--sat) * 2.2),
+    calc(var(--lum) * 0.3),
+    calc(var(--alpha) * 0.3)
+  );
+
+  --theme-color--contrast-max: hsl(var(--hsl) * 2);
+
+  // backdrop
   --theme-color--block: hsla(var(--hsl), var(--alpha));
   --theme-color--outline: hsl(var(--hsl) / 0.25);
-  // backdrop
   --theme-color--backdrop-from: hsl(var(--hsl) / 0.25);
   --theme-color--backdrop-to: hsl(var(--hsl) / 0.2);
 }
 
 @mixin dark-palette {
-  --theme-color--paper: hsl(274deg 13% 5% / 95%);
-  --theme-color--ink: hsla(228, 100%, 88%, 1);
-  --theme-color--ink-fade: rgba(240, 240, 240, 0.25);
-  --theme-color--accent: hsl(136, 53%, 44%);
-  --theme-color--contrast-max: hsla(0, 0%, 0%, 1);
-  // greys
-  --theme-color--block: hsla(0, 0%, 0%, 0.95);
-  --theme-color--outline: hsla(0, 0%, 89%, 1);
-  // backdrop
-  --theme-color--backdrop-from: hsla(0, 0%, 0%, 0.99);
-  --theme-color--backdrop-to: hsla(0, 0%, 0%, 0.69);
+  --hue: 270;
+  --sat: 8%;
+  --lum: 20%;
+  --alpha: 0.99;
+  --theme-color--ink: hsla(
+    calc(var(--hue) * 1.1),
+    calc(var(--sat) + 60%),
+    calc(var(--lum) * 4.4),
+    var(--alpha)
+  );
+  --theme-color--accent: hsla(262, 100%, 67%, 1);
+  --theme-color--pop: hsl(146, 100%, 46%);
 }
 
 :root {
