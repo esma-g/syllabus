@@ -1,5 +1,6 @@
 ---
 title: Delivery
+description: "How to deliver the module"
 ---
 
 ## Group size
