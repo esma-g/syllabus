@@ -26,5 +26,7 @@
     <li class="c-timeline__entry">{{ partial "timeline.html" . }}</li>
     {{ end }}
   </ol>
+
+  {{ range .Pages}} {{ partial "cells.html" . }} {{ end }}
 </article>
 {{ partial "breadcrumbs.html" . }} {{ end }}

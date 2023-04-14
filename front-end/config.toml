@@ -15,7 +15,7 @@ url = "objectives"
 weight = 2
 [[menu.tools]]
 name = "Timeline"
-url = ""
+url = "sprints"
 weight = 3
 [[menu.tools]]
 name = "Product"
@@ -40,6 +40,7 @@ org = "https://github.com/CodeYourFuture"
 repo = "https://github.com/CodeYourFuture/syllabus/"
 tree = "https://github.com/CodeYourFuture/syllabus/tree/main/"
 edit = "https://github.com/CodeYourFuture/syllabus/edit/main/"
+root = "syllabus"
 orgapi = "https://api.github.com/repos/CodeYourFuture/"
 
 [markup]

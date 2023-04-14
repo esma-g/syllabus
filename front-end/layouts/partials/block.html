@@ -1,0 +1,5 @@
+{{ $headless := .site.GetPage (printf "%s" .block) }} {{ if $headless }}
+<section class="block">{{ $headless.Content }}</section>
+{{ else }}
+<p>Error: Headless leaf bundle not found.</p>
+{{ end }}
