@@ -1,0 +1,25 @@
+{
+  "hero": {
+    "aspectRatio": "3/1",
+    "sizes": [
+      { "width": 600, "height": 200, "suffix": "@300w" },
+      { "width": 960, "height": 220, "suffix": "@600w" },
+      { "width": 1920, "height": 640, "suffix": "@900w" }
+    ]
+  },
+  "card": {
+    "aspectRatio": "4/3",
+    "sizes": [
+      { "width": 400, "height": 300, "suffix": "@400w" },
+      { "width": 800, "height": 600, "suffix": "@800w" },
+    ]
+  },
+  "icon": {
+    "aspectRatio": "1/1",
+    "sizes": [
+      { "width": 200, "height": 200, "suffix": "@300w" },
+      { "width": 200, "height": 200, "suffix": "@200w" },
+      { "width": 400, "height": 400, "suffix": "@600w" }
+    ]
+  }
+}

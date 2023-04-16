@@ -1,5 +1,5 @@
 <!-- prettier-ignore -->
-{{ $name := .block.name }}
+{{ $name := .block.name | default "error"}}
 {{ $src := .block.src }}
 {{ $blockPath := printf "blocks/%s" $name }}
 

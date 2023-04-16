@@ -1,0 +1,10 @@
+<ul class="c-objectives">
+  {{ range .Params.Objectives }}
+  <li>
+    <label>
+      <input type="checkbox" name="objective" value="{{ . }}" />
+      <span>{{ . }}</span>
+    </label>
+  </li>
+  {{ end }}
+</ul>

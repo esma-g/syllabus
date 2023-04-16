@@ -1,11 +1,8 @@
 {{ define "main" }}
 <article>
   <header class="l-page__header c-page-header">
-    <img
-      class="c-page-header__picture"
-      src="{{.Site.BaseURL}}pictures/illos/icecream-robots.webp"
-      alt="friendly robots studying"
-    />
+    {{ partial "picture.html" (dict "pictureClass" "c-page-header__picture"
+    "keyword" "hero") }}
     <div class="c-page-header__container">
       <h1 class="c-page-header__title e-heading__1">📅 {{.Title}}</h1>
       <h2 class="c-page-header__subtitle e-heading__2">

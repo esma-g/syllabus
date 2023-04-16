@@ -1,0 +1,13 @@
+
+blocks:
+  - name: kata
+  - name: blockers
+    src: module
+  - name: ecommerce
+    src: "https://github.com/CodeYourFuture/Module-Databases/blob/main/E-Commerce/"
+blocks:
+  - name: kata
+  - name: blockers
+    src: module
+  - name: ecommerce-api
+    src: "https://github.com/CodeYourFuture/Module-Databases/tree/main/E-Commerce-API"

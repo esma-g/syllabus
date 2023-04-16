@@ -1,0 +1,40 @@
+<!-- grab vars -->
+
+{{ $keyword := .keyword }} {{ $srcImage := .srcImage }} {{ $pictureClass :=
+.pictureClass }} {{ $altText := .alt }}
+
+<!-- If "srcImage" not provided, find the image in the page bundle using the keyword -->
+{{ if not $srcImage }}
+  {{ $srcImage = (.Page.Resources.GetMatch (printf "*%s*" $keyword)) }}
+ {{ if not $srcImage }}
+    {{ $srcImage = (resources.Get "pictures/illos/candy-robots.webp") }}
+  {{ end }}
+{{ end }}
+
+<!-- only if image exists -->
+
+{{ if $srcImage }}
+<picture class="{{ $pictureClass }}">
+{{ $imgConfig := index $.Site.Data.imagecuts $keyword }} {{ with $imgConfig }}
+{{ $resizedImages := slice }} {{ range .sizes }} {{ $width := .width }} {{ $height := .height }} {{
+$newImage := $srcImage.Fit $width $height }} {{ $resizedImages =
+$resizedImages | append (dict "src" $newImage.RelPermalink "width" $width
+"height" $height "suffix" .suffix) }} {{ end }}
+
+
+  <source
+    srcset="{{ range $index, $element := $resizedImages }}{{ if $index }}, {{ end }}{{ $element.src }} {{ $element.suffix }} {{ $element.width }}w {{ end }}"
+    sizes="{{ range $index, $element := $resizedImages }}{{ if $index }}, {{ end }}(max-width: {{ $element.width }}px) {{ $element.suffix }}{{ end }}"
+  />
+  {{ end }}
+
+  <img
+    src="{{ $srcImage.RelPermalink }}"
+    alt="{{ with $altText }}{{ . }}{{ else }}{{ $srcImage.Title }}{{ end }}"
+    {{ with $imgConfig.aspectRatio }} style="aspect-ratio: {{ . }};" {{ end }}
+  />
+</picture>
+{{ else }}
+<img class="{{$pictureClass}}" src="{{$.Site.BaseURL}}/pictures/illos/candy-robots.webp" alt="Candy Robots" alt=""/>
+
+{{ end }}
