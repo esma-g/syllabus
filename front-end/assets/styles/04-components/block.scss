@@ -1,0 +1,11 @@
+.c-block {
+  padding: var(--theme-spacing--4) var(--theme-spacing--gutter)
+    var(--theme-spacing--6);
+  border-bottom: var(--theme-border--thick);
+  border-image: var(--theme-border-image);
+
+  &__list {
+    display: grid;
+    gap: var(--theme-spacing--gutter);
+  }
+}

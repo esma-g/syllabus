@@ -1,6 +1,5 @@
 .c-card {
   @include grid-assign(image, date, byline, title);
-
   display: grid;
   grid-template:
     "image image image" 100px
@@ -9,8 +8,7 @@
     ".     .      ." var(--theme-spacing--1) / var(--theme-spacing--1) 1fr var(--theme-spacing--1);
 
   background-color: var(--theme-color--paper);
-  box-shadow: 2px 3px 0 var(--theme-color--pop),
-    4px 5px 0 var(--theme-color--accent);
+
   height: 100%;
 
   @include on-event {
@@ -20,12 +18,15 @@
   }
 
   &__image {
-    background: var(--theme-color--ink);
+    background: var(--theme-color--pop);
     overflow: hidden;
-    filter: grayscale(0.4);
     transition: filter 10s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation: morph 12s ease-in-out infinite;
     @include on-event(false, ".c-card") {
       filter: grayscale(0) hue-rotate(360deg);
+    }
+    > img {
+      transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     }
   }
 }

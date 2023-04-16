@@ -29,11 +29,16 @@
     calc(var(--alpha) * 0.3)
   );
 
-  --theme-color--contrast-max: hsl(var(--hsl) * 2);
+  --theme-color--contrast-max: hsl(
+    var(--hue),
+    calc(var(--sat) / 100),
+    calc(var(--lum) * 2),
+    var(--alpha)
+  );
 
   // backdrop
   --theme-color--block: hsla(var(--hsl), var(--alpha));
-  --theme-color--outline: hsl(var(--hsl) / 0.25);
+  --theme-color--outline: hsl(var(--hsl), 1);
   --theme-color--backdrop-from: hsl(var(--hsl) / 0.25);
   --theme-color--backdrop-to: hsl(var(--hsl) / 0.2);
 }

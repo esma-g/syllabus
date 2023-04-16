@@ -1,21 +1,12 @@
 .c-page-header {
   --gap: var(--theme-spacing--gutter);
-  --arrow: polygon(
-    20px 0%,
-    20px 20%,
-    100% 20%,
-    100% 80%,
-    20px 80%,
-    20px 100%,
-    0% 50%
-  );
 
   @include grid-assign(
     container,
     picture,
     title,
     subtitle,
-    summary,
+    description,
     breadcrumbs,
     lastmod,
     toc,
@@ -33,12 +24,13 @@
     pointer-events: all;
     display: grid;
     grid-template:
-      ".           .   .        " var(--gap)
-      "breadcrumbs .   edit     " min-content
-      "title       .   .        " min-content
-      "subtitle    .   .        " min-content
-      "toc         toc toc      " auto
-      ".           .   lastmod  " min-content / 1fr var(--gap) minmax(0, 1fr);
+      ".              .   .        " var(--gap)
+      "breadcrumbs    .   edit     " min-content
+      "title          .   .        " min-content
+      "subtitle       .   .        " min-content
+      "description    .   .        " min-content
+      "toc            toc toc      " auto
+      ".              .   lastmod  " min-content / 1fr var(--gap) minmax(0, 1fr);
   }
   &__title {
     line-height: 0.75;
@@ -48,16 +40,14 @@
   }
   &__lastmod,
   &__edit {
-    background: var(--theme-color--accent);
     color: var(--theme-color--contrast-max);
     font-size: var(--theme-type-size--6);
     padding: calc(var(--theme-spacing--1) / 2);
     text-align: right;
   }
-  &__edit {
-    background: var(--theme-color--ink-fade);
-    color: var(--theme-color--ink);
-    clip-path: var(--arrow);
+
+  &__breadcrumbs {
+    padding: 0 0 0 10ch;
   }
 
   // small tweaks for list view
