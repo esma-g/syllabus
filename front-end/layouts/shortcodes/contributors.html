@@ -1,5 +1,5 @@
-{{ $contributors := getJSON
-"https://api.github.com/repos/CodeYourFuture/immersive-go-course/contributors"}}
+{{$url := .Site.orgapi .Site.root "contributors"}} {{ $contributors := getJSON
+$url}}
 
 <ol class="c-contributors">
   {{ range sort $contributors ".contributions" "desc"}}
