@@ -1,5 +1,6 @@
 ---
 title: "Blockers!"
+time: 1
 description: "A game to help you identify and remove blockers"
 headless: true
 objectives:
@@ -13,13 +14,11 @@ objectives:
   ]
 ---
 
-## Blockers! (60 minutes)
-
 [Online Version of this game](https://www.dr-mikes-math-games-for-kids.com/online-traffic-jam-game.html) / [Physical Version of this game](https://www.thinkfun.com/products/rush-hour/)
 
 ### Gameplay
 
-{{<note title="Game (30 minutes)">}}
+{{<note title="Game (30 minutes)" type="activity">}}
 In groups or breakout rooms of 4 trainees maximum.
 
 One person will share their screen and be the **driver**. The driver can only move the pieces where you are told by the navigators. The driver cannot make any decisions!

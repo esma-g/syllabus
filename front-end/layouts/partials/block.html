@@ -1,5 +1,36 @@
-{{ $headless := .site.GetPage (printf "%s" .block) }} {{ if $headless }}
-<section class="block">{{ $headless.Content }}</section>
-{{ else }}
-<p>Error: Headless leaf bundle not found.</p>
+<!-- prettier-ignore -->
+{{ $name := .block.name }}
+{{ $src := .block.src }}
+{{ $blockPath := printf "blocks/%s" $name }}
+
+{{ if eq $src "module" }}
+  {{ $blockPath = printf "%s/blocks/%s" .Page.Section $name }}
 {{ end }}
+{{ $block := .Page.Site.GetPage $blockPath }}
+
+{{ if "api.github.com" | in $src }}
+{{ $resp := getJSON $src }}
+<section class="c-block">
+  <h2 class="c-block__title e-heading__2"><a href="{{$resp.html_url}}">{{$name}} 🔗</a></h2>
+  <div class="c-block__content c-copy">
+     {{ $resp.content | base64Decode | markdownify }}
+  </div>
+</section>
+{{ else if $block }}
+  <section class="c-block">
+    <h2 class="c-block__title e-heading__2">{{$block.Title}}</h2>
+    {{with $block.Params.Objectives}} 
+    <details>
+    <summary><h3 class="e-heading__5">Objectives</h3></summary>
+    <ul>
+      {{ range $block.Params.Objectives}}<li>{{.}}</li>{{end}}
+    </ul>
+  </details>
+  {{end}}
+    <div class="c-block__content c-copy">{{$block.Content }}</div>
+  </section>
+  {{ else }}
+
+  <p>Error: Block not found. Did you run fetch from remote?</p>
+  {{ end }}
+</section>
