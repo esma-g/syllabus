@@ -43,6 +43,10 @@ edit = "https://github.com/CodeYourFuture/syllabus/edit/main/"
 root = "syllabus"
 orgapi = "https://api.github.com/repos/CodeYourFuture/"
 
+hero = "/static/pictures/illos/candy-robots.webp"
+card = "/static/pictures/illos/robots-milkshakes-macbooks.webp"
+
+
 [markup]
 [markup.tableOfContents]
 endLevel = 6
