@@ -1,7 +1,6 @@
 <!-- prettier-ignore-start -->
-{{ $repo := .Params.backlog }} 
-{{ $issues := print .Site.Params.orgapi $repo "/issues"}}
-{{ $filter := .Params.backlog_filter }}
+{{ $repo := .Params.backlog }} {{ $issues := print .Site.Params.orgapi $repo
+"/issues"}} {{ $filter := .Params.backlog_filter }}
 <!-- fallback issues object -->
 {{$fallBackURL := "https://github.com/CodeYourFuture/Module-Template/issues"}}
 {{$fallBackTitle := "Test issue title"}} {{$fallBackState := "open"}}
@@ -11,37 +10,26 @@ $fallBackBody )}}
 <!-- api call -->
 {{ $commitObject := getJSON $issues }}
 <!-- range over issues list and pull out useful data -->
-{{ range $commitObject }} 
-  {{ if eq .state "open" }}
-    {{ $showIssue := false }} 
-    {{ with .labels }} 
-      {{ range . }} 
-        {{ if in .name $filter }} 
-          {{ $showIssue = true }}
-        {{ end }} 
-      {{ end }} 
-    {{ end }} 
-
-    {{ if $showIssue }}
-      <details class="c-issue">
-        <summary class="c-issue__title e-heading__3">
-          {{ .title }} <a class="c-issue__link" href="{{ .html_url}}">🔗</a>
-        </summary>
-        <div class="c-issue__body">{{ .body | markdownify}}</div>
-      </details>
-      {{ with .labels }}
-        <ul class="c-issue__labels">
-          {{ range . }}
-            <li class="c-issue__label" style="--github:#{{.color}}4d">
-              {{/*the 4d is transparency */}}
-              <span class="c-issue__label-name" title="{{.description}}"
-                >{{ .name }}</span
-              >
-            </li>
-          {{ end }}
-        </ul>
-      {{ end }}
-    {{ end }}
+{{ range $commitObject }} {{ if eq .state "open" }} {{ $showIssue := false }} {{
+with .labels }} {{ range . }} {{ if in .name $filter }} {{ $showIssue = true }}
+{{ end }} {{ end }} {{ end }} {{ if $showIssue }}
+<details class="c-issue">
+  <summary class="c-issue__title e-heading__3">
+    {{ .title }} <a class="c-issue__link" href="{{ .html_url}}">🔗</a>
+  </summary>
+  <div class="c-issue__body">{{ .body | markdownify}}</div>
+</details>
+{{ with .labels }}
+<ul class="c-issue__labels">
+  {{ range . }}
+  <li class="c-issue__label" style="--github:#{{.color}}4d">
+    {{/*the 4d is transparency. TODO if the emoji doesn't show, get it from
+    https://api.github.com/emojis */}}
+    <span class="c-issue__label-name" title="{{.description}}"
+      >{{ .name }}</span
+    >
+  </li>
   {{ end }}
-{{ end }}
+</ul>
+{{ end }} {{ end }} {{ end }} {{ end }}
 <!-- prettier-ignore-end -->
