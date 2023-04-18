@@ -1,0 +1,24 @@
+{{/*
+<!-- prettier-ignore -->
+{{ if "api.github.com" | in $src }}
+{{$contributorsURL := printf
+"https:/%s/%s/commits?path=%s" $.Site.orgapi $repo $file}} 
+{{ else }}
+<!-- if it's not a link elsewhere, get the last commit on this file -->
+{{ $contributorsURL := printf $.Site.orgapi $root "commits?path=%s" $file }} {{
+end}} {{ $contributors := getJSON $contributorsURL }}
+
+<ol class="c-byline">
+  {{ range $contributors }}
+  <li class="c-byline__chip">
+    <h3 class="c-byline__name">
+      <a class="c-byline__link" href="{{.author.html_url}}"
+        >{{.author.login}}</a
+      >
+    </h3>
+    <data class="c-byline__commits">{{.contributions}}</data>
+    <img class="c-byline__avatar" src="{{.author.avatar_url}}" alt="" />
+  </li>
+  {{ end }}
+</ol>
+*/}}

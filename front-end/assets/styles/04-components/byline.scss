@@ -1,0 +1,37 @@
+// this chip shows an author's name and avatar
+// it's attached to a block and pulled from github directly
+// if the author has no github account, it will show a default avatar
+
+// the chip is a link to the author's github profile
+// if there are more than one authors, it will show a list of chips on hover/focus
+// with a cute unfolding animation
+
+.c-byline {
+  @include grid-assign(avatar, name, chip);
+
+  @include on-event {
+    animation: unfold 0.3s forwards;
+  }
+
+  &__chip {
+    display: grid;
+    grid-template:
+      ". ...... .... ." var(--theme-spacing--1)
+      ". avatar name ." 1fr
+      ". ...... .... ." var(--theme-spacing--1) /
+      var(--theme-spacing--gutter) 50px 1fr var(--theme-spacing--gutter);
+  }
+  --chip-height: calc(var(--theme-spacing--1) + 50px + var(--theme-spacing--1));
+  &__avatar {
+    clip-path: circle();
+  }
+}
+
+@keyframes unfold {
+  0% {
+    height: var(--chip-height);
+  }
+  100% {
+    height: initial;
+  }
+}
