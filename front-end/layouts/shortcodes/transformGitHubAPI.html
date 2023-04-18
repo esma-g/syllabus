@@ -1,0 +1,35 @@
+{{/*
+<!-- prettier-ignore-->
+
+{{- define "transformGitHubAPIURL" -}}
+  {{- $input := .Input -}}
+  {{- $key := .Key -}}
+
+  {{- with $url, $err := url.Parse $input -}}
+    {{- if $err -}}
+      {{ errorf "Error parsing URL: %s" $err }}
+    {{- else -}}
+      {{- $repo := index (split $url.Path "/") 2 -}}
+      {{- $filePath := replace $url.Path (printf "/repos/CodeYourFuture/%s/contents/" $repo) "" -}}
+      {{- $filePath = replace $filePath (printf "/%s" $url.Query().Get "ref") "" -}}
+
+      {{- $output := printf "https://api.github.com/repos/CodeYourFuture/%s/%s" $repo $key -}}
+      {{- if $filePath != "readme.md" -}}
+        {{- $output = printf "%s?path=%s" $output $filePath -}}
+      {{- end -}}
+
+      {{- $output -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+<!-- Parse the input URL and call the transformGitHubAPIURL function -->
+{{- $input :=
+"https://api.github.com/repos/CodeYourFuture/Module-Databases/contents/Big-Spender/readme.md?ref=main"
+-}} {{- $key := "commits" -}} {{- $transformGitHubAPIURL := partial
+"transformGitHubAPIURL" -}} {{- $url, $err := $transformGitHubAPIURL (dict
+"Input" $input "Key" $key) -}} {{- if $err -}} {{ errorf "Error transforming
+GitHub API URL: %s" $err }} {{- else -}} {{ $url }} {{- end -}}
+
+<!-- prettier-ignore--end -->
+*/}}
