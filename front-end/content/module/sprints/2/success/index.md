@@ -1,10 +1,6 @@
----
-title: Success
----
++++
+title = 'SUCCESS'
+date = '2023-04-23T17:16:11Z'
++++
 
-This module is done when you have achieved the following:
 
-- [ ] [Preparation](preparation/)
-- [ ] [Objectives](objectives/)
-- [ ] [Coursework](coursework/)
-- [ ] [Project](project/)
