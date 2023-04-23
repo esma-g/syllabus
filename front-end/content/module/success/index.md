@@ -1,7 +1,7 @@
 +++
 title = 'SUCCESS'
 description = 'SUCCESS description'
-layout = SUCCESS
+layout = 'SUCCESS'
 +++
 
 

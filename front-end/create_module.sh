@@ -32,7 +32,7 @@ for file in "${FILES[@]}"; do
   echo "+++
 title = '$(echo $file | tr '[:lower:]' '[:upper:]')'
 description = '$(echo $file | tr '[:lower:]' '[:upper:]') description'
-layout = $(echo $file | tr '[:lower:]' '[:upper:]')
+layout = '$(echo $file | tr '[:lower:]' '[:upper:]')'
 +++
 
 " > $MODULE_DIR/$file/index.md
@@ -74,9 +74,9 @@ headless = true
 time = 0.3
 facilitation = false
 [objectives]
-    1="Use the Teach Tech Together guide to construct your objectives"
-    2="Limit the objectives to 3-5 items"
-    3="Write objectives you can measure"
+    1='Use the Teach Tech Together guide to construct your objectives'
+    2='Limit the objectives to 3-5 items'
+    3='Write objectives you can measure'
 +++
 
 " > $BLOCKS_DIR/$block/index.md
@@ -97,7 +97,7 @@ for product_file in "${PRODUCT_FILES[@]}"; do
   echo "+++
 title = '$(echo $product_file | tr '[:lower:]' '[:upper:]')'
 description = '$(echo $product_file | tr '[:lower:]' '[:upper:]') description'
-layout = $(echo $product_file | tr '[:lower:]' '[:upper:]')
+layout = '$(echo $product_file | tr '[:lower:]' '[:upper:]')'
 +++
 
 " > $PRODUCT_DIR/$product_file/index.md

@@ -1,7 +1,7 @@
 +++
 title = 'PREP'
 description = 'PREP description'
-layout = PREP
+layout = 'PREP'
 +++
 
 
