@@ -7,7 +7,7 @@
   </header>
 
   <section class="c-splash">
-    {{.Content}} {{- range site.Menus.main }}
+    {{.Content}} {{- range site.Menus.syllabus }}
     <a href="{{ .URL }}">
       {{ .Name }} {{- with .Page }} {{- with .Params.version -}} ({{ . }}) {{-
       end }} {{- end }}

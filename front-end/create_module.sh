@@ -18,24 +18,28 @@ mkdir -p $BLOCKS_DIR
 mkdir -p $PRODUCT_DIR
 
 echo "+++
-title = '$MODULE_NAME Plan'
-description = '$MODULE_NAME description'
+title = '$MODULE_NAME'
+description = 'The plan for $MODULE_NAME'
 layout = 'module'
+menu = ['syllabus']
 +++
 
 " > $MODULE_DIR/_index.md
 
 FILES=("prep" "backlog" "success")
-
+MENU_ORDER=1
 for file in "${FILES[@]}"; do
   mkdir -p $MODULE_DIR/$file
   echo "+++
-title = '$(echo $file | tr '[:lower:]' '[:upper:]')'
-description = '$(echo $file | tr '[:lower:]' '[:upper:]') description'
-layout = '$(echo $file | tr '[:lower:]' '[:upper:]')'
+title = '$file'
+description = '$file description'
+layout = '$file'
+menu = ['module']
+weight = $MENU_ORDER
 +++
 
 " > $MODULE_DIR/$file/index.md
+  MENU_ORDER=$((MENU_ORDER + 5))
 done
 
 for i in {1..4}; do
@@ -44,8 +48,10 @@ for i in {1..4}; do
   mkdir -p $SPRINT_PATH
   echo "+++
 title = 'Sprint $i'
-description = 'Sprint $i description'
+description = 'The plan for the week'
 layout = 'sprint'
+menu = ['sprint', 'module']
+weight = $((i + 1))
 +++
 
 " > $SPRINT_PATH/_index.md
@@ -55,8 +61,9 @@ layout = 'sprint'
   for file in "${SPRINT_FILES[@]}"; do
     mkdir -p $SPRINT_PATH/$file
     echo "+++
-title = '$(echo $file | tr '[:lower:]' '[:upper:]')'
-date = '$(date -u +"%Y-%m-%dT%H:%M:%SZ")'
+title = '$file'
+layout = '$file'
+menu = ['sprint']
 +++
 
 " > $SPRINT_PATH/$file/index.md
@@ -68,8 +75,7 @@ BLOCKS=("block1" "block2" "block3")
 for block in "${BLOCKS[@]}"; do
   mkdir -p $BLOCKS_DIR/$block
   echo "+++
-title = '$(echo $block | tr '[:lower:]' '[:upper:]')'
-date = '$(date -u +"%Y-%m-%dT%H:%M:%SZ")'
+title = '$block'
 headless = true
 time = 0.3
 facilitation = false
@@ -88,6 +94,7 @@ echo "+++
 title = 'Product'
 description = 'Product description'
 layout = 'product'
+menu = ['product']
 +++
 
 " > $PRODUCT_DIR/_index.md
@@ -95,9 +102,9 @@ layout = 'product'
 for product_file in "${PRODUCT_FILES[@]}"; do
   mkdir -p $PRODUCT_DIR/$product_file
   echo "+++
-title = '$(echo $product_file | tr '[:lower:]' '[:upper:]')'
-description = '$(echo $product_file | tr '[:lower:]' '[:upper:]') description'
-layout = '$(echo $product_file | tr '[:lower:]' '[:upper:]')'
+title = '$product_file'
+description = '$product_file description'
+layout = '$product_file'
 +++
 
 " > $PRODUCT_DIR/$product_file/index.md
