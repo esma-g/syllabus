@@ -16,7 +16,18 @@
     </h2>
     {{ end }} {{with .Description }}
     <h3 class="c-page-header__description">{{.}}</h3>
-    {{end}} {{ if and (gt .Page.WordCount 400) (.Page.TableOfContents) }}
+    {{end}}
+    <!-- edit on github TODO match paths-->
+    {{$pathAsString := print $.Site.Params.tree .Path }} {{$changeIndexToReadMe
+    := replace $pathAsString "index.md" "README.md"}}
+    <a
+      class="c-page-header__edit e-heading__5 e-link is-none--lt-container"
+      href="{{$changeIndexToReadMe}}"
+      >{{ partial "github-icon.html" . }}
+      <span class="is-invisible">Edit on GitHub</span></a
+    >
+    <!--TOC-->
+    {{ if and (gt .Page.WordCount 400) (.Page.TableOfContents) }}
     <section class="c-page-header__toc c-toc" id="toc">
       {{ .Page.TableOfContents }}
     </section>

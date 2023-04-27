@@ -1,39 +1,16 @@
 {{ define "main" }}
 
 <article>
-  <header class="l-page__header c-page-header">
-    <div class="c-page-header__container">
-      <div class="c-page-header__breadcrumbs">
-        {{ partial "breadcrumbs.html" . }}
-      </div>
-      <h1 class="c-page-header__title e-heading__1">{{.Title}}</h1>
-      {{ with .Description}}
-      <p class="c-page-header__description">{{.}}</p>
-      {{ end }}
-      <!-- edit on github -->
-      {{$pathAsString := print $.Site.Params.tree .Path }}
-      {{$changeIndexToReadMe := replace $pathAsString "index.md" "README.md"}}
-      <a
-        class="c-page-header__edit e-heading__5 e-link is-none--lt-container"
-        href="{{$changeIndexToReadMe}}"
-        >{{ partial "github-icon.html" . }}
-        <span class="is-invisible">Edit on GitHub</span></a
-      >
-
-      <!-- table of contents -->
-      {{ if and (gt .WordCount 400 ) (.TableOfContents) }}
-      <section class="c-page-header__toc c-toc" id="toc">
-        {{ .TableOfContents }}
-      </section>
-      {{ end }}
-    </div>
-    {{ with .Params.hero }} {{ partial "picture.html" (dict "keyword" "hero"
-    "srcImage" . "alt" "Dismayed robots reading") }} {{ end }}
-  </header>
+  {{ partial "page-header.html" }}
 
   <section class="l-page__main c-copy">{{.Content}}</section>
+  <div class="c-block__list">
+    <!-- Blocks will appear here in order listed in the blocks list in the sprint front matter -->
+    {{ range .Params.blocks }} {{ partial "block.html" (dict "block" . "Page"
+    $.Page) }} {{ end }}
+  </div>
 
-  {{ partial "page-footer.html" .}}
+  {{/* {{ partial "page-footer.html" .}} */}}
 </article>
 
 {{ end }}
