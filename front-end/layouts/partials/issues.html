@@ -1,35 +1,37 @@
-<!-- prettier-ignore-start -->
-{{ $repo := .Params.backlog }} {{ $issues := print .Site.Params.orgapi $repo
-"/issues"}} {{ $filter := .Params.backlog_filter }}
-<!-- fallback issues object -->
-{{$fallBackURL := "https://github.com/CodeYourFuture/Module-Template/issues"}}
-{{$fallBackTitle := "Test issue title"}} {{$fallBackState := "open"}}
-{{$fallBackBody := "### Markdown here"}} {{$commitObject := slice (dict
-"html_url" $fallBackURL "title" $fallBackTitle "state" $fallBackState "body"
-$fallBackBody )}}
+<!-- prettier-ignore -->
+{{ $repo := .Params.backlog }}
+{{ $issues := print .Site.Params.orgapi $repo "/issues" }}
+{{ $filter := .Params.backlog_filter }}
 <!-- api call -->
 {{ $commitObject := getJSON $issues }}
+<!-- if no object show error -->
+
+{{ if $commitObject }}
 <!-- range over issues list and pull out useful data -->
-{{ range $commitObject }} {{ if eq .state "open" }} {{ $showIssue := false }} {{
-with .labels }} {{ range . }} {{ if in .name $filter }} {{ $showIssue = true }}
-{{ end }} {{ end }} {{ end }} {{ if $showIssue }}
+{{ range $commitObject }}
+<!-- only show open issues -->
+{{ if eq .state "open" }} {{ $showIssue := true }}
+<!-- if a filter exists, only show issues with the right label -->
+{{ if $filter }} {{ $showIssue = false }} {{ range .labels }} {{ if in .name
+$filter }} {{ $showIssue = true }} {{ end }} {{ end }} {{ end }}
+<!-- now show the issue -->
+{{ if $showIssue }}
 <details class="c-issue">
   <summary class="c-issue__title e-heading__3">
-    {{ .title }} <a class="c-issue__link" href="{{ .html_url}}">🔗</a>
+    {{ .title }} <a class="c-issue__link" href="{{ .html_url }}">🔗</a>
   </summary>
-  <div class="c-issue__body">{{ .body | markdownify}}</div>
+  <div class="c-issue__body">{{ .body | markdownify }}</div>
 </details>
 {{ with .labels }}
 <ul class="c-issue__labels">
   {{ range . }}
-  <li class="c-issue__label" style="--github:#{{.color}}4d">
-    {{/*the 4d is transparency. TODO if the emoji doesn't show, get it from
-    https://api.github.com/emojis */}}
-    <span class="c-issue__label-name" title="{{.description}}"
-      >{{ .name }}</span
-    >
+  <li class="c-issue__label" style="--github:#{{ .color }}4d">
+    <span class="c-issue__label-name" title="{{ .description }}">
+      {{ .name }}
+    </span>
   </li>
   {{ end }}
 </ul>
-{{ end }} {{ end }} {{ end }} {{ end }}
-<!-- prettier-ignore-end -->
+{{ end }} {{ end }} {{ end }} {{ end }} {{ else }}
+<h3>Error, fetch failed</h3>
+{{ end }}
