@@ -1,26 +1,13 @@
-{{ define "main" }}
-<article>
-  <header class="l-page__header c-page-header">
-    <img
-      class="c-page-header__picture"
-      src="{{.Site.BaseURL}}pictures/illos/icecream-robots.webp"
-      alt="friendly robots studying"
-    />
-    <div class="c-page-header__container">
-      <h1 class="c-page-header__title e-heading__1">📅 {{.Title}}</h1>
-      <nav class="c-page-header__breadcrumbs">
-        {{ partial "breadcrumbs.html" . }}
-      </nav>
-    </div>
-  </header>
+{{ define "main" }} {{ partial "page-header.html" .}}
 
-  {{with .Content}}
-  <section class="c-content">{{.}}</section>
-  {{end}}
-  <div class="c-block__list">
-    <!-- Blocks will appear here in order listed in the blocks list in the sprint front matter -->
-    {{ range .Params.blocks }} {{ partial "block.html" (dict "block" . "Page"
-    $.Page) }} {{ end }}
-  </div>
-</article>
+<article class="{{ with .Content }}c-copy{{end}}">{{ .Content }}</article>
+
+<ol>
+  {{ range .Pages}} {{ if in .Params.menu "sprint" }}
+  <li>
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+  </li>
+  {{ end }} {{ end }}
+</ol>
+
 {{ end }}
