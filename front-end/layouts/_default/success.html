@@ -1,0 +1,22 @@
+<!-- prettier-ignore -->
+{{ define "main" }}
+  {{ partial "page-header.html" . }}
+
+<article class="{{ with .Content }}c-copy{{end}}">{{ .Content }}</article>
+
+<!-- grab blocks -->
+{{ $siblingPrepPath := path.Join (path.Dir .File.Path) "prep" "index.md" }} {{
+$prepPage := .Site.GetPage "page" $siblingPrepPath }} {{ with $prepPage }} {{
+$blocks := .Params.blocks }} {{ range $blocks }} {{ $blockName := .name }} {{
+$src := .src }} {{ $blockPath := printf "blocks/%s" $blockName }} {{ if eq $src
+"module" }} {{ $blockPath = printf "%s/blocks/%s" $.Section $blockName }} {{ end
+}} {{ $block := $.Site.GetPage $blockPath }} {{ with $block.Params.objectives }}
+<h3>{{ $block.Title }}</h3>
+<ul>
+  {{ range . }}
+  <li>{{ . }}</li>
+  {{ end }}
+</ul>
+{{ end }} {{ end }} {{ else }}
+<p>Error: Sibling prep page not found.</p>
+{{ end }} {{ end }}
