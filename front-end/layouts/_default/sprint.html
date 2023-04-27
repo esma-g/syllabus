@@ -3,7 +3,7 @@
 <article class="{{ with .Content }}c-copy{{end}}">{{ .Content }}</article>
 
 <ol>
-  {{ range .Pages}} {{ if in .Params.menu "sprint" }}
+  {{ range sort .Pages "Params.weight"}} {{ if in .Params.menu "sprint" }}
   <li>
     <a href="{{ .Permalink }}">{{ .Title }}</a>
   </li>
