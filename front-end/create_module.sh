@@ -33,7 +33,7 @@ for file in "${FILES[@]}"; do
   echo "+++
 title = '$file'
 description = '$file description'
-layout = '$file.html'
+layout = '$file'
 menu = ['module']
 weight = $MENU_ORDER
 backlog= 'Module-$MODULE_NAME'
@@ -50,7 +50,7 @@ for i in {1..4}; do
   echo "+++
 title = 'Sprint $i'
 description = 'The plan for the week'
-layout = 'sprint.html'
+layout = 'sprint'
 menu = ['module']
 weight = $((i + 1))
 +++
@@ -95,7 +95,7 @@ PRODUCT_FILES=("plan" "build" "test" "ship")
 echo "+++
 title = 'Product'
 description = 'Product description'
-layout = 'product.html'
+layout = 'product'
 menu = ['product']
 +++
 
@@ -107,7 +107,7 @@ for product_file in "${PRODUCT_FILES[@]}"; do
   echo "+++
 title = '$product_file'
 description = '$product_file description'
-layout = '$product_file.html'
+layout = '$product_file'
 weight = $MENU_ORDER
 +++
 
