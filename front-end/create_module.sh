@@ -58,6 +58,7 @@ weight = $((i + 1))
 " > $SPRINT_PATH/_index.md
 
   SPRINT_FILES=("prep" "backlog" "day-plan" "success")
+  MENU_ORDER=1
 
   for file in "${SPRINT_FILES[@]}"; do
     mkdir -p $SPRINT_PATH/$file
@@ -65,11 +66,13 @@ weight = $((i + 1))
 title = '$file'
 layout = '$file'
 menu = ['sprint']
+weight = $MENU_ORDER
 backlog= 'Module-$MODULE_NAME'
 backlog_filter= 'Week $i'
 +++
 
 " > $SPRINT_PATH/$file/index.md
+MENU_ORDER=$((MENU_ORDER + 1))
   done
 done
 
