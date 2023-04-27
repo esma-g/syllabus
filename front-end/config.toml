@@ -4,6 +4,7 @@ title = "<Syllabus>"
 languageLang = "en"
 sectionPagesMenu = "main"
 enableEmoji = true
+ignoreErrors = ["error-remote-getjson"]
 
 [params]
 description = "A free and open source web development programme."

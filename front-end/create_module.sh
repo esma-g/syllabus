@@ -33,9 +33,10 @@ for file in "${FILES[@]}"; do
   echo "+++
 title = '$file'
 description = '$file description'
-layout = '$file'
+layout = '$file.html'
 menu = ['module']
 weight = $MENU_ORDER
+backlog= 'Module-$MODULE_NAME'
 +++
 
 " > $MODULE_DIR/$file/index.md
@@ -49,8 +50,8 @@ for i in {1..4}; do
   echo "+++
 title = 'Sprint $i'
 description = 'The plan for the week'
-layout = 'sprint'
-menu = ['sprint', 'module']
+layout = 'sprint.html'
+menu = ['module']
 weight = $((i + 1))
 +++
 
@@ -64,6 +65,8 @@ weight = $((i + 1))
 title = '$file'
 layout = '$file'
 menu = ['sprint']
+backlog= 'Module-$MODULE_NAME'
+backlog_filter= 'Week $i'
 +++
 
 " > $SPRINT_PATH/$file/index.md
@@ -88,24 +91,26 @@ facilitation = false
 " > $BLOCKS_DIR/$block/index.md
 done
 
-PRODUCT_FILES=("plan" "build" "ship")
-
+PRODUCT_FILES=("plan" "build" "test" "ship")
 echo "+++
 title = 'Product'
 description = 'Product description'
-layout = 'product'
+layout = 'product.html'
 menu = ['product']
 +++
 
 " > $PRODUCT_DIR/_index.md
 
+MENU_ORDER=1
 for product_file in "${PRODUCT_FILES[@]}"; do
   mkdir -p $PRODUCT_DIR/$product_file
   echo "+++
 title = '$product_file'
 description = '$product_file description'
-layout = '$product_file'
+layout = '$product_file.html'
+weight = $MENU_ORDER
 +++
 
 " > $PRODUCT_DIR/$product_file/index.md
+  MENU_ORDER=$((MENU_ORDER + 1))
 done
