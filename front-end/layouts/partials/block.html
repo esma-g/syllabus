@@ -19,7 +19,7 @@
 {{ if $internal}}
 <section class="c-block">
   <h2 class="c-block__title e-heading__2">{{$block.Title}}</h2>
-  {{with $block.Params.Objectives}}
+  {{ partial "lastmod.html" . }} {{with $block.Params.Objectives}}
   <details>
     <summary><h3 class="e-heading__5">Objectives</h3></summary>
     <ul>

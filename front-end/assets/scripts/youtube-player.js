@@ -8,9 +8,11 @@ class YouTubePlayer extends HTMLElement {
   connectedCallback() {
     this.shadowRoot.innerHTML = `
      <style>
-.container {border-radius: 2rem;
+.container {
+    border-radius: var(--theme-border-radius);
+    box-shadow: var(--theme-box-shadow);
     overflow: hidden;
-    border: 1rem inset var(--theme-color--pop);}
+   }
   .container, .thumbnail {
     width:100%;
     max-width:100%;
@@ -73,8 +75,8 @@ class YouTubePlayer extends HTMLElement {
           "allow",
           "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         );
-        iframe.style.width = "560";
-        iframe.style.height = "315";
+        iframe.style.width = "560px";
+        iframe.style.height = "315px";
 
         const container = this.shadowRoot.querySelector(".container");
         container.classList.add("has-video");
