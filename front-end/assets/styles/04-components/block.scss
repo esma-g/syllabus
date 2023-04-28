@@ -8,4 +8,9 @@
     display: grid;
     gap: var(--theme-spacing--gutter);
   }
+
+  &--youtube {
+    max-width: fit-content;
+    text-align: center;
+  }
 }

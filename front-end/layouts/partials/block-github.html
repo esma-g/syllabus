@@ -1,0 +1,17 @@
+<!-- prettier-ignore -->
+{{ $name := .block.name | default "error"}}
+{{ $src := .block.src }}
+{{ $resp := getJSON $src }}
+{{ if $resp}}
+<section class="c-block">
+  <h2 class="c-block__title e-heading__2">
+    <a href="{{$resp.html_url}}">{{$name}} 🔗</a>
+  </h2>
+  <h3 class="c-block__byline e-heading__5">{{ partial "byline.html" }}</h3>
+  <div class="c-block__content c-copy">
+    {{ $resp.content | base64Decode | markdownify }}
+  </div>
+</section>
+{{ else}}
+<h3>Error</h3>
+{{ end }}

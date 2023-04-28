@@ -7,33 +7,28 @@
   {{ $blockPath = printf "%s/blocks/%s" .Page.Section $name }}
 {{ end }}
 {{ $block := .Page.Site.GetPage $blockPath }}
-
-{{ if "api.github.com" | in $src }}
-{{ $resp := getJSON $src }}
-{{ if $resp}}
+{{ $internal := true}}
+<!-- blocks either live on github, on youtube, or in the blocks folder -->
+<!-- if block is on youtube, use the youtube partial -->
+{{ if "youtube" | in $src }} {{$internal = false }} {{partial
+"block-youtube.html" .}} {{end}}
+<!-- if block is on github, use the github partial -->
+{{ if "github" | in $src }} {{$internal = false }} {{partial "block-github.html"
+.}} {{end}}
+<!-- if block is in the blocks folder, use this block partial -->
+{{ if $internal}}
 <section class="c-block">
-  <h2 class="c-block__title e-heading__2"><a href="{{$resp.html_url}}">{{$name}} 🔗</a></h2>
-  <h3 class="c-block__byline e-heading__5">{{ partial "byline.html" }}</h3>
-  <div class="c-block__content c-copy">
-     {{ $resp.content | base64Decode | markdownify }}
-  </div>
-</section>
-{{ end }}
-{{ else if $block }}
-  <section class="c-block">
-    <h2 class="c-block__title e-heading__2">{{$block.Title}}</h2>
-    {{with $block.Params.Objectives}} 
-    <details>
+  <h2 class="c-block__title e-heading__2">{{$block.Title}}</h2>
+  {{with $block.Params.Objectives}}
+  <details>
     <summary><h3 class="e-heading__5">Objectives</h3></summary>
     <ul>
-      {{ range $block.Params.Objectives}}<li>{{.}}</li>{{end}}
+      {{ range $block.Params.Objectives}}
+      <li>{{.}}</li>
+      {{end}}
     </ul>
   </details>
   {{end}}
-    <div class="c-block__content c-copy">{{$block.Content }}</div>
-  </section>
-  {{ else }}
-
-  <p>Error: Block not found. Did you run fetch from remote?</p>
-  {{ end }}
+  <div class="c-block__content c-copy">{{$block.Content }}</div>
 </section>
+{{ end}}
