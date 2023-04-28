@@ -40,8 +40,7 @@
   </button>
 </footer>
 
-{{ $scripts := resources.Get "scripts/app.js" | resources.Minify }} {{ partial
-"random-bg" .}}
+{{ $scripts := resources.Get "scripts/app.js" | resources.Minify }}
 
 <script src="{{$scripts.Permalink}}" defer></script>
 
