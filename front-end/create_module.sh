@@ -104,6 +104,7 @@ echo "+++
 title = 'Product'
 description = 'Product description'
 layout = 'product'
+emoji= '🎁'
 menu = ['product']
 +++
 

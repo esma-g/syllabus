@@ -1,6 +1,6 @@
 {{ define "main" }}
 <article>
-  {{ partial "page-header.html" . }}
+  {{ .Scratch.Set "emoji" "🧑🏾‍💻"}} {{ partial "page-header.html" . }}
 
   <section class="l-page__main c-copy">{{.Content}}</section>
   <div class="c-block__list">
