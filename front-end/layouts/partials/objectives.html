@@ -1,10 +1,24 @@
-<ul class="c-objectives">
-  {{ range .Params.Objectives }}
-  <li>
-    <label>
-      <input type="checkbox" name="objective" value="{{ . }}" />
-      <span>{{ . }}</span>
-    </label>
-  </li>
-  {{ end }}
-</ul>
+<!-- prettier-ignore-->
+
+{{ $name := .block.name | default "error"}}
+{{ $src := .block.src }}
+{{ $blockPath := printf "blocks/%s" $name }}
+
+{{ if eq $src "module" }}
+  {{ $blockPath = printf "%s/blocks/%s" .Page.Section $name }}
+{{ end }}
+{{ $block := .Page.Site.GetPage $blockPath }}
+
+{{ if $block }}
+  {{with $block.Params.Objectives}}
+<section class="c-objectives">
+  <h3 class="c-block__title e-heading__3">{{$block.Title}}</h3>
+  <ul class="c-objectives__list">
+    {{ range $block.Params.Objectives}}
+    <li class="c-objectives__item">
+      <label><input type="checkbox" />{{.}}</label>
+    </li>
+    {{end}}
+  </ul>
+</section>
+{{end}} {{end}}

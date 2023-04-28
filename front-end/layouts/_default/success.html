@@ -1,22 +1,32 @@
-<!-- prettier-ignore -->
 {{ define "main" }}
-  {{ partial "page-header.html" . }}
 
-<article class="{{ with .Content }}c-copy{{end}}">{{ .Content }}</article>
+<article>
+  {{ partial "page-header.html" }}
 
-<!-- grab blocks -->
-{{ $siblingPrepPath := path.Join (path.Dir .File.Path) "prep" "index.md" }} {{
-$prepPage := .Site.GetPage "page" $siblingPrepPath }} {{ with $prepPage }} {{
-$blocks := .Params.blocks }} {{ range $blocks }} {{ $blockName := .name }} {{
-$src := .src }} {{ $blockPath := printf "blocks/%s" $blockName }} {{ if eq $src
-"module" }} {{ $blockPath = printf "%s/blocks/%s" $.Section $blockName }} {{ end
-}} {{ $block := $.Site.GetPage $blockPath }} {{ with $block.Params.objectives }}
-<h3>{{ $block.Title }}</h3>
-<ul>
-  {{ range . }}
-  <li>{{ . }}</li>
-  {{ end }}
-</ul>
-{{ end }} {{ end }} {{ else }}
-<p>Error: Sibling prep page not found.</p>
-{{ end }} {{ end }}
+  <section class="l-page__main c-copy">{{.Content}}</section>
+
+  <!-- get the path to the prep page that is the sibling of this page-->
+  {{ $prep := .Site.GetPage (printf "%sprep/index.md"
+  .CurrentSection.RelPermalink) }}
+  <!-- get the blocks from the prep page front matter -->
+  {{ $blocks := $prep.Params.blocks }}
+  <!-- for each block, print the objectives only -->
+  {{range $blocks }} {{ partial "objectives.html" (dict "block" . "Page" $.Page)
+  }} {{ end }}
+
+  <!-- now print any objectives from the success page front matter -->
+  {{ if .Params.Objectives}}
+  <section class="c-objectives">
+    <h3 class="c-block__title e-heading__3">{{.Title}}</h3>
+    <ul class="c-objectives__list">
+      {{ range .Params.Objectives}}
+      <li class="c-objectives__item">
+        <label><input type="checkbox" />{{.}}</label>
+      </li>
+      {{end}}
+    </ul>
+  </section>
+  {{end}}
+</article>
+
+{{ end }}
