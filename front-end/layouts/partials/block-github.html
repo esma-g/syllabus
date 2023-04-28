@@ -1,8 +1,14 @@
 <!-- prettier-ignore -->
 {{ $name := .block.name | default "error"}}
 {{ $src := .block.src }}
-{{ $resp := getJSON $src }}
-{{ if $resp}}
+
+<!-- convert the src to a github api url  eg
+  https://github.com/CodeYourFuture/Module-Databases/tree/main/Big-Spender
+  to
+  https://api.github.com/repos/CodeYourFuture/Module-Databases/readme/Big-Spender/-->
+{{ $src = replace $src "https://github.com/CodeYourFuture/"
+"https://api.github.com/repos/CodeYourFuture/" }} {{ $src = replace $src
+"/tree/main" "/readme/" }} {{$resp := getJSON $src}} {{ if $resp}}
 <section class="c-block">
   <h2 class="c-block__title e-heading__2">
     <a href="{{$resp.html_url}}">{{$name}} 🔗</a>
