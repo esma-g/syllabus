@@ -1,6 +1,7 @@
 {{ define "main" }}
 <article>
-  {{ partial "page-header.html" .}}
+  <!-- reset emoji from page matter to calendar emoji -->
+  {{ .Scratch.Set "emoji" "📅" }} {{ partial "page-header.html" . }}
 
   <section class="c-content">{{.Content}}</section>
 

@@ -21,6 +21,7 @@ echo "+++
 title = '$MODULE_NAME'
 description = 'The plan for $MODULE_NAME'
 layout = 'module'
+emoji= '📚'
 menu = ['syllabus']
 +++
 
@@ -34,6 +35,7 @@ for file in "${FILES[@]}"; do
 title = '$file'
 description = '$file description'
 layout = '$file'
+emoji= '📝'
 menu = ['module']
 weight = $MENU_ORDER
 backlog= 'Module-$MODULE_NAME'
@@ -51,6 +53,7 @@ for i in {1..4}; do
 title = 'Sprint $i'
 description = 'The plan for the week'
 layout = 'sprint'
+emoji= '⏱️'
 menu = ['module']
 weight = $((i + 1))
 +++
@@ -65,6 +68,7 @@ weight = $((i + 1))
     echo "+++
 title = '$file'
 layout = '$file'
+emoji= '📝'
 menu = ['sprint']
 weight = $MENU_ORDER
 backlog= 'Module-$MODULE_NAME'
@@ -85,6 +89,7 @@ title = '$block'
 headless = true
 time = 0.3
 facilitation = false
+emoji= '🧩'
 [objectives]
     1='Use the Teach Tech Together guide to construct your objectives'
     2='Limit the objectives to 3-5 items'

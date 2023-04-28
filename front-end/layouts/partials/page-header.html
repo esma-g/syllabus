@@ -2,21 +2,24 @@
   <!-- content -->
   <div class="c-page-header__container">
     <div class="c-page-header__breadcrumbs">
-      {{ partial "breadcrumbs.html" . }}
+      {{ partial "breadcrumbs.html" .Page }}
     </div>
     <h1 class="c-page-header__title e-heading__1">
-      {{ with .Page.Params.emoji }}{{.}} {{end}} {{ .Page.Title }}
+      {{$override := .Scratch.Get "emoji"}} {{if $override}} {{$override}} {{
+      else}} {{with .Page.Params.emoji}} {{.}} {{end}} {{end}}{{ .Page.Title }}
     </h1>
     {{ if eq .Page.Params.layout "backlog" }}
     <h2 class="c-page-header__subtitle c-page-header__backlog e-heading__2">
       {{ .Page.Params.backlog }}
-      <a class="c-page-header__link" href="{{ .Page.Site.Params.org }}/{{ . }}"
+      <a
+        class="c-page-header__link"
+        href="{{ .Page.Site.Params.org }}/{{ .Page.Params.backlog }}/issues"
         >🔗</a
       >
     </h2>
-    {{ end }} {{with .Description }}
+    {{ else }} {{with .Page.Description }}
     <h3 class="c-page-header__description">{{.}}</h3>
-    {{end}}
+    {{end}} {{end}}
     <!-- edit on github TODO match paths-->
     {{/* {{$pathAsString := print $.Site.Params.tree .Path }}
     {{$changeIndexToReadMe := replace $pathAsString "index.md" "README.md"}}
